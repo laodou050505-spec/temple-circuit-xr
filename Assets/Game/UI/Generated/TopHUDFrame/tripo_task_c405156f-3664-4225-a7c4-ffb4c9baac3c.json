@@ -1,0 +1,19 @@
+{
+  "task_id": "c405156f-3664-4225-a7c4-ffb4c9baac3c",
+  "status": "success",
+  "type": "image_to_image",
+  "progress": 100,
+  "input": {
+    "prompt": "Transform this visual style into a very wide, low-height Chinese temple tabletop game HUD frame. Keep the dark jade lacquer interior, aged bronze-gold outline, subtle cinnabar carved corner ornaments, handcrafted premium board-game material, front orthographic view, perfectly straight horizontal rectangle, clean empty center for player information. No text, no letters, no numbers, no icons, no symbols, no buttons, no perspective, no scene, no objects. Transparent background outside the frame, crisp symmetrical edges, production-ready Unity UI sprite.",
+    "model_version": "banana"
+  },
+  "output": {
+    "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_c6fae067c9334bd9af3d07029c0e7b00/20260810/c405156f-3664-4225-a7c4-ffb4c9baac3c/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYzZmYWUwNjdjOTMzNGJkOWFmM2QwNzAyOWMwZTdiMDAvMjAyNjA4MTAvYzQwNTE1NmYtMzY2NC00MjI1LWE3YzQtZmZiNGM5YmFhYzNjL2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3ODY0NTUyODl9fX1dfQ__&Signature=tmnXTCNMq3~fho40RMJuRObmSC1XXhcMDMNL1CXRoPyktg1acY~0aUSHXO~NnyAIyIaDFIZSkU2TjmiYOFMBxqtzjfAc0MYP-ufKFV2s9swZLEzGLOuP7Lm5bn08bDvF8WI~YGousGdQfeWa~xNNZjVPRNFoUE1OWTfeDGbOBYuEgkgVGdk7BJ1t1o0N8b4VO3qLNYq~5pJhD0Cy3w62XWXjk6IMaiUoXsAkH0~Dvzk5mJgcFe77iZrCISmpTxzJ3qp0UQIPOCEL7ntb7I56wE2Eq4QhuIaUjt6IF74Y2~ZpUrmcHj~SZaPY6lBPmBoIJUoB4IXw2jYy3Kk1Oteb7g__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "created_at": "2026-08-10T13:34:24.322274Z",
+  "completed_at": "2026-08-10T13:34:46.246761Z",
+  "credits_consumed": 5.0,
+  "downloaded_files": [
+    "/Users/ld/Documents/Codex/2026-08-10/大富翁/Assets/Game/UI/Generated/TopHUDFrame/01_generated_image_url.png"
+  ]
+}

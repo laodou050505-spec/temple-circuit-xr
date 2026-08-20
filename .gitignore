@@ -1,0 +1,38 @@
+# Unity-generated caches and local editor state
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Local builds, visual QA captures, and intermediate exports
+[Bb]uilds/
+[Bb]uild/
+[Vv]isualQA/
+
+# Operating-system and IDE files
+.DS_Store
+.idea/
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Credentials, signing files, and environment overrides
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key

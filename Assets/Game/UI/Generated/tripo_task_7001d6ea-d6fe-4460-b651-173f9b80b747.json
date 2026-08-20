@@ -1,0 +1,19 @@
+{
+  "task_id": "7001d6ea-d6fe-4460-b651-173f9b80b747",
+  "status": "success",
+  "type": "text_to_image",
+  "progress": 100,
+  "input": {
+    "prompt": "Reusable Chinese temple tabletop board game UI panel asset. One wide rectangular information panel, front orthographic view. Dark translucent ink-green lacquer center with ample empty space, restrained cinnabar-red corner accents, very thin antique-gold border, subtle carved cloud motifs only along the outer frame. Quiet premium mobile game interface, clean symmetrical composition. No text, no letters, no numbers, no symbols, no icons, no buttons, no watermark.",
+    "model_version": "banana2"
+  },
+  "output": {
+    "generated_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_c6fae067c9334bd9af3d07029c0e7b00/20260810/7001d6ea-d6fe-4460-b651-173f9b80b747/generated_image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly90cmlwby1kYXRhLnJnMS5kYXRhLnRyaXBvM2QuY29tL3RjbGlfYzZmYWUwNjdjOTMzNGJkOWFmM2QwNzAyOWMwZTdiMDAvMjAyNjA4MTAvNzAwMWQ2ZWEtZDZmZS00NDYwLWI2NTEtMTczZjliODBiNzQ3L2dlbmVyYXRlZF9pbWFnZS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3ODY0NDEzNjR9fX1dfQ__&Signature=slW-1Qe~zP540SHniU1MW0su-wE5emT7ycQN9i7Eg2~OG8q99EAuBa~hk9KoNffBVeg9Pi9h4O1Tht8HFaXiTXFIXamB8czeUb4TvrreqsoQmL4NCLXtymfT0PRt-~r7kqPOE3o9qRLWSbwZ-XDEZfFBtb3Fr7KqwOtKObozml7nQcdcP-wD6UKdVqhaB7UtDIP7J9hs9vaUVHQ5~aumX-abV8ue29vBCrOUispWEq0G0UNs2OUlnW0XmbgiFybKMNYuNoaJQhrJnwI2xpBG8TAWW3dDWONO~804c8FvKV~6~ZlrjllAXLQgJqaggvs-Po1cenRg8tARLsUfFSqtJQ__&Key-Pair-Id=K1676C64NMVM2J"
+  },
+  "created_at": "2026-08-10T09:42:22.678435Z",
+  "completed_at": "2026-08-10T09:42:41.673663Z",
+  "credits_consumed": 10.0,
+  "downloaded_files": [
+    "/Users/ld/Documents/Codex/2026-08-10/大富翁/Assets/Game/UI/Generated/01_generated_image_url.png"
+  ]
+}

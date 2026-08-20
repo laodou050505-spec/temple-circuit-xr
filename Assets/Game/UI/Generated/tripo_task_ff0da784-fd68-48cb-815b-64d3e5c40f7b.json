@@ -1,0 +1,15 @@
+{
+  "task_id": "ff0da784-fd68-48cb-815b-64d3e5c40f7b",
+  "status": "failed",
+  "type": "text_to_image",
+  "progress": 100,
+  "input": {
+    "prompt": "A single reusable ornate game UI information panel background for a Chinese fantasy temple tabletop board game, dark translucent ink-green lacquer center, restrained cinnabar red side accents, thin antique gold edge, subtle carved cloud motifs only around the border, quiet premium mobile game interface, symmetrical, clean large empty center for overlay text, isolated panel filling the frame, front orthographic view, no perspective, no buttons, no icons, no letters, no numbers, no text, no symbols, no watermark, polished 2D game UI asset",
+    "model_version": "banana"
+  },
+  "output": {},
+  "created_at": "2026-08-10T08:53:28.623477Z",
+  "completed_at": "2026-08-10T08:53:50.215597Z",
+  "error_code": 1004,
+  "error_message": "Failed to generate image"
+}
