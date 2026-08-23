@@ -122,9 +122,10 @@ namespace TempleCircuit
                 canvasRect.offsetMax = Vector2.zero;
             }
 
-            var backdrop = CreateImage("Backdrop", canvasRect, Color.black);
-            Stretch(backdrop.rectTransform);
-            backdrop.raycastTarget = false;
+            // The cover artwork itself is the complete, opaque title stage.
+            // Do not add a second black world-space rectangle behind it: in MR
+            // that would mask the real room outside the 16:9 cover and make the
+            // simulator look like a conventional black-background VR game.
 
             var coverFrame = new GameObject("CoverFrame_16x9", typeof(RectTransform), typeof(AspectRatioFitter));
             coverRect = coverFrame.GetComponent<RectTransform>();

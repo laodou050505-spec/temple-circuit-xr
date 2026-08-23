@@ -156,7 +156,14 @@ namespace TempleCircuit
             if (audioManager == null)
                 audioManager = GetComponent<TempleAudioManager>();
             if (dice != null)
+            {
                 dice.game = this;
+                // The title stage hides gameplay renderers until START.  Snap only
+                // after they are restored so the dice sits on the central temple,
+                // not at the temporary title-stage height beneath the board.
+                dice.SnapToSupportSurface();
+                dice.CaptureRestPose();
+            }
             var bounds = CalculateBoardBounds();
             hud.Build(this, bounds.center, Mathf.Max(bounds.size.x, bounds.size.z));
             ResetGame();

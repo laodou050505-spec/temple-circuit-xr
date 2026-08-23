@@ -12,8 +12,8 @@ Shader "TempleCircuit/CameraBackground"
     {
         Tags
         {
-            "Queue" = "Transparent+100"
-            "RenderType" = "Transparent"
+            "Queue" = "Background"
+            "RenderType" = "Background"
             "RenderPipeline" = "UniversalPipeline"
         }
 
@@ -21,9 +21,9 @@ Shader "TempleCircuit/CameraBackground"
         {
             Name "DesktopMRBackground"
             Cull Off
-            ZWrite Off
-            ZTest Always
-            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite On
+            ZTest LEqual
+            Blend One Zero
 
             HLSLPROGRAM
             #pragma vertex Vert
@@ -59,12 +59,6 @@ Shader "TempleCircuit/CameraBackground"
 
             half4 Frag(Varyings input) : SV_Target
             {
-                float2 screenUv = input.positionCS.xy / _ScreenParams.xy;
-                float sceneDepth = SampleSceneDepth(screenUv);
-                float sceneEyeDepth = LinearEyeDepth(sceneDepth, _ZBufferParams);
-                if (sceneEyeDepth < _ProjectionParams.z * 0.999)
-                    discard;
-
                 float2 uv = (input.uv - 0.5) * _CropScale.xy;
                 uv = float2(
                     uv.x * _UvRotation.x - uv.y * _UvRotation.y,

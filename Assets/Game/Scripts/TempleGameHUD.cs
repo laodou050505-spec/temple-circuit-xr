@@ -130,9 +130,13 @@ namespace TempleCircuit
             if (camera == null)
                 return;
 
-            var rig = FindAnyObjectByType<TempleXRTabletopRig>();
-            var canvasObject = new GameObject("TempleHUD_WorldStatus", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(TempleWorldStatusAnchor));
-            canvasObject.transform.SetParent(transform, true);
+            // This compact strip is deliberately the one auxiliary HUD in the
+            // experience: it remains centred along the top of the player's view.
+            // The board, dice, action panel and four coloured tile panels remain
+            // in world space.  Parenting it to the tracked camera keeps its front
+            // facing the player without moving or obscuring the tabletop.
+            var canvasObject = new GameObject("TempleHUD_TopStatus", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(TempleHeadLockedStatusAnchor));
+            canvasObject.transform.SetParent(camera.transform, false);
             headCanvas = canvasObject.GetComponent<Canvas>();
             headCanvas.renderMode = RenderMode.WorldSpace;
             headCanvas.worldCamera = camera;
@@ -140,40 +144,29 @@ namespace TempleCircuit
             canvasObject.GetComponent<CanvasScaler>().dynamicPixelsPerUnit = 1f;
 
             var rect = canvasObject.GetComponent<RectTransform>();
-            rect.sizeDelta = new Vector2(1180f, 188f);
-            if (rig != null)
-            {
-                rect.position = rig.GetWorldTablePoint(rig.statusBoardOffsetFromTabletop);
-                var facePlayer = rig.DesignPlayerEyeWorldPosition - rect.position;
-                facePlayer.y = 0f;
-                rect.rotation = facePlayer.sqrMagnitude < 0.001f
-                    ? rig.DesignPlayerFacingRotation
-                    : Quaternion.LookRotation(facePlayer.normalized, Vector3.up);
-                rect.localScale = Vector3.one *
-                    (rig.statusBoardWidthMeters * rig.WorldUnitsPerTabletopMeter / 1180f);
-                canvasObject.GetComponent<TempleWorldStatusAnchor>().Configure(rig, camera, rect.position);
-            }
-            else
-            {
-                var fallbackBounds = CalculateWorldBoardBounds();
-                var fallbackSize = Mathf.Max(fallbackBounds.size.x, fallbackBounds.size.z);
-                rect.position = fallbackBounds.center + new Vector3(0f, fallbackSize * 0.28f, -fallbackSize * 0.48f);
-                rect.rotation = Quaternion.LookRotation(camera.transform.position - rect.position, Vector3.up);
-                rect.localScale = Vector3.one * (fallbackSize * 0.72f / 1180f);
-            }
+            rect.sizeDelta = new Vector2(1320f, 210f);
+            // Deliberately large and high in the view: this is the one small
+            // auxiliary HUD, kept clear of the floating board and dice UI.
+            rect.localPosition = new Vector3(0f, 0.66f, 1.45f);
+            // An identity canvas viewed along the camera's forward axis preserves
+            // the artwork's authored left-to-right reading order.  Do not flip
+            // this child: a 180-degree yaw mirrors the top status text.
+            rect.localRotation = Quaternion.identity;
+            rect.localScale = Vector3.one * (1.68f / 1320f);
+            canvasObject.GetComponent<TempleHeadLockedStatusAnchor>().Configure(camera, rect.localPosition);
 
-            var background = CreateImage("StatusBackground", rect, topHudSprite == null ? Ink : Color.white, Vector2.zero, new Vector2(1160f, 176f));
+            var background = CreateImage("StatusBackground", rect, topHudSprite == null ? Ink : Color.white, Vector2.zero, new Vector2(1300f, 198f));
             background.sprite = topHudSprite;
             if (topHudSprite != null)
                 background.type = Image.Type.Sliced;
             else
                 AddOutline(background.gameObject, new Color32(220, 181, 91, 175), new Vector2(2f, -2f));
 
-            var location = CreateText("Location", background.rectTransform, 30, TextAnchor.MiddleLeft, Gold, new Vector2(-350f, 47f), new Vector2(380f, 58f));
+            var location = CreateText("Location", background.rectTransform, 34, TextAnchor.MiddleLeft, Gold, new Vector2(-398f, 53f), new Vector2(430f, 64f));
             location.text = "香火争渡 · 云上寺院";
             location.fontStyle = FontStyles.Bold;
-            roundText = CreateText("Round", background.rectTransform, 24, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 47f), new Vector2(260f, 58f));
-            trendText = CreateText("Trend", background.rectTransform, 24, TextAnchor.MiddleRight, Paper, new Vector2(350f, 47f), new Vector2(340f, 58f));
+            roundText = CreateText("Round", background.rectTransform, 28, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(300f, 64f));
+            trendText = CreateText("Trend", background.rectTransform, 28, TextAnchor.MiddleRight, Paper, new Vector2(398f, 53f), new Vector2(390f, 64f));
 
             var colors = new[]
             {
@@ -184,11 +177,11 @@ namespace TempleCircuit
             };
             for (var i = 0; i < 4; i++)
             {
-                var card = CreateImage("Player" + i, background.rectTransform, CardInk, new Vector2(-405f + i * 270f, -36f), new Vector2(246f, 72f));
+                var card = CreateImage("Player" + i, background.rectTransform, CardInk, new Vector2(-455f + i * 303f, -40f), new Vector2(278f, 82f));
                 playerCards.Add(card);
-                var accent = CreateImage("Accent", card.rectTransform, colors[i], new Vector2(-116f, 0f), new Vector2(6f, 60f));
+                var accent = CreateImage("Accent", card.rectTransform, colors[i], new Vector2(-131f, 0f), new Vector2(7f, 68f));
                 accent.raycastTarget = false;
-                var text = CreateText("PlayerText", card.rectTransform, 22, TextAnchor.MiddleLeft, Paper, new Vector2(10f, 0f), new Vector2(206f, 70f));
+                var text = CreateText("PlayerText", card.rectTransform, 25, TextAnchor.MiddleLeft, Paper, new Vector2(12f, 0f), new Vector2(232f, 80f));
                 playerTexts.Add(text);
             }
         }
@@ -540,8 +533,8 @@ namespace TempleCircuit
         public Camera targetCamera;
         public Transform diceTarget;
         public float boardSize = 1f;
-        public float sideRatio = 0.25f;
-        public float forwardRatio = 0.15f;
+        public float sideRatio = 0.17f;
+        public float forwardRatio = 0.10f;
         public float verticalRatio = 0.11f;
         public float followSpeed = 8f;
 
@@ -569,6 +562,12 @@ namespace TempleCircuit
 
         void UpdatePose(bool immediate)
         {
+            // The dice is re-grounded after leaving the title stage and moves
+            // during the roll.  Re-reading its visual top each frame keeps this
+            // action panel beside the central dice rather than at a stale point
+            // under the scene.
+            if (diceTarget != null)
+                diceTop = CalculateTop(diceTarget);
             var toCamera = targetCamera.transform.position - diceTop;
             toCamera.y = 0f;
             if (toCamera.sqrMagnitude < 0.001f)
@@ -630,6 +629,40 @@ namespace TempleCircuit
             var towardCamera = targetCamera.transform.position - worldAnchor;
             if (towardCamera.sqrMagnitude > 0.001f)
                 transform.rotation = Quaternion.LookRotation(towardCamera.normalized, Vector3.up);
+        }
+    }
+
+    /// <summary>
+    /// Keeps the intentionally small status strip fixed at the top centre of the
+    /// player's view.  All primary interaction surfaces remain world-space.
+    /// </summary>
+    public sealed class TempleHeadLockedStatusAnchor : MonoBehaviour
+    {
+        Camera targetCamera;
+        Vector3 localAnchor;
+
+        public void Configure(Camera camera, Vector3 anchor)
+        {
+            targetCamera = camera;
+            localAnchor = anchor;
+            ApplyPose();
+        }
+
+        void LateUpdate()
+        {
+            if (targetCamera == null)
+                targetCamera = Camera.main;
+            ApplyPose();
+        }
+
+        void ApplyPose()
+        {
+            if (targetCamera == null)
+                return;
+            if (transform.parent != targetCamera.transform)
+                transform.SetParent(targetCamera.transform, false);
+            transform.localPosition = localAnchor;
+            transform.localRotation = Quaternion.identity;
         }
     }
 

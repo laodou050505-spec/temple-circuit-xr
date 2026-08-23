@@ -15,6 +15,8 @@ namespace TempleCircuitEditor
     public static class TempleGameSceneInstaller
     {
         const string RuntimeRootName = "TempleGame_Runtime";
+        const string CentralShrineName = "tripo_convert_2654ab84-38d2-4dad-93ed-677928f3c4a0";
+        const string CentralDiceAnchorName = "TempleDiceAnchor_CentralShrine";
         const string AssetRoot = "Assets/模型资产/手绘低多边形中国佛寺幻想微缩沙盘风";
         static readonly string[] TileFolders = { "/41/", "/42/", "/43/", "/44/" };
         static readonly string[] PawnFolders = { "/32/", "/33/", "/34/", "/35/" };
@@ -77,6 +79,7 @@ namespace TempleCircuitEditor
             EnsureBoxCollider(diceRoot);
             var dice = diceRoot.GetComponent<TempleDiceInteractor>() ?? Undo.AddComponent<TempleDiceInteractor>(diceRoot);
             dice.game = game;
+            dice.centerAnchor = EnsureCentralDiceAnchor();
             dice.SnapToSupportSurface();
             dice.CaptureRestPose();
             game.dice = dice;
@@ -131,6 +134,7 @@ namespace TempleCircuitEditor
             game.audioManager = audio;
             ConfigureAudio(audio);
             dice.game = game;
+            dice.centerAnchor = EnsureCentralDiceAnchor();
             dice.SnapToSupportSurface();
             dice.CaptureRestPose();
             rig.game = game;
@@ -162,6 +166,41 @@ namespace TempleCircuitEditor
             EditorSceneManager.MarkSceneDirty(scene);
             EditorSceneManager.SaveScene(scene);
             Debug.Log("Temple presentation repaired: stable camera reference, head-locked player HUD, dice spatial UI and dice surface placement.");
+        }
+
+        /// <summary>
+        /// Creates a non-rendering marker on the central shrine's visible top.
+        /// The dice uses it rather than guessing from all board meshes, keeping
+        /// the die centered on the shrine after XR runtime tabletop scaling.
+        /// </summary>
+        static Transform EnsureCentralDiceAnchor()
+        {
+            var shrine = UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None)
+                .FirstOrDefault(candidate => candidate.name == CentralShrineName);
+            if (shrine == null)
+                throw new InvalidOperationException("The central shrine for the dice anchor was not found: " + CentralShrineName);
+
+            var renderers = shrine.GetComponentsInChildren<Renderer>(true)
+                .Where(renderer => renderer != null)
+                .ToArray();
+            if (renderers.Length == 0)
+                throw new InvalidOperationException("The central shrine has no renderers for a dice anchor.");
+
+            var bounds = renderers[0].bounds;
+            for (var i = 1; i < renderers.Length; i++)
+                bounds.Encapsulate(renderers[i].bounds);
+
+            var anchor = shrine.Find(CentralDiceAnchorName);
+            if (anchor == null)
+            {
+                var anchorObject = new GameObject(CentralDiceAnchorName);
+                Undo.RegisterCreatedObjectUndo(anchorObject, "Create central shrine dice anchor");
+                anchor = anchorObject.transform;
+                anchor.SetParent(shrine, true);
+            }
+            anchor.position = new Vector3(bounds.center.x, bounds.max.y, bounds.center.z);
+            anchor.rotation = Quaternion.identity;
+            return anchor;
         }
 
         [MenuItem("Tools/香火争渡/更新 16:9 启动封面")]

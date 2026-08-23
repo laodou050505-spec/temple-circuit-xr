@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &6553126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6553127}
+  m_Layer: 0
+  m_Name: TempleDiceAnchor_CentralShrine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6553127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0.000000050432693, z: 0.5097656}
+  m_LocalScale: {x: 0.10576502, y: 0.105765, z: 0.105765}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1903801514}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &29123301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1012,11 +1043,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.62707543
-  cycleSeconds: 6.8
-  phaseDegrees: 142
-  pitchDegrees: 0.12
-  rollDegrees: 0.05
+  verticalAmplitude: 0.4730569
+  cycleSeconds: 5.6
+  phaseDegrees: 213
+  pitchDegrees: 0.06666666
+  rollDegrees: 0.11
 --- !u!1001 &101437089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2424,11 +2455,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.5115616
-  cycleSeconds: 5.9
-  phaseDegrees: 99
-  pitchDegrees: 0.08
-  rollDegrees: 0.095
+  verticalAmplitude: 0.62707543
+  cycleSeconds: 6.8
+  phaseDegrees: 170
+  pitchDegrees: 0.12
+  rollDegrees: 0.05
 --- !u!1001 &342962139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2587,11 +2618,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.4730569
-  cycleSeconds: 5.6
-  phaseDegrees: 185
-  pitchDegrees: 0.06666666
-  rollDegrees: 0.11
+  verticalAmplitude: 0.58857083
+  cycleSeconds: 6.5
+  phaseDegrees: 256
+  pitchDegrees: 0.10666666
+  rollDegrees: 0.065000005
 --- !u!1001 &379829558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2819,11 +2850,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.4730569
-  cycleSeconds: 5.6
-  phaseDegrees: 185
-  pitchDegrees: 0.06666666
-  rollDegrees: 0.11
+  verticalAmplitude: 0.58857083
+  cycleSeconds: 6.5
+  phaseDegrees: 256
+  pitchDegrees: 0.10666666
+  rollDegrees: 0.065000005
 --- !u!114 &402700275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5065,11 +5096,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.62707543
-  cycleSeconds: 6.8
-  phaseDegrees: 86
-  pitchDegrees: 0.12
-  rollDegrees: 0.05
+  verticalAmplitude: 0.4730569
+  cycleSeconds: 5.6
+  phaseDegrees: 129
+  pitchDegrees: 0.06666666
+  rollDegrees: 0.11
 --- !u!1001 &628829830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11939,11 +11970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.4730569
-  cycleSeconds: 5.6
-  phaseDegrees: 157
-  pitchDegrees: 0.06666666
-  rollDegrees: 0.11
+  verticalAmplitude: 0.58857083
+  cycleSeconds: 6.5
+  phaseDegrees: 200
+  pitchDegrees: 0.10666666
+  rollDegrees: 0.065000005
 --- !u!1001 &1457025954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12282,11 +12313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.4730569
-  cycleSeconds: 5.6
-  phaseDegrees: 157
-  pitchDegrees: 0.06666666
-  rollDegrees: 0.11
+  verticalAmplitude: 0.58857083
+  cycleSeconds: 6.5
+  phaseDegrees: 200
+  pitchDegrees: 0.10666666
+  rollDegrees: 0.065000005
 --- !u!1001 &1553311525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12376,11 +12407,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.5115616
-  cycleSeconds: 5.9
-  phaseDegrees: 15
-  pitchDegrees: 0.08
-  rollDegrees: 0.095
+  verticalAmplitude: 0.62707543
+  cycleSeconds: 6.8
+  phaseDegrees: 58
+  pitchDegrees: 0.12
+  rollDegrees: 0.05
 --- !u!1001 &1558240853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12815,11 +12846,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.62707543
-  cycleSeconds: 6.8
-  phaseDegrees: 86
-  pitchDegrees: 0.12
-  rollDegrees: 0.05
+  verticalAmplitude: 0.4730569
+  cycleSeconds: 5.6
+  phaseDegrees: 129
+  pitchDegrees: 0.06666666
+  rollDegrees: 0.11
 --- !u!1001 &1622167492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13601,11 +13632,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.62707543
-  cycleSeconds: 6.8
-  phaseDegrees: 142
-  pitchDegrees: 0.12
-  rollDegrees: 0.05
+  verticalAmplitude: 0.4730569
+  cycleSeconds: 5.6
+  phaseDegrees: 213
+  pitchDegrees: 0.06666666
+  rollDegrees: 0.11
 --- !u!1001 &1716567428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13969,11 +14000,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.5115616
-  cycleSeconds: 5.9
-  phaseDegrees: 99
-  pitchDegrees: 0.08
-  rollDegrees: 0.095
+  verticalAmplitude: 0.62707543
+  cycleSeconds: 6.8
+  phaseDegrees: 170
+  pitchDegrees: 0.12
+  rollDegrees: 0.05
 --- !u!1001 &1732935637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14201,11 +14232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f257f80d5167648158c278bc6495d40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleBoardMotion
-  verticalAmplitude: 0.5115616
-  cycleSeconds: 5.9
-  phaseDegrees: 15
-  pitchDegrees: 0.08
-  rollDegrees: 0.095
+  verticalAmplitude: 0.62707543
+  cycleSeconds: 6.8
+  phaseDegrees: 58
+  pitchDegrees: 0.12
+  rollDegrees: 0.05
 --- !u!1001 &1776413279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14905,7 +14936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3789c6c844adb4bccb880853cd248e37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -371.82
+      value: -371.80353
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3789c6c844adb4bccb880853cd248e37, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14913,7 +14944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3789c6c844adb4bccb880853cd248e37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -654.5
+      value: -654.62964
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3789c6c844adb4bccb880853cd248e37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14998,7 +15029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempleCircuit.TempleDiceInteractor
   game: {fileID: 1380605266}
-  centerAnchor: {fileID: 0}
+  centerAnchor: {fileID: 6553127}
   minimumHoldSeconds: 0.45
   rollSeconds: 0.85
   surfaceClearance: 0.002
@@ -15610,9 +15641,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: b63f3748208ed47f286f7265db0e6d81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6553127}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b63f3748208ed47f286f7265db0e6d81, type: 3}
+--- !u!4 &1903801514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b63f3748208ed47f286f7265db0e6d81, type: 3}
+  m_PrefabInstance: {fileID: 1903801513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1904191217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16588,14 +16627,18 @@ MonoBehaviour:
   startScreen: {fileID: 1380605270}
   tabletopWidthMeters: 1.35
   tabletopCenter: {x: 0, y: 0.84, z: 1.05}
-  designEyeOffsetFromTabletop: {x: 0, y: 0.78, z: -1.1}
-  designLookAtOffsetFromTabletop: {x: 0, y: 0, z: 0}
+  designEyeOffsetFromTabletop: {x: 0, y: 0.68, z: -1.18}
+  designLookAtOffsetFromTabletop: {x: 0, y: 0.02, z: -0.5}
   designFacingYawDegrees: 0
+  titleDesignEyeOffsetFromTabletop: {x: 0, y: 0.78, z: -1.1}
+  titleDesignLookAtOffsetFromTabletop: {x: 0, y: 0.78, z: -0.45}
+  titleDesignFacingYawDegrees: 0
   startPortalOffsetFromTabletop: {x: 0, y: 0.78, z: -0.45}
   startPortalWidthMeters: 1.18
   statusBoardOffsetFromTabletop: {x: 0, y: 1.15, z: 0.62}
-  statusBoardWidthMeters: 0.92
+  statusBoardWidthMeters: 1.48
   rayLength: 5
+  useVideoSeeThrough: 1
 --- !u!4 &2030799834
 Transform:
   m_ObjectHideFlags: 0

@@ -50,6 +50,14 @@ namespace TempleCircuitEditor
 
             var projectConfig = PXR_ProjectSetting.GetProjectConfig();
             projectConfig.videoSeeThrough = true;
+            projectConfig.mrSafeguard = true;
+            // This tabletop needs PICO's camera passthrough only.  It does not
+            // consume scene meshes or invent a virtual room, so keep the
+            // optional scene-capture provider out of the presentation path.
+            projectConfig.sceneCapture = false;
+            projectConfig.enableRecommendMSAA = true;
+            projectConfig.recommendMSAA = true;
+            projectConfig.portalFirstSelected = 1;
             EditorUtility.SetDirty(projectConfig);
             PXR_ProjectSetting.SaveAssets();
 
@@ -58,7 +66,7 @@ namespace TempleCircuitEditor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             EditorUserBuildSettings.SwitchActiveBuildTargetAsync(BuildTargetGroup.Android, BuildTarget.Android);
-            Debug.Log("PICO configured: official PXR loader, XR mode, video passthrough, Multiview, OpenGLES3/Vulkan, Android API 29+, ARM64, IL2CPP, Activity and Input System-only project setting.");
+            Debug.Log("PICO configured: official PXR loader, XR mode, video passthrough, MR Safeguard, Multiview, OpenGLES3/Vulkan, Android API 29+, ARM64, IL2CPP, Activity and Input System-only project setting.");
         }
 
         static void EnsurePicoLoader()
@@ -151,12 +159,17 @@ namespace TempleCircuitEditor
             if (settings == null || settings.stereoRenderingModeAndroid != PXR_Settings.StereoRenderingModeAndroid.Multiview) errors.Add("PICO Multiview is not enabled.");
             var projectConfig = PXR_ProjectSetting.GetProjectConfig();
             if (projectConfig == null || !projectConfig.videoSeeThrough) errors.Add("PICO video passthrough is not enabled.");
+            if (projectConfig == null || !projectConfig.mrSafeguard) errors.Add("PICO MR Safeguard is not enabled.");
+            var mobilePipeline = AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>("Assets/Settings/Mobile_RPAsset.asset");
+            var alphaOutput = mobilePipeline == null ? null : new SerializedObject(mobilePipeline).FindProperty("m_AllowPostProcessAlphaOutput");
+            if (alphaOutput == null || !alphaOutput.boolValue)
+                errors.Add("Mobile URP post-processing does not preserve the transparent VST alpha channel.");
             var inputHandler = File.ReadAllText("ProjectSettings/ProjectSettings.asset").Contains("activeInputHandler: 1");
             if (!inputHandler) errors.Add("Input System is not the single active input backend.");
 
             if (errors.Count > 0)
                 throw new BuildFailedException("PICO validation failed:\n- " + string.Join("\n- ", errors));
-            Debug.Log("PICO validation passed: loader, video passthrough, Multiview, API 29+, ARM64, IL2CPP, Activity and Input System-only are configured.");
+            Debug.Log("PICO validation passed: loader, video passthrough, MR Safeguard, Multiview, API 29+, ARM64, IL2CPP, Activity and Input System-only are configured.");
         }
 
         [MenuItem("Tools/香火争渡/构建/macOS 测试版")]
@@ -202,15 +215,17 @@ namespace TempleCircuitEditor
             foreach (var tile in game.pathTiles)
                 center += tile.transform.position;
             center /= game.pathTiles.Length;
-            var eye = center + rig.designEyeOffsetFromTabletop * (Mathf.Max(0.0001f, EstimateBoardWidth(game) / rig.tabletopWidthMeters));
-            var forward = center - eye;
+            var sourceUnitsPerMeter = Mathf.Max(0.0001f, EstimateBoardWidth(game) / rig.tabletopWidthMeters);
+            var eye = center + rig.designEyeOffsetFromTabletop * sourceUnitsPerMeter;
+            var landmark = center + rig.designLookAtOffsetFromTabletop * sourceUnitsPerMeter;
+            var forward = landmark - eye;
             forward.y = 0f;
             if (forward.sqrMagnitude < 0.01f)
                 throw new BuildFailedException("Design player start cannot coincide with the tabletop centre.");
 
             Debug.Log($"World-space verification passed: {game.pathTiles.Length} board tiles and dice remain scene objects; " +
-                      $"ray targets are collidable. Single design start is eye {eye:F3} facing board landmark {center:F3}; " +
-                      "desktop camera, XR launch and recenter derive from TempleXRTabletopRig design start fields. " +
+                      $"ray targets are collidable. Single design start is eye {eye:F3} facing board landmark {landmark:F3}; " +
+                      "desktop camera, XR launch and recenter derive from TempleXRTabletopRig design start fields; runtime UI compensates for the tabletop root scale. " +
                       "Title stage uses its own authoritative title start and disables gameplay renderers, colliders, behaviours and audio until START.");
         }
 
@@ -244,14 +259,27 @@ namespace TempleCircuitEditor
             camera.farClipPlane = 2000f;
             camera.fieldOfView = 52f;
 
-            var outputDirectory = Path.GetFullPath("VisualQA/WorldSpace-20260820");
+            var outputDirectory = Path.GetFullPath("VisualQA/WorldSpace-20260822-PlayerStart");
             Directory.CreateDirectory(outputDirectory);
             var outputPath = Path.Combine(outputDirectory, "Unity-GameView-DesignStart.png");
-            var renderTexture = new RenderTexture(1920, 1080, 24, RenderTextureFormat.ARGB32);
+            var renderTexture = new RenderTexture(1920, 1080, 24, RenderTextureFormat.ARGB32)
+            {
+                useMipMap = false,
+                autoGenerateMips = false
+            };
             var previousTarget = camera.targetTexture;
             var previousActive = RenderTexture.active;
             camera.targetTexture = renderTexture;
-            camera.Render();
+            // URP renders through the render pipeline rather than the legacy
+            // Camera.Render path. RenderSingleCamera guarantees the evidence
+            // capture contains the same tabletop composition as Game View.
+            var request = new UnityEngine.Rendering.RenderPipeline.StandardRequest
+            {
+                destination = renderTexture
+            };
+            if (!UnityEngine.Rendering.RenderPipeline.SupportsRenderRequest(camera, request))
+                throw new BuildFailedException("Desktop capture render request is not supported by the active URP pipeline.");
+            UnityEngine.Rendering.RenderPipeline.SubmitRenderRequest(camera, request);
             RenderTexture.active = renderTexture;
             var image = new Texture2D(1920, 1080, TextureFormat.RGB24, false);
             image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
@@ -321,6 +349,20 @@ namespace TempleCircuitEditor
             var mobilePipeline = AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>("Assets/Settings/Mobile_RPAsset.asset");
             if (mobilePipeline == null)
                 throw new BuildFailedException("Mobile URP asset was not found.");
+            // The PICO VST compositor reads the alpha from the XR eye target.
+            // This game keeps its post-processing for the authored board, so
+            // explicitly preserve alpha instead of letting URP overwrite the
+            // transparent camera background with an opaque black frame.
+            var serializedPipeline = new SerializedObject(mobilePipeline);
+            var alphaOutput = serializedPipeline.FindProperty("m_AllowPostProcessAlphaOutput");
+            if (alphaOutput == null)
+                throw new BuildFailedException("Mobile URP alpha-output setting was not found.");
+            if (!alphaOutput.boolValue)
+            {
+                alphaOutput.boolValue = true;
+                serializedPipeline.ApplyModifiedPropertiesWithoutUndo();
+                EditorUtility.SetDirty(mobilePipeline);
+            }
             GraphicsSettings.defaultRenderPipeline = mobilePipeline;
             QualitySettings.renderPipeline = mobilePipeline;
             EditorUtility.SetDirty(mobilePipeline);

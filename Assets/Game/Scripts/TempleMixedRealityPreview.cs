@@ -19,7 +19,10 @@ namespace TempleCircuit
         WebCamTexture webCamTexture;
         Coroutine cameraAttempt;
         bool desktopActive;
-        bool preferCamera = true;
+        // Desktop is only a debugging fallback. The actual PICO build uses the
+        // headset's video passthrough, so never put a local webcam quad in front
+        // of the authored world-space board.
+        bool preferCamera;
         bool usingCamera;
         bool selectedCameraIsFrontFacing;
         int attemptVersion;
@@ -134,7 +137,9 @@ namespace TempleCircuit
             {
                 name = "Desktop MR Background Material",
                 hideFlags = HideFlags.DontSave,
-                renderQueue = (int)RenderQueue.Transparent + 100
+                // Keep this behind all opaque and transparent game content. The
+                // previous overlay queue could visually cover the tabletop.
+                renderQueue = (int)RenderQueue.Background
             };
             backgroundRenderer.sharedMaterial = backgroundMaterial;
             UpdateBackgroundGeometry();

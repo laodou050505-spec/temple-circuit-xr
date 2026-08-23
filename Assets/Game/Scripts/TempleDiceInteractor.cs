@@ -57,6 +57,22 @@ namespace TempleCircuit
             if (!TryGetRendererBounds(out var diceBounds))
                 return false;
 
+            // The central temple anchor is authored once in the saved scene.
+            // Do not infer its support from the whole board when it is
+            // available: decorative floor renderers can win that search and
+            // leave the die below the board after XR runtime scaling.
+            if (centerAnchor != null && TryGetCentralSupportBounds(out var centralSupport))
+            {
+                lockedSupportTop = centralSupport.max.y;
+                lockedSupportCenter = new Vector2(centerAnchor.position.x, centerAnchor.position.z);
+                supportLocked = true;
+                AlignVisualCenter();
+                GroundToLockedSupport();
+                restWorldPosition = transform.position;
+                Debug.Log($"Temple dice anchored on the central shrine at {transform.position:F3}; shrine top {lockedSupportTop:F3}.", this);
+                return true;
+            }
+
             var supportTop = float.NegativeInfinity;
             Renderer supportRenderer = null;
             var center = diceBounds.center;
@@ -70,6 +86,9 @@ namespace TempleCircuit
                     continue;
                 if (center.x < bounds.min.x - padding || center.x > bounds.max.x + padding || center.z < bounds.min.z - padding || center.z > bounds.max.z + padding)
                     continue;
+                // Only the surface already below the dice is a valid support.
+                // This avoids snapping through the central shrine to a roof,
+                // fence or decorative renderer which happens to overlap it.
                 if (bounds.max.y > center.y + diceBounds.extents.y * 0.12f)
                     continue;
                 if (bounds.max.y <= supportTop)
@@ -88,6 +107,35 @@ namespace TempleCircuit
             GroundToLockedSupport();
             restWorldPosition = transform.position;
             return true;
+        }
+
+        bool TryGetCentralSupportBounds(out Bounds bounds)
+        {
+            // The anchor is a child of the central-shrine prefab root. Use its
+            // visible geometry so the dice consistently grounds on the shrine.
+            var supportRoot = centerAnchor == null ? null : centerAnchor.parent;
+            if (supportRoot == null)
+            {
+                bounds = default;
+                return false;
+            }
+
+            var renderers = supportRoot.GetComponentsInChildren<Renderer>(true);
+            var found = false;
+            bounds = default;
+            foreach (var renderer in renderers)
+            {
+                if (renderer == null || !renderer.enabled || !renderer.gameObject.activeInHierarchy || renderer.transform.IsChildOf(transform))
+                    continue;
+                if (!found)
+                {
+                    bounds = renderer.bounds;
+                    found = true;
+                }
+                else
+                    bounds.Encapsulate(renderer.bounds);
+            }
+            return found;
         }
 
         void GroundToLockedSupport(float lift = 0f)
@@ -236,7 +284,11 @@ namespace TempleCircuit
             {
                 var p = Mathf.Clamp01(elapsed / duration);
                 var settle = 1f - Mathf.SmoothStep(0f, 1f, p);
-                var arc = Mathf.Sin(p * Mathf.PI) * localDiceHeight * Mathf.Lerp(0.28f, 0.5f, power);
+                // The die remains seated on the central shrine: it should have
+                // a clear roll arc, not spring above the temple or its nearby
+                // action panel.  This is intentionally much lower than the
+                // original desktop-sized throw.
+                var arc = Mathf.Sin(p * Mathf.PI) * localDiceHeight * Mathf.Lerp(0.10f, 0.18f, power);
                 var animatedRotation = Quaternion.Slerp(startRotation, targetRotation, Mathf.SmoothStep(0.58f, 1f, p)) *
                     Quaternion.Euler(spin * (p * settle * 0.35f));
                 ApplyLockedPose(animatedRotation, arc);
