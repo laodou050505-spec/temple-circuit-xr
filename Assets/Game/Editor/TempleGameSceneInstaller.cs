@@ -372,6 +372,36 @@ namespace TempleCircuitEditor
             RepairPresentation();
         }
 
+        public static void ExpandPeripheralIslandsBatch()
+        {
+            EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity", OpenSceneMode.Single);
+            var game = UnityEngine.Object.FindAnyObjectByType<TempleCircuitGame>();
+            if (game == null || game.pathTiles == null || game.pathTiles.Length == 0)
+                throw new InvalidOperationException("Temple board is unavailable for peripheral island spacing.");
+
+            var validTiles = game.pathTiles.Where(tile => tile != null).ToArray();
+            var center = validTiles.Aggregate(Vector3.zero, (sum, tile) => sum + tile.transform.position) / validTiles.Length;
+            var tileSpan = EstimateTileSpan(validTiles.Select(tile => tile.gameObject).ToList());
+            var moved = FindPrefabRoots(path => path.Contains("/1/") || path.Contains("/15/"))
+                .Where(root => TryGetRendererBounds(root, out var bounds) &&
+                    Vector3.Distance(new Vector3(bounds.center.x, 0f, bounds.center.z), new Vector3(center.x, 0f, center.z)) > tileSpan * 6f)
+                .ToArray();
+            if (moved.Length != 8)
+                throw new InvalidOperationException($"Expected the 8 roots that form four peripheral islands, found {moved.Length}.");
+
+            foreach (var root in moved)
+            {
+                var outward = root.transform.position - center;
+                outward.y = 0f;
+                Undo.RecordObject(root.transform, "Expand Temple peripheral islands");
+                root.transform.position += outward.normalized * (tileSpan * 1.15f);
+                EditorUtility.SetDirty(root.transform);
+            }
+            EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+            EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+            Debug.Log($"Expanded four peripheral island clusters: moved {moved.Length} paired island roots outward by {tileSpan * 1.15f:F2} world units.");
+        }
+
         static TempleXRTabletopRig RemoveDuplicateXrRigs()
         {
             var rigs = UnityEngine.Object.FindObjectsByType<TempleXRTabletopRig>(FindObjectsInactive.Include);
@@ -504,6 +534,9 @@ namespace TempleCircuitEditor
         static void ConfigureOwnershipFlagSetup(TempleCircuitGame game)
         {
             game.ownershipFlagPrefabs = FlagFolders.Select(FindAssetPrefab).ToArray();
+            game.ownershipWalls = UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Exclude)
+                .Where(renderer => renderer.name.StartsWith("tripo_convert_1d1ce0ab-4c21-4f4d-a75a-e654f5d73c7f"))
+                .ToArray();
             if (game.pawnFollowers == null)
                 return;
             foreach (var follower in game.pawnFollowers)

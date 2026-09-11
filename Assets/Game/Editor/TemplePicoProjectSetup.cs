@@ -161,9 +161,19 @@ namespace TempleCircuitEditor
             if (projectConfig == null || !projectConfig.videoSeeThrough) errors.Add("PICO video passthrough is not enabled.");
             if (projectConfig == null || !projectConfig.mrSafeguard) errors.Add("PICO MR Safeguard is not enabled.");
             var mobilePipeline = AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>("Assets/Settings/Mobile_RPAsset.asset");
-            var alphaOutput = mobilePipeline == null ? null : new SerializedObject(mobilePipeline).FindProperty("m_AllowPostProcessAlphaOutput");
+            var serializedPipeline = mobilePipeline == null ? null : new SerializedObject(mobilePipeline);
+            var alphaOutput = serializedPipeline?.FindProperty("m_AllowPostProcessAlphaOutput");
             if (alphaOutput == null || !alphaOutput.boolValue)
                 errors.Add("Mobile URP post-processing does not preserve the transparent VST alpha channel.");
+            var supportsHdr = serializedPipeline?.FindProperty("m_SupportsHDR");
+            if (supportsHdr == null || supportsHdr.boolValue)
+                errors.Add("Mobile URP HDR must stay disabled for the transparent MR eye target.");
+            var shadowDistance = serializedPipeline?.FindProperty("m_ShadowDistance");
+            if (shadowDistance == null || shadowDistance.floatValue > 12.01f)
+                errors.Add("Mobile URP shadow distance exceeds the tabletop rendering budget.");
+            var additionalLightLimit = serializedPipeline?.FindProperty("m_AdditionalLightsPerObjectLimit");
+            if (additionalLightLimit == null || additionalLightLimit.intValue > 2)
+                errors.Add("Mobile URP additional-light limit exceeds the tabletop rendering budget.");
             var inputHandler = File.ReadAllText("ProjectSettings/ProjectSettings.asset").Contains("activeInputHandler: 1");
             if (!inputHandler) errors.Add("Input System is not the single active input backend.");
 
@@ -201,8 +211,9 @@ namespace TempleCircuitEditor
                 throw new BuildFailedException("World-space verification needs the Temple game, tabletop rig and board tiles.");
             if (rig.tabletopWidthMeters < 0.6f || rig.startPortalWidthMeters < 0.5f || rig.statusBoardWidthMeters < 0.3f)
                 throw new BuildFailedException("World-space board or authored interaction surface dimensions are invalid.");
-            if (rig.designEyeOffsetFromTabletop.y <= 0.2f || rig.designEyeOffsetFromTabletop.z >= -0.25f)
-                throw new BuildFailedException("Design player start must stand in front of and above the tabletop.");
+            rig.AlignGameplayStartWithStartTile();
+            if (rig.designEyeOffsetFromTabletop.y <= 0.2f)
+                throw new BuildFailedException("Design player start must stand above and outside the START edge.");
             if (game.dice == null || game.dice.GetComponent<Collider>() == null)
                 throw new BuildFailedException("The world-space dice must have a collider for controller ray interaction.");
             var start = Object.FindAnyObjectByType<TempleCircuit.TempleStartScreen>();
@@ -355,14 +366,17 @@ namespace TempleCircuitEditor
             // transparent camera background with an opaque black frame.
             var serializedPipeline = new SerializedObject(mobilePipeline);
             var alphaOutput = serializedPipeline.FindProperty("m_AllowPostProcessAlphaOutput");
-            if (alphaOutput == null)
-                throw new BuildFailedException("Mobile URP alpha-output setting was not found.");
-            if (!alphaOutput.boolValue)
-            {
-                alphaOutput.boolValue = true;
-                serializedPipeline.ApplyModifiedPropertiesWithoutUndo();
-                EditorUtility.SetDirty(mobilePipeline);
-            }
+            var supportsHdr = serializedPipeline.FindProperty("m_SupportsHDR");
+            var shadowDistance = serializedPipeline.FindProperty("m_ShadowDistance");
+            var additionalLightLimit = serializedPipeline.FindProperty("m_AdditionalLightsPerObjectLimit");
+            if (alphaOutput == null || supportsHdr == null || shadowDistance == null || additionalLightLimit == null)
+                throw new BuildFailedException("Required Mobile URP performance or alpha-output settings were not found.");
+
+            alphaOutput.boolValue = true;
+            supportsHdr.boolValue = false;
+            shadowDistance.floatValue = 12f;
+            additionalLightLimit.intValue = 2;
+            serializedPipeline.ApplyModifiedPropertiesWithoutUndo();
             GraphicsSettings.defaultRenderPipeline = mobilePipeline;
             QualitySettings.renderPipeline = mobilePipeline;
             EditorUtility.SetDirty(mobilePipeline);

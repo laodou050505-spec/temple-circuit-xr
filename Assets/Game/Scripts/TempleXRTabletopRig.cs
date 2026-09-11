@@ -23,8 +23,12 @@ namespace TempleCircuit
         [Min(0.6f)] public float tabletopWidthMeters = 1.35f;
         public Vector3 tabletopCenter = new Vector3(0f, 0.84f, 1.05f);
         [Header("Authoritative gameplay design start (relative to tabletop centre)")]
+        public bool alignGameplayStartToStartTile = true;
+        [Min(0.35f)] public float startTileViewingDistanceMeters = 0.70f;
+        [Tooltip("Eye height above the board at START and recenter. XR keeps the tracked head pitch and subsequent physical movement.")]
+        [Min(0.2f)] public float startTileViewingHeightMeters = 0.82f;
         [Tooltip("The single authored gameplay eye position, in physical tabletop metres. Desktop, XR launch and recenter all derive from it.")]
-        public Vector3 designEyeOffsetFromTabletop = new Vector3(0f, 0.68f, -1.18f);
+        public Vector3 designEyeOffsetFromTabletop = new Vector3(0f, 0.82f, -1.18f);
         [Tooltip("The gameplay landmark the player faces. This is biased toward the START tile and the four pawns, not the board centre.")]
         public Vector3 designLookAtOffsetFromTabletop = new Vector3(0f, 0.02f, -0.50f);
         [Range(-180f, 180f)] public float designFacingYawDegrees;
@@ -60,6 +64,10 @@ namespace TempleCircuit
         bool externalDiceHold;
         XRInputDevice holdingDevice;
         TempleWorldButton hoveredButton;
+        TempleTileInfoBillboard leftHoveredTileInfo;
+        TempleTileInfoBillboard rightHoveredTileInfo;
+        TemplePlayerCardHover leftHoveredPlayerCard;
+        TemplePlayerCardHover rightHoveredPlayerCard;
         Vector2 previousMouse;
         bool desktopOrbiting;
         bool desktopConfigured;
@@ -81,6 +89,7 @@ namespace TempleCircuit
         Coroutine passthroughEnableRoutine;
         PXR_ARCameraEffectManager arCameraEffectManager;
         readonly List<XRNodeState> nodeStates = new List<XRNodeState>();
+        readonly List<XRInputSubsystem> inputSubsystems = new List<XRInputSubsystem>();
         bool hasTrackedHeadPose;
         bool floorTrackingOriginApplied;
         bool designStartPending;
@@ -321,6 +330,30 @@ namespace TempleCircuit
             sourceBoardCenter = new Vector3((minX + maxX) * 0.5f, averageY / count, (minZ + maxZ) * 0.5f);
             sourceBoardWidth = Mathf.Max(maxX - minX, maxZ - minZ);
             boardGeometryCaptured = sourceBoardWidth >= 0.01f;
+            if (boardGeometryCaptured && alignGameplayStartToStartTile)
+                AlignGameplayStartWithStartTile();
+        }
+
+        public void AlignGameplayStartWithStartTile()
+        {
+            if (!boardGeometryCaptured)
+            {
+                CaptureBoardGeometry();
+                return;
+            }
+            var start = System.Array.Find(game.pathTiles, tile => tile != null && tile.index == 0);
+            if (start == null) return;
+            var startPoint = (start.GetStandingPoint(0) + start.GetStandingPoint(3)) * 0.5f;
+            var centre = tabletopScaled ? tabletopCenter : sourceBoardCenter;
+            var offset = (startPoint - centre) / WorldUnitsPerTabletopMeter;
+            var outward = Mathf.Abs(offset.x) > Mathf.Abs(offset.z)
+                ? new Vector3(Mathf.Sign(offset.x), 0f, 0f)
+                : new Vector3(0f, 0f, Mathf.Sign(offset.z));
+            designEyeOffsetFromTabletop = offset + outward * startTileViewingDistanceMeters;
+            designEyeOffsetFromTabletop.y = startTileViewingHeightMeters;
+            designLookAtOffsetFromTabletop = offset - outward * 0.18f;
+            designLookAtOffsetFromTabletop.y = offset.y + 0.06f;
+            designFacingYawDegrees = Quaternion.LookRotation(-outward, Vector3.up).eulerAngles.y;
         }
 
         /// <summary>Maps authored tabletop metres into either the source or runtime-scaled world.</summary>
@@ -491,8 +524,8 @@ namespace TempleCircuit
                 ApplyDesignStartWithAvailableHeadPose(true);
             ApplyPose(leftDevice, leftController);
             ApplyPose(rightDevice, rightController);
-            UpdateController(leftDevice, leftController, leftRay, ref leftTriggerPrevious, ref leftTriggerArmed);
-            UpdateController(rightDevice, rightController, rightRay, ref rightTriggerPrevious, ref rightTriggerArmed);
+            UpdateController(leftDevice, leftController, leftRay, XRNode.LeftHand, ref leftHoveredTileInfo, ref leftHoveredPlayerCard, ref leftTriggerPrevious, ref leftTriggerArmed);
+            UpdateController(rightDevice, rightController, rightRay, XRNode.RightHand, ref rightHoveredTileInfo, ref rightHoveredPlayerCard, ref rightTriggerPrevious, ref rightTriggerArmed);
 
             var leftMenu = leftDevice.TryGetFeatureValue(XRCommonUsages.menuButton, out var leftMenuValue) && leftMenuValue;
             var rightMenu = rightDevice.TryGetFeatureValue(XRCommonUsages.menuButton, out var rightMenuValue) && rightMenuValue;
@@ -525,7 +558,7 @@ namespace TempleCircuit
             if (floorTrackingOriginApplied)
                 return;
 
-            var inputSubsystems = new List<XRInputSubsystem>();
+            inputSubsystems.Clear();
             SubsystemManager.GetSubsystems(inputSubsystems);
             foreach (var subsystem in inputSubsystems)
             {
@@ -552,7 +585,9 @@ namespace TempleCircuit
                 target.localRotation = rotation;
         }
 
-        void UpdateController(XRInputDevice device, Transform controller, LineRenderer ray, ref bool triggerPrevious, ref bool triggerArmed)
+        void UpdateController(XRInputDevice device, Transform controller, LineRenderer ray, XRNode hand,
+            ref TempleTileInfoBillboard hoveredTileInfo, ref TemplePlayerCardHover hoveredPlayerCard,
+            ref bool triggerPrevious, ref bool triggerArmed)
         {
             if (controller == null || ray == null)
                 return;
@@ -562,20 +597,38 @@ namespace TempleCircuit
             TempleWorldButton button = null;
             TempleDiceInteractor pointedDice = null;
             TempleStartSurface startSurface = null;
+            TempleTileInfoBillboard pointedTileInfo = null;
+            TemplePlayerCardHover pointedPlayerCard = null;
             var hitPoint = end;
-            if (Physics.Raycast(origin, direction, out var hit, rayLength))
+            if (device.isValid && Physics.Raycast(origin, direction, out var hit, rayLength, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide))
             {
                 end = hit.point;
                 hitPoint = hit.point;
                 button = hit.transform.GetComponentInParent<TempleWorldButton>();
                 pointedDice = hit.transform.GetComponentInParent<TempleDiceInteractor>();
                 startSurface = hit.transform.GetComponentInParent<TempleStartSurface>();
+                pointedTileInfo = hit.transform.GetComponentInParent<TempleTileInfoBillboard>();
+                pointedPlayerCard = hit.transform.GetComponentInParent<TemplePlayerCardHover>();
             }
             ray.SetPosition(0, origin);
             ray.SetPosition(1, end);
 
             if (startScreen != null && !startScreen.GameStarted)
                 startScreen.SetWorldHover(hitPoint, startSurface != null);
+
+            if (pointedTileInfo != hoveredTileInfo)
+            {
+                hoveredTileInfo?.SetRayHovered(hand, false);
+                hoveredTileInfo = pointedTileInfo;
+                hoveredTileInfo?.SetRayHovered(hand, true);
+            }
+
+            if (pointedPlayerCard != hoveredPlayerCard)
+            {
+                hoveredPlayerCard?.SetRayHovered(hand, false);
+                hoveredPlayerCard = pointedPlayerCard;
+                hoveredPlayerCard?.SetRayHovered(hand, true);
+            }
 
             if (button != hoveredButton)
             {

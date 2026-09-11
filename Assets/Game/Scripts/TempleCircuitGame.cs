@@ -76,8 +76,9 @@ namespace TempleCircuit
         public TempleGameHUD hud;
         public TempleAudioManager audioManager;
         public GameObject[] ownershipFlagPrefabs;
+        public Renderer[] ownershipWalls;
         [Min(1)] public int maxRounds = 16;
-        [Min(1)] public int fameToWin = 14;
+        [Min(1)] public int fameToWin = 8;
         [Min(0.05f)] public float moveStepSeconds = 0.34f;
 
         readonly List<TemplePlayerState> players = new List<TemplePlayerState>();
@@ -789,11 +790,13 @@ namespace TempleCircuit
 
         void UpdateOwnershipMarker(int tileIndex)
         {
-            var existing = pathTiles[tileIndex].transform.Find("OwnerMarker");
+            var markerName = $"OwnerMarker_{tileIndex:00}";
+            var existing = ownershipMarkers.Find(item => item != null && item.name == markerName);
             if (existing != null)
             {
-                ownershipMarkers.Remove(existing.gameObject);
-                Destroy(existing.gameObject);
+                ownershipMarkers.Remove(existing);
+                existing.SetActive(false);
+                Destroy(existing);
             }
             var tile = tiles[tileIndex];
             if (tile.owner < 0)
@@ -802,29 +805,17 @@ namespace TempleCircuit
                 return;
             }
 
-            var marker = new GameObject("OwnerMarker");
+            var marker = new GameObject(markerName);
             var spacing = pathTiles[tileIndex].EstimateSpacing();
+            // The general UI spacing has a 0.2-unit minimum. Flags must instead
+            // fit the actual stone footprint after conversion to XR metres.
+            if (pathTiles[tileIndex].TryGetSurfaceBounds(out var footprint))
+                spacing = Mathf.Max(0.001f, Mathf.Min(footprint.size.x, footprint.size.z));
             var boardCenter = CalculateBoardBounds().center;
             var tileComponent = pathTiles[tileIndex];
-            var outward = tileComponent.transform.position - boardCenter;
-            outward.y = 0f;
-            if (outward.sqrMagnitude < 0.001f)
-                outward = Vector3.forward;
-            outward.Normalize();
-            var tangent = Vector3.Cross(Vector3.up, outward).normalized;
-            var surfacePoint = tileComponent.GetStandingPoint(0);
-            var radialExtent = spacing * 0.5f;
-            if (tileComponent.TryGetSurfaceBounds(out var tileBounds))
-            {
-                surfacePoint = new Vector3(tileBounds.center.x, tileBounds.max.y, tileBounds.center.z);
-                radialExtent = Mathf.Abs(outward.x) * tileBounds.extents.x + Mathf.Abs(outward.z) * tileBounds.extents.z;
-            }
-            // Keep the flag beside the information card. The card is centered
-            // just outside the tile, so a larger tangent offset gives both
-            // elements their own readable space without changing the scene.
-            marker.transform.position = surfacePoint + outward * (radialExtent + spacing * 0.16f) + tangent * (spacing * 0.84f);
-            marker.transform.rotation = Quaternion.LookRotation(outward, Vector3.up);
-            marker.transform.SetParent(tileComponent.transform, true);
+            marker.transform.SetParent(transform, true);
+            var flagAnchor = marker.AddComponent<TempleOwnershipFlagAnchor>();
+            flagAnchor.Configure(tileComponent, boardCenter, spacing, ownershipWalls);
 
             var flagPrefab = ownershipFlagPrefabs != null && tile.owner < ownershipFlagPrefabs.Length ? ownershipFlagPrefabs[tile.owner] : null;
             if (flagPrefab != null)
@@ -843,6 +834,7 @@ namespace TempleCircuit
                 }
                 foreach (var collider in flag.GetComponentsInChildren<Collider>())
                     Destroy(collider);
+                flagAnchor.SetFlagModel(flag.transform);
             }
             ownershipMarkers.Add(marker);
             hud?.RefreshTileInfoCards(this);
@@ -873,7 +865,7 @@ namespace TempleCircuit
         void RefreshHud()
         {
             if (hud != null && players.Count > 0)
-                hud.RefreshPlayers(players, round, maxRounds, CategoryName(trend), activePlayer);
+                hud.RefreshPlayers(players, round, maxRounds, CategoryName(trend), activePlayer, fameToWin);
         }
 
         string DescribeTile(TileState tile)
@@ -888,6 +880,37 @@ namespace TempleCircuit
                 case TileType.Gate: return "获得 35 金与一张改骰签。";
                 default: return "绕寺一周时会获得 60 金。";
             }
+        }
+
+        /// <summary>
+        /// Returns a compact, stable summary for the player-name hover card.
+        /// The UI can query this without reaching into the private tile state;
+        /// malformed or stale indices are ignored instead of throwing.
+        /// </summary>
+        public string GetOwnedPropertySummary(int playerId)
+        {
+            if (playerId < 0 || playerId >= players.Count)
+                return "暂无已占领房产";
+
+            var owned = players[playerId].properties;
+            if (owned == null || owned.Count == 0)
+                return "暂无已占领房产";
+
+            var lines = new List<string>(owned.Count);
+            for (var i = 0; i < owned.Count; i++)
+            {
+                var tileIndex = owned[i];
+                if (tileIndex < 0 || tileIndex >= tiles.Count)
+                    continue;
+
+                var tile = tiles[tileIndex];
+                if (tile == null || tile.owner != playerId || string.IsNullOrEmpty(tile.name))
+                    continue;
+
+                lines.Add($"{tile.name} · {tile.level + 1}级");
+            }
+
+            return lines.Count == 0 ? "暂无已占领房产" : string.Join("\n", lines);
         }
 
         public TempleTileInfoContent GetTileInfo(int index)

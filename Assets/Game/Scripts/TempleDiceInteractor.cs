@@ -24,6 +24,8 @@ namespace TempleCircuit
         bool rolling;
         Camera inputCamera;
         float localDiceHeight = 1f;
+        Renderer[] visualRenderers = Array.Empty<Renderer>();
+        bool visualRenderersCached;
 
         public bool IsHolding => holding;
         public bool IsRolling => rolling;
@@ -185,16 +187,32 @@ namespace TempleCircuit
 
         bool TryGetRendererBounds(out Bounds bounds)
         {
-            var renderers = GetComponentsInChildren<Renderer>();
-            if (renderers.Length == 0)
+            if (!visualRenderersCached)
             {
-                bounds = default;
-                return false;
+                visualRenderers = GetComponentsInChildren<Renderer>();
+                visualRenderersCached = true;
             }
-            bounds = renderers[0].bounds;
-            for (var i = 1; i < renderers.Length; i++)
-                bounds.Encapsulate(renderers[i].bounds);
-            return true;
+
+            var found = false;
+            bounds = default;
+            foreach (var renderer in visualRenderers)
+            {
+                if (renderer == null)
+                    continue;
+                if (!found)
+                {
+                    bounds = renderer.bounds;
+                    found = true;
+                }
+                else
+                    bounds.Encapsulate(renderer.bounds);
+            }
+            return found;
+        }
+
+        void OnTransformChildrenChanged()
+        {
+            visualRenderersCached = false;
         }
 
         void Update()
