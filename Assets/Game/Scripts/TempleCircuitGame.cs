@@ -544,7 +544,7 @@ namespace TempleCircuit
                 if (tile.level >= 2 || player.cash < cost)
                 {
                     // EN: 回到自己的院落 / 这座院落已经修缮到满级。/ 修缮需要 {cost} 金。
-                    hud.ShowResult("Back to Your Property", tile.level >= 2 ? "This property is fully upgraded." : $"Upgrade costs {cost}G.");
+                    hud.ShowResult($"Back to {Poss(player.name)} Property", tile.level >= 2 ? "This property is fully upgraded." : $"Upgrade costs {cost}G.");
                     yield return FinishTurnRoutine();
                 }
                 else if (player.human)
@@ -572,7 +572,9 @@ namespace TempleCircuit
             // EN: ，本轮香火加成已翻倍 → , incense bonus doubled this round
             var doubled = tile.category == trend ? ", incense bonus doubled this round" : string.Empty;
             // EN: 香客走进别人的院落 / 向 {owner.name} 支付 {paid} 金{doubled}。
-            hud.ShowResult("Visiting Another's Property", $"Paid {paid}G to {owner.name}{doubled}.");
+            // EN: if owner is "You" (player 0) use "you" (lowercase object pronoun)
+            var ownerRef = owner.name == "You" ? "you" : owner.name;
+            hud.ShowResult("Visiting Another's Property", $"Paid {paid}G to {ownerRef}{doubled}.");
             if (paid < rent)
                 Bankrupt(player);
             RefreshHud();
@@ -798,6 +800,12 @@ namespace TempleCircuit
 
         static int UpgradeCost(TileState tile) => Mathf.RoundToInt((tile.price * 0.5f + tile.level * 15f) / 5f) * 5;
 
+        /// <summary>
+        /// Returns the possessive determiner for a player name.
+        /// "You" → "Your"; all others → "{name}'s".
+        /// </summary>
+        static string Poss(string name) => name == "You" ? "Your" : name + "'s";
+
         void CheckCompletedSet(TemplePlayerState player, TempleTileCategory category)
         {
             var categoryTiles = tiles.Select((tile, index) => new { tile, index }).Where(x => x.tile.type == TileType.Property && x.tile.category == category).ToArray();
@@ -984,7 +992,7 @@ namespace TempleCircuit
                     // EN: {name}的院落\n{level+1}级 · 租{rent} → {name}'s Property\nLevel {level+1} · Rent {rent}G
                     var detail = tile.owner < 0
                         ? $"Available\n{tile.price}G · Rent {tile.rent}G"
-                        : $"{players[tile.owner].name}'s Property\nLevel {tile.level + 1} · Rent {CalculateRent(tile)}G";
+                        : $"{Poss(players[tile.owner].name)} Property\nLevel {tile.level + 1} · Rent {CalculateRent(tile)}G";
                     return new TempleTileInfoContent(CompactTileName(tile.name), detail, accent);
                 case TileType.Chance:
                     // EN: 祈签 → Slip; 抽取随机祈愿\n福祸皆可能 → Random prayer\nGood or ill fate

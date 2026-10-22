@@ -131,12 +131,17 @@ namespace TempleCircuit
                 panel.raycastTarget = false;
                 AddTilePanelFrame(panel.rectTransform, tileColor);
 
-                var content = CreateText("Content", panel.rectTransform, 20, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(244f, 104f));
+                // EN tile cards: widen content box to 258×110 so English detail lines (e.g.,
+                // "Random prayer\nGood or ill fate") fit without shrinking below the original
+                // Chinese visual size. OverflowModes.Overflow lets extra lines show beyond the
+                // box edge rather than being truncated silently.
+                var content = CreateText("Content", panel.rectTransform, 20, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(258f, 110f));
                 content.fontStyle = FontStyles.Bold;
                 content.fontWeight = FontWeight.Bold;
                 content.outlineColor = new Color32(24, 34, 29, 235);
                 content.outlineWidth = 0.20f;
                 content.textWrappingMode = TextWrappingModes.Normal;
+                content.overflowMode = TextOverflowModes.Overflow;
                 content.lineSpacing = -3f;
 
                 var billboard = canvasObject.GetComponent<TempleTileInfoBillboard>();
@@ -187,15 +192,32 @@ namespace TempleCircuit
                 AddOutline(background.gameObject, new Color32(220, 181, 91, 175), new Vector2(2f, -2f));
 
             // EN: 香火争渡 · 云上寺院 → Incense Crossing · Cloud Temple
+            // Use titleFont (Cinzel) for the location label — same as headlineText.
             font = titleFont;
-            var location = CreateText("Location", background.rectTransform, 30, TextAnchor.MiddleLeft, Gold, new Vector2(-415f, 53f), new Vector2(400f, 64f));
+            // Width 460: fits "Incense Crossing · Cloud Temple" at auto-shrink range 20–26px.
+            // overflow=Overflow prevents the text being cut mid-word if the box is still tight.
+            var location = CreateText("Location", background.rectTransform, 26, TextAnchor.MiddleLeft, Gold, new Vector2(-415f, 53f), new Vector2(460f, 64f));
             location.text = "Incense Crossing · Cloud Temple";
             location.fontStyle = FontStyles.Bold;
+            location.overflowMode = TextOverflowModes.Overflow;
+            location.enableAutoSizing = true;
+            location.fontSizeMin = 18f;
+            location.fontSizeMax = 26f;
 
             // Use body font for status text (readable mixed-case)
             font = bodyFont ?? titleFont;
-            roundText = CreateText("Round", background.rectTransform, 26, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(420f, 64f));
-            trendText = CreateText("Trend", background.rectTransform, 27, TextAnchor.MiddleRight, Paper, new Vector2(432f, 53f), new Vector2(320f, 64f));
+            // roundText: "Round 16 / 16  ·  8 Merit To Win" — allow auto-shrink, overflow visible
+            roundText = CreateText("Round", background.rectTransform, 24, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(380f, 64f));
+            roundText.overflowMode = TextOverflowModes.Overflow;
+            roundText.enableAutoSizing = true;
+            roundText.fontSizeMin = 18f;
+            roundText.fontSizeMax = 24f;
+            // trendText: "Incense Flow · Incense Court" — longest category name; width 420 fits at 24px
+            trendText = CreateText("Trend", background.rectTransform, 24, TextAnchor.MiddleRight, Paper, new Vector2(430f, 53f), new Vector2(420f, 64f));
+            trendText.overflowMode = TextOverflowModes.Overflow;
+            trendText.enableAutoSizing = true;
+            trendText.fontSizeMin = 18f;
+            trendText.fontSizeMax = 24f;
 
             var colors = new[]
             {
@@ -400,8 +422,8 @@ namespace TempleCircuit
 
         public void ShowRoll(string playerName, bool reroll)
         {
-            // EN: 改骰签已启用 → Re-roll Slip Active; {name}的回合 → {name}'s Turn
-            headlineText.text = reroll ? "Re-roll Slip Active" : $"{playerName}'s Turn";
+            // EN: 改骰签已启用 → Re-roll Slip Active; {name}的回合 → {name}'s Turn / Your Turn
+            headlineText.text = reroll ? "Re-roll Slip Active" : $"{Poss(playerName)} Turn";
             // EN: 按住中央骰子，积蓄香火。→ Hold the central die to build incense power.
             bodyText.text = "Hold the central die to build incense power.";
             // EN: 松手落骰 → Release to roll
@@ -443,6 +465,12 @@ namespace TempleCircuit
             ConfigureButton(primaryButton, primaryLabel, primary, primaryAction, primaryEnabled);
             ConfigureButton(secondaryButton, secondaryLabel, secondary, secondaryAction, true);
         }
+
+        /// <summary>
+        /// Returns possessive determiner. "You" → "Your"; others → "{name}'s".
+        /// Keeps "You's Turn" / "You's Property" grammatically correct.
+        /// </summary>
+        static string Poss(string name) => name == "You" ? "Your" : name + "'s";
 
         // EN: detect "Move " prefix (was "前进 "); split on ',' (was '，')
         static string FormatChoiceBody(string body)
@@ -954,7 +982,9 @@ namespace TempleCircuit
         public void SetContent(TempleTileInfoContent content)
         {
             if (contentText != null)
-                contentText.text = $"<size=32><b>{content.title}</b></size>\n<size=21><b>{content.detail}</b></size>";
+                // Title size=32 (same as original CN); detail size=22 (slightly larger than CN 21 to
+                // improve readability for English multi-word lines like "Random prayer\nGood or ill fate").
+                contentText.text = $"<size=32><b>{content.title}</b></size>\n<size=22><b>{content.detail}</b></size>";
             if (accentImage != null)
                 accentImage.color = tileColor;
         }
