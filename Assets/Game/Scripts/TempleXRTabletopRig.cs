@@ -471,7 +471,7 @@ namespace TempleCircuit
             callbacks.PermissionDeniedAndDontAskAgain += permission =>
             {
                 if (permission == Permission.Camera)
-                    Debug.LogWarning("Temple MR camera permission was blocked. Enable Camera for 香火争渡 in PICO settings to use passthrough.", this);
+                    Debug.LogWarning("Temple MR camera permission was blocked. Enable Camera for Incense Crossing in PICO settings to use passthrough.", this);
             };
             Permission.RequestUserPermission(Permission.Camera, callbacks);
 #endif

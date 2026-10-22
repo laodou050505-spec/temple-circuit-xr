@@ -25,7 +25,7 @@ namespace TempleCircuitEditor
         // by player color, so the red flag (30) belongs to player three.
         static readonly string[] FlagFolders = { "/38/", "/39/", "/30/", "/40/" };
 
-        [MenuItem("Tools/香火争渡/安装完整游戏到当前场景")]
+        [MenuItem("Tools/IncenseCrossing/Install Full Game to Current Scene")]
         public static void Install()
         {
             if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
@@ -114,7 +114,7 @@ namespace TempleCircuitEditor
             Debug.Log($"Temple Circuit installed: {tileComponents.Length} path tiles, 4 pawns, ownership flags, central fixed-scale dice, PICO XR tabletop rig and Meadow Forest water.");
         }
 
-        [MenuItem("Tools/香火争渡/修复 UI、骰子与观看位置")]
+        [MenuItem("Tools/IncenseCrossing/Fix UI, Dice & Camera Position")]
         public static void RepairPresentation()
         {
             var scene = SceneManager.GetActiveScene();
@@ -203,7 +203,7 @@ namespace TempleCircuitEditor
             return anchor;
         }
 
-        [MenuItem("Tools/香火争渡/更新 16:9 启动封面")]
+        [MenuItem("Tools/IncenseCrossing/Update 16:9 Start Cover")]
         public static void RefreshStartScreenInSavedScene()
         {
             const string scenePath = "Assets/Scenes/SampleScene.unity";
@@ -253,7 +253,7 @@ namespace TempleCircuitEditor
             return AssetDatabase.LoadAssetAtPath<AudioClip>(assetPath);
         }
 
-        [MenuItem("Tools/香火争渡/修复 POLYGON 素材粉色材质")]
+        [MenuItem("Tools/IncenseCrossing/Fix POLYGON Asset Pink Materials")]
         public static void RepairPolygonNatureBiomesMaterials()
         {
             const string packagePath = "Assets/PolygonNatureBiomes/URP_ExtractMe/Unity_2022.unitypackage";
@@ -277,7 +277,7 @@ namespace TempleCircuitEditor
             RepairPolygonNatureBiomesMaterials();
         }
 
-        [MenuItem("Tools/香火争渡/导入并安装游戏音频")]
+        [MenuItem("Tools/IncenseCrossing/Import & Install Game Audio")]
         public static void InstallGameAudio()
         {
             var scene = SceneManager.GetActiveScene();
@@ -304,7 +304,7 @@ namespace TempleCircuitEditor
             InstallGameAudio();
         }
 
-        [MenuItem("Tools/香火争渡/修复当前场景水面（不改布局）")]
+        [MenuItem("Tools/IncenseCrossing/Fix Current Scene Water Surface")]
         public static void RepairCurrentSceneWater()
         {
             RepairWaterInScene(SceneManager.GetActiveScene());

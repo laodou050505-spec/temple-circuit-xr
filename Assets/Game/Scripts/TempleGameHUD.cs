@@ -114,8 +114,8 @@ namespace TempleCircuit
                 panel.raycastTarget = false;
                 AddTilePanelFrame(panel.rectTransform, tileColor);
 
-                // A single centered block prevents the Chinese font's line
-                // metrics from clipping the title or the final detail line.
+                // A single centered block prevents any line-metric clipping on
+                // the title or the final detail line at small XR scale.
                 var content = CreateText("Content", panel.rectTransform, 20, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(244f, 104f));
                 content.fontStyle = FontStyles.Bold;
                 content.fontWeight = FontWeight.Bold;
@@ -149,11 +149,6 @@ namespace TempleCircuit
             if (camera == null)
                 return;
 
-            // This compact strip is deliberately the one auxiliary HUD in the
-            // experience: it remains centred along the top of the player's view.
-            // The board, dice, action panel and four coloured tile panels remain
-            // in world space.  Parenting it to the tracked camera keeps its front
-            // facing the player without moving or obscuring the tabletop.
             var canvasObject = new GameObject("TempleHUD_TopStatus", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster), typeof(TempleHeadLockedStatusAnchor));
             canvasObject.transform.SetParent(camera.transform, false);
             headCanvas = canvasObject.GetComponent<Canvas>();
@@ -164,12 +159,7 @@ namespace TempleCircuit
 
             var rect = canvasObject.GetComponent<RectTransform>();
             rect.sizeDelta = new Vector2(1320f, 210f);
-            // Deliberately large and high in the view: this is the one small
-            // auxiliary HUD, kept clear of the floating board and dice UI.
             rect.localPosition = new Vector3(0f, 0.92f, 1.45f);
-            // An identity canvas viewed along the camera's forward axis preserves
-            // the artwork's authored left-to-right reading order.  Do not flip
-            // this child: a 180-degree yaw mirrors the top status text.
             rect.localRotation = Quaternion.identity;
             rect.localScale = Vector3.one * (1.68f / 1320f);
             canvasObject.GetComponent<TempleHeadLockedStatusAnchor>().Configure(camera, rect.localPosition);
@@ -181,8 +171,9 @@ namespace TempleCircuit
             else
                 AddOutline(background.gameObject, new Color32(220, 181, 91, 175), new Vector2(2f, -2f));
 
+            // EN: location label translated from "香火争渡 · 云上寺院"
             var location = CreateText("Location", background.rectTransform, 30, TextAnchor.MiddleLeft, Gold, new Vector2(-415f, 53f), new Vector2(400f, 64f));
-            location.text = "香火争渡 · 云上寺院";
+            location.text = "Incense Crossing · Cloud Temple";
             location.fontStyle = FontStyles.Bold;
             roundText = CreateText("Round", background.rectTransform, 26, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(420f, 64f));
             trendText = CreateText("Trend", background.rectTransform, 27, TextAnchor.MiddleRight, Paper, new Vector2(432f, 53f), new Vector2(320f, 64f));
@@ -261,9 +252,6 @@ namespace TempleCircuit
             var canvasRect = canvasObject.GetComponent<RectTransform>();
             canvasRect.sizeDelta = new Vector2(700f, 350f);
             var inheritedScale = Mathf.Max(0.0001f, transform.lossyScale.x);
-            // Increase only the physical size of the dice action surface. Its
-            // anchor remains beside the central die, so the board composition
-            // and button proportions are unchanged.
             var scale = Mathf.Max(0.0001f, boardSize * 0.36f / 700f);
             canvasRect.localScale = Vector3.one * (scale / inheritedScale);
             var promptAnchor = canvasObject.GetComponent<TempleDicePromptAnchor>();
@@ -301,16 +289,20 @@ namespace TempleCircuit
 
         public void RefreshPlayers(IReadOnlyList<TemplePlayerState> players, int round, int maxRounds, string trend, int activePlayer, int fameToWin)
         {
+            // EN: "巡游 {round}/{maxRounds} · {fameToWin}功德圆满" → "Round {round}/{maxRounds} · {fameToWin} Merit To Win"
             if (roundText != null)
-                roundText.text = $"巡游 {Mathf.Min(round, maxRounds)} / {maxRounds} · {fameToWin}功德圆满";
+                roundText.text = $"Round {Mathf.Min(round, maxRounds)} / {maxRounds}  ·  {fameToWin} Merit To Win";
+            // EN: "香火流向 · {trend}" → "Incense Flow · {trend}"
             if (trendText != null)
-                trendText.text = $"香火流向 · {trend}";
+                trendText.text = $"Incense Flow · {trend}";
             for (var i = 0; i < playerTexts.Count && i < players.Count; i++)
             {
                 var player = players[i];
                 playerNames[i] = player.name;
-                var status = player.bankrupt ? "已离寺" : $"{player.cash} 金 · {player.fame} 功德";
-                var displayName = i == activePlayer ? $"<b>本轮 · {player.name}</b>" : player.name;
+                // EN: "已离寺" → "Left Temple"  |  "{cash} 金 · {fame} 功德" → "{cash}G · {fame} Merit"
+                var status = player.bankrupt ? "Left Temple" : $"{player.cash}G  ·  {player.fame} Merit";
+                // EN: "本轮 · {name}" → "Active · {name}"
+                var displayName = i == activePlayer ? $"<b>Active · {player.name}</b>" : player.name;
                 playerTexts[i].text = $"{displayName}\n{status}";
                 playerTexts[i].color = player.bankrupt ? new Color32(134, 139, 132, 255) : Paper;
                 playerCards[i].color = i == activePlayer ? ActiveInk : CardInk;
@@ -345,11 +337,13 @@ namespace TempleCircuit
             }
 
             var summary = game.GetOwnedPropertySummary(active);
-            var name = active < playerNames.Length && !string.IsNullOrEmpty(playerNames[active]) ? playerNames[active] : $"玩家 {active + 1}";
+            // EN: fallback player label "Player {n}" (no Chinese)
+            var name = active < playerNames.Length && !string.IsNullOrEmpty(playerNames[active]) ? playerNames[active] : $"Player {active + 1}";
             var entries = summary.Split('\n');
             var twoColumns = entries.Length > 5;
             var rows = twoColumns ? (entries.Length + 1) / 2 : entries.Length;
-            var content = new System.Text.StringBuilder($"<b>{name} · 已占领房产</b>\n");
+            // EN: "{name} · 已占领房产" → "{name} · Properties Owned"
+            var content = new System.Text.StringBuilder($"<b>{name} · Properties Owned</b>\n");
             for (var row = 0; row < rows; row++)
             {
                 content.Append(entries[row]);
@@ -376,18 +370,24 @@ namespace TempleCircuit
 
         public void ShowRoll(string playerName, bool reroll)
         {
-            headlineText.text = reroll ? "改骰签已启用" : $"{playerName}的回合";
-            bodyText.text = "按住中央骰子，积蓄香火。";
-            hintText.text = "松手落骰";
+            // EN: "改骰签已启用" → "Re-roll Slip Active"  |  "{name}的回合" → "{name}'s Turn"
+            headlineText.text = reroll ? "Re-roll Slip Active" : $"{playerName}'s Turn";
+            // EN: "按住中央骰子，积蓄香火。" → "Hold the central die to build incense power."
+            bodyText.text = "Hold the central die to build incense power.";
+            // EN: "松手落骰" → "Release to roll"
+            hintText.text = "Release to roll";
             SetChargeVisible(false);
             HideButtons();
         }
 
         public void ShowDiceCharge(float strength)
         {
-            headlineText.text = "香火正在汇聚";
-            bodyText.text = $"蓄力 {Mathf.RoundToInt(strength * 100f)}%";
-            hintText.text = "松手落骰";
+            // EN: "香火正在汇聚" → "Incense Power Building"
+            headlineText.text = "Incense Power Building";
+            // EN: "蓄力 {n}%" → "Charging {n}%"
+            bodyText.text = $"Charging {Mathf.RoundToInt(strength * 100f)}%";
+            // EN: "松手落骰" → "Release to roll"
+            hintText.text = "Release to roll";
             SetChargeVisible(true);
             if (chargeFill != null)
                 chargeFill.sizeDelta = new Vector2(458f * Mathf.Clamp01(strength), 10f);
@@ -395,8 +395,10 @@ namespace TempleCircuit
 
         public void ShowRolling()
         {
-            headlineText.text = "骰子落定中";
-            bodyText.text = "香火点数即将揭晓。";
+            // EN: "骰子落定中" → "Die Settling"
+            headlineText.text = "Die Settling";
+            // EN: "香火点数即将揭晓。" → "The incense number will be revealed."
+            bodyText.text = "The incense number will be revealed.";
             hintText.text = string.Empty;
             SetChargeVisible(false);
             HideButtons();
@@ -406,22 +408,24 @@ namespace TempleCircuit
         {
             headlineText.text = title;
             bodyText.text = FormatChoiceBody(body);
-            hintText.text = "请选择";
+            // EN: "请选择" → "Choose"
+            hintText.text = "Choose";
             SetChargeVisible(false);
             ConfigureButton(primaryButton, primaryLabel, primary, primaryAction, primaryEnabled);
             ConfigureButton(secondaryButton, secondaryLabel, secondary, secondaryAction, true);
         }
 
+        // EN: prefix changed from "前进 " to "Move " and separator from "，" to ","
         static string FormatChoiceBody(string body)
         {
-            if (string.IsNullOrEmpty(body) || !body.StartsWith("前进 ", System.StringComparison.Ordinal))
+            if (string.IsNullOrEmpty(body) || !body.StartsWith("Move ", System.StringComparison.Ordinal))
                 return body;
 
-            var clauseEnd = body.IndexOf('，');
+            var clauseEnd = body.IndexOf(',');
             if (clauseEnd <= 0 || clauseEnd >= body.Length - 1)
                 return body;
             var advance = body.Substring(0, clauseEnd);
-            var remainder = body.Substring(clauseEnd + 1);
+            var remainder = body.Substring(clauseEnd + 1).TrimStart();
             return $"<size=34><b>{advance}</b></size>\n<size=22>{remainder}</size>";
         }
 
@@ -436,7 +440,8 @@ namespace TempleCircuit
 
         public void ShowWinner(string winner, string detail)
         {
-            ShowChoices($"圆满 · {winner}获胜", detail, "再开一局", "restart", "留在棋盘", "dismiss-win");
+            // EN: "圆满 · {name}获胜" → "Fulfilled · {name} Wins"  |  "再开一局" → "Play Again"  |  "留在棋盘" → "Stay on Board"
+            ShowChoices($"Fulfilled · {winner} Wins", detail, "Play Again", "restart", "Stay on Board", "dismiss-win");
         }
 
         void SetChargeVisible(bool visible)
@@ -620,15 +625,17 @@ namespace TempleCircuit
             puffThree.raycastTarget = false;
         }
 
+        // EN: removed CJK fallback candidates; English font does not need CJK fallback
         static Font CreateFallbackFont()
         {
-            var candidates = new[] { "Noto Sans CJK SC", "Droid Sans Fallback", "Arial" };
+            var candidates = new[] { "Georgia", "Times New Roman", "Arial" };
             return Font.CreateDynamicFontFromOSFont(candidates, 48);
         }
 
         Font ResolveSourceFont()
         {
-            var resolved = uiFont != null ? uiFont : Resources.Load<Font>("Fonts/NotoSansSC-Variable");
+            // EN: load Cinzel (serif, Latin-only, SIL OFL) instead of NotoSansSC-Variable
+            var resolved = uiFont != null ? uiFont : Resources.Load<Font>("Fonts/Cinzel-Regular");
             return resolved != null ? resolved : CreateFallbackFont();
         }
 
@@ -636,10 +643,6 @@ namespace TempleCircuit
         {
             if (source == null)
                 return null;
-            // A denser signed-distance atlas keeps Chinese strokes separated
-            // after the world-space tile canvases are minified by the XR eye
-            // target. Limit the 2048 atlas to tile labels; the already-large
-            // top and dice panels keep their lighter 1024 atlases.
             var highResolution = string.Equals(role, "Tiles", System.StringComparison.Ordinal);
             var asset = TMP_FontAsset.CreateFontAsset(
                 source,
@@ -660,10 +663,6 @@ namespace TempleCircuit
             switch (category)
             {
                 case TempleTileCategory.Offering: return new Color32(226, 183, 69, 255);
-                // The source board assets serialize folder 44 (purple) as
-                // Meditation and folder 42 (green) as Relic. Match the panel
-                // to the brick's authored colour instead of enum declaration
-                // order so every card and physical tile agree in the scene.
                 case TempleTileCategory.Meditation: return new Color32(151, 102, 179, 255);
                 case TempleTileCategory.Incense: return new Color32(210, 76, 61, 255);
                 default: return new Color32(72, 162, 132, 255);
@@ -676,8 +675,6 @@ namespace TempleCircuit
         public Camera targetCamera;
         public Transform diceTarget;
         public float boardSize = 1f;
-        // Keep the action card visibly to the player's right of the die,
-        // leaving the central shrine and die silhouette unobstructed.
         public float sideRatio = 0.24f;
         public float forwardRatio = 0.10f;
         public float verticalRatio = 0.11f;
@@ -710,10 +707,6 @@ namespace TempleCircuit
 
         void UpdatePose(bool immediate)
         {
-            // The dice is re-grounded after leaving the title stage and moves
-            // during the roll.  Re-reading its visual top each frame keeps this
-            // action panel beside the central dice rather than at a stale point
-            // under the scene.
             if (diceTarget != null)
                 diceTop = CalculateTop();
             var toCamera = targetCamera.transform.position - diceTop;
@@ -726,7 +719,6 @@ namespace TempleCircuit
                 toCamera * (boardSize * forwardRatio) + Vector3.up * (boardSize * verticalRatio);
             var blend = immediate ? 1f : 1f - Mathf.Exp(-followSpeed * Time.unscaledDeltaTime);
             transform.position = Vector3.Lerp(transform.position, desiredPosition, blend);
-
             transform.rotation = targetCamera.transform.rotation;
         }
 
@@ -793,10 +785,6 @@ namespace TempleCircuit
         }
     }
 
-    /// <summary>
-    /// Keeps the main status board in the tabletop world at a high authored anchor while
-    /// turning its front toward the viewer. Position is intentionally never camera-relative.
-    /// </summary>
     public sealed class TempleWorldStatusAnchor : MonoBehaviour
     {
         TempleXRTabletopRig rig;
@@ -831,10 +819,6 @@ namespace TempleCircuit
         }
     }
 
-    /// <summary>
-    /// Keeps the intentionally small status strip fixed at the top centre of the
-    /// player's view.  All primary interaction surfaces remain world-space.
-    /// </summary>
     public sealed class TempleHeadLockedStatusAnchor : MonoBehaviour
     {
         Camera targetCamera;
@@ -955,9 +939,6 @@ namespace TempleCircuit
                 radialExtent = Mathf.Abs(outward.x) * bounds.extents.x + Mathf.Abs(outward.z) * bounds.extents.z;
 
             var tangent = Vector3.Cross(Vector3.up, outward).normalized;
-            // Alternate neighbouring cards along the path and split them into
-            // two shallow height bands. This keeps the ring ordered while
-            // preventing the wide XR labels from stacking over each other.
             var lateralBand = tile.index % 3 - 1;
             var heightBand = tile.index % 2;
             transform.position = new Vector3(tileCenter.x, tileTop + spacing * (0.38f + heightBand * 0.16f), tileCenter.z)

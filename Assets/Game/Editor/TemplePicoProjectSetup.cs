@@ -19,12 +19,15 @@ namespace TempleCircuitEditor
         const int ReferenceWidth = 1920;
         const int ReferenceHeight = 1080;
 
-        [MenuItem("Tools/香火争渡/PICO/配置 Android 与 PICO XR")]
+        // EN: all menu paths use English product slug; bundle ID and productName updated for EN edition
+        [MenuItem("Tools/IncenseCrossing/PICO/Configure Android & PICO XR")]
         public static void ConfigurePico()
         {
             PlayerSettings.companyName = "TempleCircuit";
-            PlayerSettings.productName = "香火争渡";
-            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.templecircuit.monopoly");
+            // EN: productName updated from "香火争渡" to "Incense Crossing"
+            PlayerSettings.productName = "Incense Crossing";
+            // EN: bundle ID updated to English edition identifier
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.templecircuit.monopoly.en");
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel29;
@@ -51,9 +54,6 @@ namespace TempleCircuitEditor
             var projectConfig = PXR_ProjectSetting.GetProjectConfig();
             projectConfig.videoSeeThrough = true;
             projectConfig.mrSafeguard = true;
-            // This tabletop needs PICO's camera passthrough only.  It does not
-            // consume scene meshes or invent a virtual room, so keep the
-            // optional scene-capture provider out of the presentation path.
             projectConfig.sceneCapture = false;
             projectConfig.enableRecommendMSAA = true;
             projectConfig.recommendMSAA = true;
@@ -66,7 +66,7 @@ namespace TempleCircuitEditor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             EditorUserBuildSettings.SwitchActiveBuildTargetAsync(BuildTargetGroup.Android, BuildTarget.Android);
-            Debug.Log("PICO configured: official PXR loader, XR mode, video passthrough, MR Safeguard, Multiview, OpenGLES3/Vulkan, Android API 29+, ARM64, IL2CPP, Activity and Input System-only project setting.");
+            Debug.Log("PICO configured (EN): official PXR loader, XR mode, video passthrough, MR Safeguard, Multiview, OpenGLES3/Vulkan, Android API 29+, ARM64, IL2CPP, Activity and Input System-only project setting.");
         }
 
         static void EnsurePicoLoader()
@@ -116,11 +116,6 @@ namespace TempleCircuitEditor
             EditorBuildSettings.scenes = scenes.ToArray();
         }
 
-        /// <summary>
-        /// Applies the supplied square artwork to every Android icon slot, including the
-        /// adaptive icon layers consumed by PICO's launcher. Keeping this here makes a
-        /// release rebuild deterministic instead of relying on an editor-only click.
-        /// </summary>
         static void ApplyAndroidAppIcon()
         {
             var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(AndroidAppIconAssetPath);
@@ -144,7 +139,7 @@ namespace TempleCircuitEditor
             Debug.Log($"PICO app icon assigned from {AndroidAppIconAssetPath} to {assignedSlots} Android icon slots.");
         }
 
-        [MenuItem("Tools/香火争渡/PICO/验证项目配置")]
+        [MenuItem("Tools/IncenseCrossing/PICO/Verify Project Configuration")]
         public static void VerifyPico()
         {
             var errors = new System.Collections.Generic.List<string>();
@@ -179,29 +174,29 @@ namespace TempleCircuitEditor
 
             if (errors.Count > 0)
                 throw new BuildFailedException("PICO validation failed:\n- " + string.Join("\n- ", errors));
-            Debug.Log("PICO validation passed: loader, video passthrough, MR Safeguard, Multiview, API 29+, ARM64, IL2CPP, Activity and Input System-only are configured.");
+            Debug.Log("PICO validation passed (EN): loader, video passthrough, MR Safeguard, Multiview, API 29+, ARM64, IL2CPP, Activity and Input System-only are configured.");
         }
 
-        [MenuItem("Tools/香火争渡/构建/macOS 测试版")]
+        [MenuItem("Tools/IncenseCrossing/Build/macOS Test Build")]
         public static void BuildMac()
         {
             ConfigureDisplay();
             EnsureDesktopRenderPipeline();
             EnsureSceneInBuild();
-            Directory.CreateDirectory("Builds");
+            Directory.CreateDirectory("Builds/EN");
             var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray(),
-                locationPathName = "Builds/TempleCircuit-macOS.app",
+                locationPathName = "Builds/EN/IncenseCrossing-EN-macOS.app",
                 target = BuildTarget.StandaloneOSX,
                 options = BuildOptions.Development
             });
             if (result == null || result.summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
                 throw new BuildFailedException("macOS build failed: " + (result == null ? "no build report" : result.summary.result.ToString()));
-            Debug.Log("macOS test build: Builds/TempleCircuit-macOS.app");
+            Debug.Log("macOS test build (EN): Builds/EN/IncenseCrossing-EN-macOS.app");
         }
 
-        [MenuItem("Tools/香火争渡/验证世界空间与设计起点")]
+        [MenuItem("Tools/IncenseCrossing/Verify World Space & Design Start")]
         public static void VerifyWorldSpaceAndDesignStart()
         {
             var scene = UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Scenes/SampleScene.unity", UnityEditor.SceneManagement.OpenSceneMode.Single);
@@ -234,7 +229,7 @@ namespace TempleCircuitEditor
             if (forward.sqrMagnitude < 0.01f)
                 throw new BuildFailedException("Design player start cannot coincide with the tabletop centre.");
 
-            Debug.Log($"World-space verification passed: {game.pathTiles.Length} board tiles and dice remain scene objects; " +
+            Debug.Log($"World-space verification passed (EN): {game.pathTiles.Length} board tiles and dice remain scene objects; " +
                       $"ray targets are collidable. Single design start is eye {eye:F3} facing board landmark {landmark:F3}; " +
                       "desktop camera, XR launch and recenter derive from TempleXRTabletopRig design start fields; runtime UI compensates for the tabletop root scale. " +
                       "Title stage uses its own authoritative title start and disables gameplay renderers, colliders, behaviours and audio until START.");
@@ -268,9 +263,10 @@ namespace TempleCircuitEditor
             camera.transform.rotation = Quaternion.LookRotation(landmark - eye, Vector3.up);
             camera.nearClipPlane = 0.05f;
             camera.farClipPlane = 2000f;
+            // EN: 52° desktop FOV as specified in handover document
             camera.fieldOfView = 52f;
 
-            var outputDirectory = Path.GetFullPath("VisualQA/WorldSpace-20260822-PlayerStart");
+            var outputDirectory = Path.GetFullPath("VisualQA/EN-20261022");
             Directory.CreateDirectory(outputDirectory);
             var outputPath = Path.Combine(outputDirectory, "Unity-GameView-DesignStart.png");
             var renderTexture = new RenderTexture(1920, 1080, 24, RenderTextureFormat.ARGB32)
@@ -281,9 +277,6 @@ namespace TempleCircuitEditor
             var previousTarget = camera.targetTexture;
             var previousActive = RenderTexture.active;
             camera.targetTexture = renderTexture;
-            // URP renders through the render pipeline rather than the legacy
-            // Camera.Render path. RenderSingleCamera guarantees the evidence
-            // capture contains the same tabletop composition as Game View.
             var request = new UnityEngine.Rendering.RenderPipeline.StandardRequest
             {
                 destination = renderTexture
@@ -300,7 +293,7 @@ namespace TempleCircuitEditor
             RenderTexture.active = previousActive;
             Object.DestroyImmediate(renderTexture);
             Object.DestroyImmediate(image);
-            Debug.Log($"Desktop design-start capture: {outputPath}; eye {eye:F3}, landmark {landmark:F3}, yaw {rig.designFacingYawDegrees:F1}.");
+            Debug.Log($"Desktop design-start capture (EN): {outputPath}; eye {eye:F3}, landmark {landmark:F3}, yaw {rig.designFacingYawDegrees:F1}.");
         }
 
         static float EstimateBoardWidth(TempleCircuit.TempleCircuitGame game)
@@ -331,7 +324,7 @@ namespace TempleCircuitEditor
             EditorUtility.SetDirty(desktopPipeline);
         }
 
-        [MenuItem("Tools/香火争渡/PICO/构建 PICO APK")]
+        [MenuItem("Tools/IncenseCrossing/PICO/Build PICO APK")]
         public static void BuildPicoApk()
         {
             if (!EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android))
@@ -342,17 +335,18 @@ namespace TempleCircuitEditor
             VerifyPico();
             VerifyWorldSpaceAndDesignStart();
             EnsureSceneInBuild();
-            Directory.CreateDirectory("Builds");
+            Directory.CreateDirectory("Builds/EN");
             var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray(),
-                locationPathName = "Builds/TempleCircuit-PICO-release.apk",
+                // EN: updated output path for English edition APK
+                locationPathName = "Builds/EN/IncenseCrossing-EN-PICO.apk",
                 target = BuildTarget.Android,
                 options = BuildOptions.None
             });
             if (result == null || result.summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
-                throw new BuildFailedException("PICO APK build failed: " + (result == null ? "no build report" : result.summary.result.ToString()));
-            Debug.Log("PICO release APK: Builds/TempleCircuit-PICO-release.apk");
+                throw new BuildFailedException("PICO APK build failed (EN): " + (result == null ? "no build report" : result.summary.result.ToString()));
+            Debug.Log("PICO release APK (EN): Builds/EN/IncenseCrossing-EN-PICO.apk");
         }
 
         static void EnsurePicoRenderPipeline()
@@ -360,10 +354,6 @@ namespace TempleCircuitEditor
             var mobilePipeline = AssetDatabase.LoadAssetAtPath<RenderPipelineAsset>("Assets/Settings/Mobile_RPAsset.asset");
             if (mobilePipeline == null)
                 throw new BuildFailedException("Mobile URP asset was not found.");
-            // The PICO VST compositor reads the alpha from the XR eye target.
-            // This game keeps its post-processing for the authored board, so
-            // explicitly preserve alpha instead of letting URP overwrite the
-            // transparent camera background with an opaque black frame.
             var serializedPipeline = new SerializedObject(mobilePipeline);
             var alphaOutput = serializedPipeline.FindProperty("m_AllowPostProcessAlphaOutput");
             var supportsHdr = serializedPipeline.FindProperty("m_SupportsHDR");

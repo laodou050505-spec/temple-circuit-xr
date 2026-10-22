@@ -73,7 +73,8 @@ namespace TempleCircuit
             try
             {
                 Require(game.fameToWin == 8, "Scene victory threshold is 8");
-                Require(((TMP_Text)Get(hud, "roundText")).text.Contains("8功德圆满"), "HUD displays actual victory threshold");
+                // EN: check for English string "8 Merit To Win" (was "8功德圆满")
+                Require(((TMP_Text)Get(hud, "roundText")).text.Contains("8 Merit To Win"), "HUD displays actual victory threshold");
                 game.StopAllCoroutines();
                 foreach (var player in game.Players) player.fame = 0;
                 game.Players[0].fame = 7;
@@ -86,7 +87,8 @@ namespace TempleCircuit
                 game.StopAllCoroutines();
                 hud.SetPlayerCardHover(0, XRNode.LeftHand, true);
                 var panel = (GameObject)Get(hud, "playerPropertyHoverRoot");
-                Require(panel.activeSelf && ((TMP_Text)Get(hud, "playerPropertyHoverText")).text.Contains("暂无已占领房产"), "Empty ownership state is visible");
+                // EN: check for English string "No Properties Owned" (was "暂无已占领房产")
+                Require(panel.activeSelf && ((TMP_Text)Get(hud, "playerPropertyHoverText")).text.Contains("No Properties Owned"), "Empty ownership state is visible");
                 hud.SetPlayerCardHover(1, XRNode.RightHand, true);
                 hud.SetPlayerCardHover(0, XRNode.LeftHand, false);
                 Require(panel.activeSelf && ((TMP_Text)Get(hud, "playerPropertyHoverText")).text.Contains(game.Players[1].name), "Hover falls back to other controller");
