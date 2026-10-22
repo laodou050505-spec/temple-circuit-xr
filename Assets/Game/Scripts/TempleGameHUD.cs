@@ -8,6 +8,14 @@ using UnityEngine.EventSystems;
 
 namespace TempleCircuit
 {
+    // EN edition: two-font system.
+    // Original HUD (CN) uses NotoSansSC-Variable (CJK sans-serif / 黑体 style).
+    // For English:
+    //   - Headline / buttons: Cinzel Regular (OFL, Roman-inscription style — small caps,
+    //     excellent for short display text and tile labels).
+    //   - Body / status / property list: EB Garamond Regular (OFL, classical humanist
+    //     serif — true lowercase, comfortable for multi-line reading text).
+    //     Falls back to Cinzel gracefully if the TTF is absent at build time.
     public sealed class TempleGameHUD : MonoBehaviour
     {
         public Sprite panelSprite;
@@ -18,7 +26,11 @@ namespace TempleCircuit
         Canvas diceCanvas;
         GameObject tileInfoRoot;
         TempleCircuitGame game;
-        Font sourceFont;
+        Font sourceTitleFont;
+        Font sourceBodyFont;
+        TMP_FontAsset titleFont;
+        TMP_FontAsset bodyFont;
+        // 'font' is the currently-active font during the build sequence
         TMP_FontAsset font;
         TMP_Text roundText;
         TMP_Text trendText;
@@ -58,11 +70,14 @@ namespace TempleCircuit
 
             this.game = game;
 
-            sourceFont = ResolveSourceFont();
+            sourceTitleFont = ResolveSourceFont();
+            sourceBodyFont = ResolveBodyFont();
+            titleFont = CreateFontInstance(sourceTitleFont, "Head");
+            bodyFont = CreateFontInstance(sourceBodyFont, "Body");
 
-            font = CreateFontInstance(sourceFont, "Head");
+            font = titleFont;
             BuildWorldStatusBoard();
-            font = CreateFontInstance(sourceFont, "Dice");
+            font = CreateFontInstance(sourceTitleFont, "Dice");
             BuildDicePrompt(game, boardCenter, boardSize);
         }
 
@@ -73,9 +88,11 @@ namespace TempleCircuit
             if (tileInfoRoot != null && tileInfoCards.Count == tiles.Count)
                 return;
 
-            if (sourceFont == null)
-                sourceFont = ResolveSourceFont();
-            font = CreateFontInstance(sourceFont, "Tiles");
+            if (sourceTitleFont == null)
+                sourceTitleFont = ResolveSourceFont();
+            if (sourceBodyFont == null)
+                sourceBodyFont = ResolveBodyFont();
+            font = CreateFontInstance(sourceBodyFont ?? sourceTitleFont, "Tiles");
             if (tileInfoRoot != null)
                 Destroy(tileInfoRoot);
             tileInfoCards.Clear();
@@ -114,8 +131,6 @@ namespace TempleCircuit
                 panel.raycastTarget = false;
                 AddTilePanelFrame(panel.rectTransform, tileColor);
 
-                // A single centered block prevents any line-metric clipping on
-                // the title or the final detail line at small XR scale.
                 var content = CreateText("Content", panel.rectTransform, 20, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(244f, 104f));
                 content.fontStyle = FontStyles.Bold;
                 content.fontWeight = FontWeight.Bold;
@@ -171,10 +186,14 @@ namespace TempleCircuit
             else
                 AddOutline(background.gameObject, new Color32(220, 181, 91, 175), new Vector2(2f, -2f));
 
-            // EN: location label translated from "香火争渡 · 云上寺院"
+            // EN: 香火争渡 · 云上寺院 → Incense Crossing · Cloud Temple
+            font = titleFont;
             var location = CreateText("Location", background.rectTransform, 30, TextAnchor.MiddleLeft, Gold, new Vector2(-415f, 53f), new Vector2(400f, 64f));
             location.text = "Incense Crossing · Cloud Temple";
             location.fontStyle = FontStyles.Bold;
+
+            // Use body font for status text (readable mixed-case)
+            font = bodyFont ?? titleFont;
             roundText = CreateText("Round", background.rectTransform, 26, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(420f, 64f));
             trendText = CreateText("Trend", background.rectTransform, 27, TextAnchor.MiddleRight, Paper, new Vector2(432f, 53f), new Vector2(320f, 64f));
 
@@ -197,6 +216,8 @@ namespace TempleCircuit
                 cardHover.Configure(this, i);
                 var accent = CreateImage("Accent", card.rectTransform, colors[i], new Vector2(-131f, 0f), new Vector2(7f, 68f));
                 accent.raycastTarget = false;
+                // body font for player status text
+                font = bodyFont ?? titleFont;
                 var text = CreateText("PlayerText", card.rectTransform, 25, TextAnchor.MiddleLeft, Paper, new Vector2(12f, 0f), new Vector2(232f, 80f));
                 playerTexts.Add(text);
             }
@@ -218,6 +239,7 @@ namespace TempleCircuit
             playerPropertyHoverBackground.raycastTarget = false;
             AddOutline(playerPropertyHoverRoot, new Color32(220, 181, 91, 185), new Vector2(1.5f, -1.5f));
 
+            font = bodyFont ?? titleFont;
             playerPropertyHoverText = CreateText("PropertyText", rect, 22, TextAnchor.MiddleLeft, Paper, Vector2.zero, new Vector2(286f, 92f));
             playerPropertyHoverText.fontStyle = FontStyles.Bold;
             playerPropertyHoverText.fontWeight = FontWeight.Bold;
@@ -263,8 +285,14 @@ namespace TempleCircuit
             if (panelSprite == null)
                 AddOutline(panel.gameObject, new Color32(220, 181, 91, 190), new Vector2(2f, -2f));
 
+            // Headline uses title font (Cinzel) for dramatic display text
+            font = this.font; // currently the "Dice" title font instance
             headlineText = CreateText("Headline", panel.rectTransform, 40, TextAnchor.MiddleLeft, Gold, new Vector2(0f, 86f), new Vector2(530f, 62f));
             headlineText.fontStyle = FontStyles.Bold;
+
+            // Body and hint use body font (EB Garamond) for readable prose
+            var diceBodyFont = bodyFont != null ? CreateFontInstance(sourceBodyFont, "DiceBody") : this.font;
+            font = diceBodyFont;
             bodyText = CreateText("Body", panel.rectTransform, 26, TextAnchor.UpperLeft, Paper, new Vector2(0f, 24f), new Vector2(530f, 82f));
             bodyText.textWrappingMode = TextWrappingModes.Normal;
             bodyText.overflowMode = TextOverflowModes.Truncate;
@@ -281,6 +309,8 @@ namespace TempleCircuit
             chargeFill = fill.rectTransform;
             chargeFill.pivot = new Vector2(0f, 0.5f);
 
+            // Button labels use title font (Cinzel works well for short button text)
+            font = this.font; // back to Dice title font
             primaryButton = CreateButton(game, panel.rectTransform, "Primary", new Vector2(-138f, -104f), new Vector2(250f, 56f), Cinnabar, out primaryLabel);
             secondaryButton = CreateButton(game, panel.rectTransform, "Secondary", new Vector2(138f, -104f), new Vector2(250f, 56f), new Color32(48, 85, 72, 255), out secondaryLabel);
             SetChargeVisible(false);
@@ -289,19 +319,19 @@ namespace TempleCircuit
 
         public void RefreshPlayers(IReadOnlyList<TemplePlayerState> players, int round, int maxRounds, string trend, int activePlayer, int fameToWin)
         {
-            // EN: "巡游 {round}/{maxRounds} · {fameToWin}功德圆满" → "Round {round}/{maxRounds} · {fameToWin} Merit To Win"
             if (roundText != null)
+                // EN: 巡游 N / N · N功德圆满 → Round N / N  ·  N Merit To Win
                 roundText.text = $"Round {Mathf.Min(round, maxRounds)} / {maxRounds}  ·  {fameToWin} Merit To Win";
-            // EN: "香火流向 · {trend}" → "Incense Flow · {trend}"
             if (trendText != null)
+                // EN: 香火流向 · {trend} → Incense Flow · {trend}
                 trendText.text = $"Incense Flow · {trend}";
             for (var i = 0; i < playerTexts.Count && i < players.Count; i++)
             {
                 var player = players[i];
                 playerNames[i] = player.name;
-                // EN: "已离寺" → "Left Temple"  |  "{cash} 金 · {fame} 功德" → "{cash}G · {fame} Merit"
+                // EN: 已离寺 → Left Temple; {cash}金 · {fame}功德 → {cash}G  ·  {fame} Merit
                 var status = player.bankrupt ? "Left Temple" : $"{player.cash}G  ·  {player.fame} Merit";
-                // EN: "本轮 · {name}" → "Active · {name}"
+                // EN: 本轮 · {name} → Active · {name}
                 var displayName = i == activePlayer ? $"<b>Active · {player.name}</b>" : player.name;
                 playerTexts[i].text = $"{displayName}\n{status}";
                 playerTexts[i].color = player.bankrupt ? new Color32(134, 139, 132, 255) : Paper;
@@ -337,12 +367,12 @@ namespace TempleCircuit
             }
 
             var summary = game.GetOwnedPropertySummary(active);
-            // EN: fallback player label "Player {n}" (no Chinese)
+            // EN: 玩家 {n} → Player {n}
             var name = active < playerNames.Length && !string.IsNullOrEmpty(playerNames[active]) ? playerNames[active] : $"Player {active + 1}";
             var entries = summary.Split('\n');
             var twoColumns = entries.Length > 5;
             var rows = twoColumns ? (entries.Length + 1) / 2 : entries.Length;
-            // EN: "{name} · 已占领房产" → "{name} · Properties Owned"
+            // EN: {name} · 已占领房产 → {name} · Properties Owned
             var content = new System.Text.StringBuilder($"<b>{name} · Properties Owned</b>\n");
             for (var row = 0; row < rows; row++)
             {
@@ -370,11 +400,11 @@ namespace TempleCircuit
 
         public void ShowRoll(string playerName, bool reroll)
         {
-            // EN: "改骰签已启用" → "Re-roll Slip Active"  |  "{name}的回合" → "{name}'s Turn"
+            // EN: 改骰签已启用 → Re-roll Slip Active; {name}的回合 → {name}'s Turn
             headlineText.text = reroll ? "Re-roll Slip Active" : $"{playerName}'s Turn";
-            // EN: "按住中央骰子，积蓄香火。" → "Hold the central die to build incense power."
+            // EN: 按住中央骰子，积蓄香火。→ Hold the central die to build incense power.
             bodyText.text = "Hold the central die to build incense power.";
-            // EN: "松手落骰" → "Release to roll"
+            // EN: 松手落骰 → Release to roll
             hintText.text = "Release to roll";
             SetChargeVisible(false);
             HideButtons();
@@ -382,11 +412,10 @@ namespace TempleCircuit
 
         public void ShowDiceCharge(float strength)
         {
-            // EN: "香火正在汇聚" → "Incense Power Building"
-            headlineText.text = "Incense Power Building";
-            // EN: "蓄力 {n}%" → "Charging {n}%"
+            // EN: 香火正在汇聚 → Gathering Incense
+            headlineText.text = "Gathering Incense";
+            // EN: 蓄力 {n}% → Charging {n}%
             bodyText.text = $"Charging {Mathf.RoundToInt(strength * 100f)}%";
-            // EN: "松手落骰" → "Release to roll"
             hintText.text = "Release to roll";
             SetChargeVisible(true);
             if (chargeFill != null)
@@ -395,10 +424,10 @@ namespace TempleCircuit
 
         public void ShowRolling()
         {
-            // EN: "骰子落定中" → "Die Settling"
-            headlineText.text = "Die Settling";
-            // EN: "香火点数即将揭晓。" → "The incense number will be revealed."
-            bodyText.text = "The incense number will be revealed.";
+            // EN: 骰子落定中 → Rolling…
+            headlineText.text = "Rolling…";
+            // EN: 香火点数即将揭晓。→ Your roll is about to land.
+            bodyText.text = "Your roll is about to land.";
             hintText.text = string.Empty;
             SetChargeVisible(false);
             HideButtons();
@@ -408,14 +437,14 @@ namespace TempleCircuit
         {
             headlineText.text = title;
             bodyText.text = FormatChoiceBody(body);
-            // EN: "请选择" → "Choose"
+            // EN: 请选择 → Choose
             hintText.text = "Choose";
             SetChargeVisible(false);
             ConfigureButton(primaryButton, primaryLabel, primary, primaryAction, primaryEnabled);
             ConfigureButton(secondaryButton, secondaryLabel, secondary, secondaryAction, true);
         }
 
-        // EN: prefix changed from "前进 " to "Move " and separator from "，" to ","
+        // EN: detect "Move " prefix (was "前进 "); split on ',' (was '，')
         static string FormatChoiceBody(string body)
         {
             if (string.IsNullOrEmpty(body) || !body.StartsWith("Move ", System.StringComparison.Ordinal))
@@ -425,7 +454,7 @@ namespace TempleCircuit
             if (clauseEnd <= 0 || clauseEnd >= body.Length - 1)
                 return body;
             var advance = body.Substring(0, clauseEnd);
-            var remainder = body.Substring(clauseEnd + 1).TrimStart();
+            var remainder = body.Substring(clauseEnd + 1);
             return $"<size=34><b>{advance}</b></size>\n<size=22>{remainder}</size>";
         }
 
@@ -440,8 +469,9 @@ namespace TempleCircuit
 
         public void ShowWinner(string winner, string detail)
         {
-            // EN: "圆满 · {name}获胜" → "Fulfilled · {name} Wins"  |  "再开一局" → "Play Again"  |  "留在棋盘" → "Stay on Board"
-            ShowChoices($"Fulfilled · {winner} Wins", detail, "Play Again", "restart", "Stay on Board", "dismiss-win");
+            // EN: 圆满 · {winner}获胜 → Merit Fulfilled · {winner} Wins
+            // EN: 再开一局 → Play Again; 留在棋盘 → View Board
+            ShowChoices($"Merit Fulfilled · {winner} Wins", detail, "Play Again", "restart", "View Board", "dismiss-win");
         }
 
         void SetChargeVisible(bool visible)
@@ -625,18 +655,32 @@ namespace TempleCircuit
             puffThree.raycastTarget = false;
         }
 
-        // EN: removed CJK fallback candidates; English font does not need CJK fallback
         static Font CreateFallbackFont()
         {
+            // EN fallback candidates (all widely available on macOS / Android)
             var candidates = new[] { "Georgia", "Times New Roman", "Arial" };
             return Font.CreateDynamicFontFromOSFont(candidates, 48);
         }
 
+        // Title font: Cinzel Regular (OFL, Roman-inscription style)
+        // Original used NotoSansSC-Variable (CJK 黑体/sans-serif).
+        // Cinzel is chosen because it matches the temple/incense theme and renders
+        // beautifully for short display labels and tile names.
+        // Its small-caps lowercase is intentional for headline UI text.
         Font ResolveSourceFont()
         {
-            // EN: load Cinzel (serif, Latin-only, SIL OFL) instead of NotoSansSC-Variable
             var resolved = uiFont != null ? uiFont : Resources.Load<Font>("Fonts/Cinzel-Regular");
             return resolved != null ? resolved : CreateFallbackFont();
+        }
+
+        // Body font: EB Garamond Regular (OFL, humanist serif with true lowercase).
+        // Used for multi-line body text (game events, property list, status bar)
+        // where Cinzel's small-caps design would reduce readability.
+        // Falls back to Cinzel gracefully if the TTF is absent.
+        Font ResolveBodyFont()
+        {
+            var resolved = Resources.Load<Font>("Fonts/EBGaramond-Regular");
+            return resolved != null ? resolved : ResolveSourceFont();
         }
 
         static TMP_FontAsset CreateFontInstance(Font source, string role)
@@ -719,6 +763,7 @@ namespace TempleCircuit
                 toCamera * (boardSize * forwardRatio) + Vector3.up * (boardSize * verticalRatio);
             var blend = immediate ? 1f : 1f - Mathf.Exp(-followSpeed * Time.unscaledDeltaTime);
             transform.position = Vector3.Lerp(transform.position, desiredPosition, blend);
+
             transform.rotation = targetCamera.transform.rotation;
         }
 
@@ -785,6 +830,10 @@ namespace TempleCircuit
         }
     }
 
+    /// <summary>
+    /// Keeps the main status board in the tabletop world at a high authored anchor while
+    /// turning its front toward the viewer.
+    /// </summary>
     public sealed class TempleWorldStatusAnchor : MonoBehaviour
     {
         TempleXRTabletopRig rig;
@@ -819,6 +868,10 @@ namespace TempleCircuit
         }
     }
 
+    /// <summary>
+    /// Keeps the intentionally small status strip fixed at the top centre of the
+    /// player's view.
+    /// </summary>
     public sealed class TempleHeadLockedStatusAnchor : MonoBehaviour
     {
         Camera targetCamera;

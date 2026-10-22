@@ -94,9 +94,8 @@ namespace TempleCircuit
         bool finished;
         TempleTileCategory trend;
 
-        // EN: player display names translated by meaning
-        // You = human player, Aman = 阿满 (content/peaceful), Mist = 小岚 (little mountain mist), Seven = 七仔 (seven kid)
-        static readonly string[] PlayerNames = { "You", "Aman", "Mist", "Seven" };
+        // EN: 你→You, 阿满→Ah Man, 小岚→Xiao Lan, 七仔→Qi Zai
+        static readonly string[] PlayerNames = { "You", "Ah Man", "Xiao Lan", "Qi Zai" };
         static readonly Color[] PlayerColors =
         {
             new Color32(226, 183, 69, 255),
@@ -105,40 +104,41 @@ namespace TempleCircuit
             new Color32(151, 102, 179, 255)
         };
 
+        // EN tile names per coordinator table
         static readonly TileBlueprint[] Blueprints =
         {
-            new TileBlueprint("Bell Gate", TileType.Start),
+            new TileBlueprint("Temple Gate Bell", TileType.Start),
             new TileBlueprint("Zen Stone Path", TileType.Property, 80, 18),
-            new TileBlueprint("Pilgrim Arcade", TileType.Property, 80, 18),
-            new TileBlueprint("Sacred Relics Hall", TileType.Property, 80, 18),
-            new TileBlueprint("Lotus Lamp Tower", TileType.Property, 80, 18),
-            new TileBlueprint("Wish Lot", TileType.Chance),
-            new TileBlueprint("Vegetarian Court", TileType.Property, 100, 22),
-            new TileBlueprint("Merit Blessing", TileType.Bonus, amount: 40),
-            new TileBlueprint("Offering Lighthouse", TileType.Property, 100, 22),
-            new TileBlueprint("Scripture Gallery", TileType.Property, 100, 22),
-            new TileBlueprint("Incense Levy", TileType.Tax, amount: 35),
+            new TileBlueprint("Pilgrims' Corridor", TileType.Property, 80, 18),
+            new TileBlueprint("Ritual Vault", TileType.Property, 80, 18),
+            new TileBlueprint("Lotus Lantern Pavilion", TileType.Property, 80, 18),
+            new TileBlueprint("Prayer Slip", TileType.Chance),
+            new TileBlueprint("Vegetarian Refectory", TileType.Property, 100, 22),
+            new TileBlueprint("Merit Red Envelope", TileType.Bonus, amount: 40),
+            new TileBlueprint("Lamp Offering Tower", TileType.Property, 100, 22),
+            new TileBlueprint("Sutra Cloister", TileType.Property, 100, 22),
+            new TileBlueprint("Incense Fund Fee", TileType.Tax, amount: 35),
             new TileBlueprint("Relic Pavilion", TileType.Property, 100, 22),
-            new TileBlueprint("Wish Lot", TileType.Chance),
+            new TileBlueprint("Prayer Slip", TileType.Chance),
             new TileBlueprint("Morning Bell Ceremony", TileType.Festival),
-            new TileBlueprint("Incense Altar", TileType.Property, 120, 26),
+            new TileBlueprint("Prayer Incense Altar", TileType.Property, 120, 26),
             new TileBlueprint("Dedication Gate", TileType.Gate),
-            new TileBlueprint("Wooden Fish Cottage", TileType.Property, 130, 28),
+            new TileBlueprint("Wooden Fish Lodge", TileType.Property, 130, 28),
             new TileBlueprint("Meditation Hall", TileType.Property, 130, 28),
-            new TileBlueprint("Wish Lot", TileType.Chance),
-            new TileBlueprint("Canon Tower", TileType.Property, 130, 28),
-            new TileBlueprint("Merit Collection", TileType.Bonus, amount: 40),
+            new TileBlueprint("Prayer Slip", TileType.Chance),
+            new TileBlueprint("Sutra Library", TileType.Property, 130, 28),
+            new TileBlueprint("Collect Merit", TileType.Bonus, amount: 40),
             new TileBlueprint("Grand Ceremony", TileType.Festival),
-            new TileBlueprint("Lamp Oil Levy", TileType.Tax, amount: 45),
-            new TileBlueprint("Wish Lot", TileType.Chance),
+            new TileBlueprint("Lamp Oil Fee", TileType.Tax, amount: 45),
+            new TileBlueprint("Prayer Slip", TileType.Chance),
             new TileBlueprint("Dedication Gate", TileType.Gate),
-            new TileBlueprint("Sympathetic Merit", TileType.Bonus, amount: 45),
+            new TileBlueprint("Rejoicing in Merit", TileType.Bonus, amount: 45),
             new TileBlueprint("Lantern Ceremony", TileType.Festival),
-            new TileBlueprint("Repair Levy", TileType.Tax, amount: 50),
-            new TileBlueprint("Wish Lot", TileType.Chance),
-            new TileBlueprint("Alms Merit", TileType.Bonus, amount: 50),
-            new TileBlueprint("Water-Land Ceremony", TileType.Festival),
-            new TileBlueprint("Wish Lot", TileType.Chance)
+            new TileBlueprint("Repair Fee", TileType.Tax, amount: 50),
+            new TileBlueprint("Prayer Slip", TileType.Chance),
+            new TileBlueprint("Merit of Giving", TileType.Bonus, amount: 50),
+            new TileBlueprint("Water and Land Ceremony", TileType.Festival),
+            new TileBlueprint("Prayer Slip", TileType.Chance)
         };
 
         public bool CanHoldDice => !finished && phase == Phase.AwaitRoll && players.Count > activePlayer && players[activePlayer].human;
@@ -216,7 +216,8 @@ namespace TempleCircuit
             hud.RefreshTileInfoCards(this);
             PlaceAllPawns();
             RefreshHud();
-            hud.ShowResult("The Bell Rings", "Four pilgrims enter the temple together. The Incense Circuit begins.");
+            // EN: 晨钟一响 / 四位行脚者同时入寺，香火巡游开始。
+            hud.ShowResult("The Bell Rings", "Four pilgrims enter the temple together. The incense circuit begins.");
             StartCoroutine(BeginTurnAfter(0.8f));
         }
 
@@ -283,7 +284,8 @@ namespace TempleCircuit
             if (!rerolling && player.rerolls > 0)
             {
                 phase = Phase.DecideRoll;
-                hud.ShowChoices($"Dice Settled: {value}", $"Move {value} spaces, or spend a Re-roll Slip to roll again.", $"Move {value}", "accept-roll", $"Re-roll · {player.rerolls} Left", "reroll");
+                // EN: body starts with "Move " so FormatChoiceBody will bold the first clause
+                hud.ShowChoices($"Dice Settled: {value}", $"Move {value}, or use a Re-roll Slip to roll again.", "Accept Roll", "accept-roll", $"Re-roll Slip · {player.rerolls} left", "reroll");
                 return;
             }
             rerolling = false;
@@ -292,7 +294,8 @@ namespace TempleCircuit
 
         IEnumerator BotTurnRoutine(TemplePlayerState player)
         {
-            hud.ShowResult($"{player.name} Studies the Incense", "Your opponent plans their next move.");
+            // EN: {player.name}正在观望香火 / 对手正在盘算下一座院落。
+            hud.ShowResult($"{player.name} Reads the Incense", "Your opponent is planning their next move.");
             yield return new WaitForSeconds(0.75f);
             var value = UnityEngine.Random.Range(1, 7);
             var done = false;
@@ -301,7 +304,8 @@ namespace TempleCircuit
             if (ShouldBotReroll(player, value))
             {
                 player.rerolls--;
-                hud.ShowResult($"{player.name} Uses a Re-roll Slip", $"Not happy with {value} spaces. Rolling again.");
+                // EN: {player.name}使用改骰签 / 嫌 {value} 步不合心意，重新投掷。
+                hud.ShowResult($"{player.name} Uses a Re-roll Slip", $"Discarded roll of {value}, rolling again.");
                 yield return new WaitForSeconds(0.45f);
                 done = false;
                 value = UnityEngine.Random.Range(1, 7);
@@ -322,7 +326,8 @@ namespace TempleCircuit
             }
             if (action == "dismiss-win")
             {
-                hud.ShowResult("This Game Is Complete", "Feel free to explore the board and view each courtyard.");
+                // EN: 本局已圆满 / 可以继续环绕棋盘查看各座院落。
+                hud.ShowResult("The Board Is Done", "You may continue to view the properties.");
                 return;
             }
             if (finished || players.Count == 0 || !players[activePlayer].human)
@@ -343,20 +348,24 @@ namespace TempleCircuit
                     break;
                 case "buy" when phase == Phase.DecideProperty:
                     Purchase(players[activePlayer], decisionTileIndex);
-                    hud.ShowResult("Courtyard Registered", $"{tiles[decisionTileIndex].name} now belongs to you.");
+                    // EN: 新院落入册 / 「{name}」现在归你。
+                    hud.ShowResult("Property Claimed", $"\"{tiles[decisionTileIndex].name}\" is now yours.");
                     StartCoroutine(FinishTurnRoutine());
                     break;
                 case "skip-buy" when phase == Phase.DecideProperty:
-                    hud.ShowResult("Keeping Your Cash", "The courtyard remains temple property. Others may still acquire it.");
+                    // EN: 现金留在手中 / 院落仍属寺院，其他人之后仍可修下。
+                    hud.ShowResult("Kept Your Gold", "The property remains available for others.");
                     StartCoroutine(FinishTurnRoutine());
                     break;
                 case "upgrade" when phase == Phase.DecideUpgrade:
                     Upgrade(players[activePlayer], decisionTileIndex);
-                    hud.ShowResult("Another Eave Added", $"{tiles[decisionTileIndex].name} has been upgraded.");
+                    // EN: 檐角又添了一层 / 「{name}」修缮完成。
+                    hud.ShowResult("Upgrade Complete", $"\"{tiles[decisionTileIndex].name}\" has been upgraded.");
                     StartCoroutine(FinishTurnRoutine());
                     break;
                 case "skip-upgrade" when phase == Phase.DecideUpgrade:
-                    hud.ShowResult("Preserving Cash for Now", "The courtyard remains as is.");
+                    // EN: 今日先守住现金 / 院落维持现状。
+                    hud.ShowResult("Kept Your Gold", "The property stays as-is.");
                     StartCoroutine(FinishTurnRoutine());
                     break;
                 case "festival-bold" when phase == Phase.DecideFestival:
@@ -381,7 +390,8 @@ namespace TempleCircuit
         {
             phase = Phase.Moving;
             pendingRoll = 0;
-            hud.ShowResult($"{player.name} Moves {steps} Spaces", "The pawn follows the colored tiles around the temple.");
+            // EN: {player.name}前进 {steps} 格 / 棋子正沿寺院外侧彩砖行走。
+            hud.ShowResult($"{player.name} Moves {steps} Space{(steps == 1 ? "" : "s")}", "Moving along the temple circuit.");
             for (var step = 0; step < steps; step++)
             {
                 var next = (player.position + 1) % pathTiles.Length;
@@ -422,6 +432,7 @@ namespace TempleCircuit
             phase = Phase.Resolving;
             var tile = tiles[player.position];
             decisionTileIndex = player.position;
+            // EN: 停在「{tile.name}」
             hud.ShowResult($"Landed on {tile.name}", DescribeTile(tile));
             yield return new WaitForSeconds(0.6f);
 
@@ -434,7 +445,10 @@ namespace TempleCircuit
                     if (player.human)
                     {
                         phase = Phase.DecideChance;
-                        hud.ShowChoices("The Gate Offers Two Lots", "A known lot gives steady Merit; a free draw resolves a random result.", "Buy Known Lot · 35G", "chance-known", "Draw Free Wish Lot", "chance-draw", player.cash >= 35);
+                        // EN: 山门递来两支签 / 明签稳定获取功德；免费抽签则会当场结算随机结果。
+                        // EN: 35 金买明签 → Buy Revealed Slip · 35G
+                        // EN: 免费抽祈愿签 → Draw a Free Prayer Slip
+                        hud.ShowChoices("Two Slips at the Gate", "A Revealed Slip gives steady merit; a free draw resolves a random outcome on the spot.", "Buy Revealed Slip · 35G", "chance-known", "Draw a Free Prayer Slip", "chance-draw", player.cash >= 35);
                     }
                     else if (player.cash >= 120 && UnityEngine.Random.value < 0.65f)
                     {
@@ -448,13 +462,17 @@ namespace TempleCircuit
                     if (player.cash < 30)
                     {
                         player.cash += 20;
-                        hud.ShowResult("No Presiding, But Not Empty-Handed", "You helped wrap up the ceremony. Gain 20 Gold.");
+                        // EN: 没主坛，也没空手 / 协助收场，获得 20 金。
+                        hud.ShowResult("Can't Lead, But Not Empty-Handed", "Assisted and received 20G.");
                         yield return FinishTurnRoutine();
                     }
                     else if (player.human)
                     {
                         phase = Phase.DecideFestival;
-                        hud.ShowChoices("A Ceremony Opens — Dare You Preside?", "Bold: 65% chance for 80 Gold & +2 Merit. Safe: guaranteed 30 Gold.", "Preside · Risk 30 Gold", "festival-bold", "Assist · Gain 30 Gold", "festival-safe");
+                        // EN: 法会开坛，要不要搏一把？ / 冒险有 65% 概率获得 80 金与 2 功德；稳妥则固定获得 30 金。
+                        // EN: 押 30 金主坛 → Stake 30G to Lead
+                        // EN: 协助法会得 30 金 → Assist for 30G
+                        hud.ShowChoices("The Ceremony Begins — Take the Gamble?", "Bold: 65% chance of 80G and 2 Merit; Safe: guaranteed 30G.", "Stake 30G to Lead", "festival-bold", "Assist for 30G", "festival-safe");
                     }
                     else
                     {
@@ -464,25 +482,29 @@ namespace TempleCircuit
                     break;
                 case TileType.Tax:
                     ChargeBank(player, tile.amount);
-                    hud.ShowResult("The Temple Ledger Arrives", $"Pay {Mathf.Min(tile.amount, player.cash + tile.amount)} Gold.");
+                    // EN: 公账递到院前 / 支付 {n} 金。
+                    hud.ShowResult("Temple Fund Collected", $"Paid {Mathf.Min(tile.amount, player.cash + tile.amount)}G.");
                     if (!finished)
                         yield return FinishTurnRoutine();
                     break;
                 case TileType.Bonus:
                     player.cash += tile.amount;
                     RefreshHud();
-                    hud.ShowResult("A Merit Scroll Arrives", $"You receive {tile.amount} Gold.");
+                    // EN: 收到一封功德帖 / 现金增加 {n} 金。
+                    hud.ShowResult("Merit Offering Received", $"Cash increased by {tile.amount}G.");
                     yield return FinishTurnRoutine();
                     break;
                 case TileType.Gate:
                     player.cash += 35;
                     player.rerolls++;
                     RefreshHud();
-                    hud.ShowResult("The Dedication Gate Bestows Fortune", "Gain 35 Gold and one Re-roll Slip.");
+                    // EN: 回向门把好运交到手里 / 35 金入袋，再添一张改骰签。
+                    hud.ShowResult("The Dedication Gate Turns Luck Your Way", "35G gained, plus one Re-roll Slip.");
                     yield return FinishTurnRoutine();
                     break;
                 default:
-                    hud.ShowResult("The Bell Echoes at the Gate", "Next pilgrim's turn begins.");
+                    // EN: 山门钟声回荡 / 继续下一位行脚者的回合。
+                    hud.ShowResult("Temple Gate Bell Rings", "On to the next pilgrim's turn.");
                     yield return FinishTurnRoutine();
                     break;
             }
@@ -495,13 +517,17 @@ namespace TempleCircuit
             {
                 if (player.cash < tile.price)
                 {
-                    hud.ShowResult("Courtyard Passes By", $"Acquiring {tile.name} costs {tile.price} Gold.");
+                    // EN: 院落擦肩而过 / 修下「{name}」需要 {price} 金。
+                    hud.ShowResult("Short on Gold", $"Needs {tile.price}G to acquire {tile.name}.");
                     yield return FinishTurnRoutine();
                 }
                 else if (player.human)
                 {
                     phase = Phase.DecideProperty;
-                    hud.ShowChoices($"Add {tile.name} to the Merit Register?", $"Cost: {tile.price} Gold. Base rent: {tile.rent} Gold. Current incense bonus doubles rent.", $"Acquire · {tile.price}G", "buy", "Keep Cash", "skip-buy");
+                    // EN: 把「{name}」收入功德簿？ / {price} 金修下，基础收益 {rent} 金；当前香火流向加成会翻倍。
+                    // EN: 收入 · {price} 金 → Acquire · {price}G
+                    // EN: 留住现金 → Skip
+                    hud.ShowChoices($"Acquire {tile.name}?", $"{tile.price}G to acquire. Base rent: {tile.rent}G; current incense bonus doubles it.", $"Acquire · {tile.price}G", "buy", "Skip", "skip-buy");
                 }
                 else
                 {
@@ -517,13 +543,17 @@ namespace TempleCircuit
                 var cost = UpgradeCost(tile);
                 if (tile.level >= 2 || player.cash < cost)
                 {
-                    hud.ShowResult("Back to Your Own Courtyard", tile.level >= 2 ? "This courtyard is already fully upgraded." : $"Upgrading costs {cost} Gold.");
+                    // EN: 回到自己的院落 / 这座院落已经修缮到满级。/ 修缮需要 {cost} 金。
+                    hud.ShowResult("Back to Your Property", tile.level >= 2 ? "This property is fully upgraded." : $"Upgrade costs {cost}G.");
                     yield return FinishTurnRoutine();
                 }
                 else if (player.human)
                 {
                     phase = Phase.DecideUpgrade;
-                    hud.ShowChoices($"Add Another Eave to {tile.name}?", $"Spend {cost} Gold to upgrade. Rent rises from {CalculateRent(tile)} to {CalculateRent(tile, tile.level + 1)} Gold.", $"Upgrade · {cost}G", "upgrade", "Not Now", "skip-upgrade");
+                    // EN: 给「{name}」添一层檐角？ / 花 {cost} 金修缮，收益将从 {rent} 金升至 {newRent} 金。
+                    // EN: 修缮 · {cost} 金 → Upgrade · {cost}G
+                    // EN: 暂不修缮 → Skip
+                    hud.ShowChoices($"Upgrade {tile.name}?", $"Spend {cost}G. Rent rises from {CalculateRent(tile)}G to {CalculateRent(tile, tile.level + 1)}G.", $"Upgrade · {cost}G", "upgrade", "Skip", "skip-upgrade");
                 }
                 else
                 {
@@ -539,8 +569,10 @@ namespace TempleCircuit
             var paid = Mathf.Min(player.cash, rent);
             player.cash -= paid;
             owner.cash += paid;
-            var doubled = tile.category == trend ? " (incense bonus doubled)" : string.Empty;
-            hud.ShowResult("A Pilgrim Enters Another's Courtyard", $"You pay {owner.name} {paid} Gold{doubled}.");
+            // EN: ，本轮香火加成已翻倍 → , incense bonus doubled this round
+            var doubled = tile.category == trend ? ", incense bonus doubled this round" : string.Empty;
+            // EN: 香客走进别人的院落 / 向 {owner.name} 支付 {paid} 金{doubled}。
+            hud.ShowResult("Visiting Another's Property", $"Paid {paid}G to {owner.name}{doubled}.");
             if (paid < rent)
                 Bankrupt(player);
             RefreshHud();
@@ -575,7 +607,8 @@ namespace TempleCircuit
             if (!bold)
             {
                 player.cash += 30;
-                hud.ShowResult("Steady Is Skilled Too", "You helped with the ceremony. 30 Gold secured.");
+                // EN: 稳妥也是本事 / 忙完一轮，30 金落袋。
+                hud.ShowResult("Safe and Steady", "A solid 30G for your effort.");
             }
             else
             {
@@ -584,10 +617,12 @@ namespace TempleCircuit
                 {
                     player.cash += 80;
                     player.fame += 2;
-                    hud.ShowResult("All Temple Pilgrims Remember Your Name", "Net gain: 50 Gold. +2 Merit.");
+                    // EN: 满寺香客都记住了你的法号 / 净赚 50 金，功德 +2。
+                    hud.ShowResult("The Temple Remembers Your Name", "Net 50G gained. Merit +2.");
                 }
                 else
-                    hud.ShowResult("The Incense Dims", "The ceremony fell flat. Lost 30 Gold deposit.");
+                    // EN: 香火暂歇 / 法会遇上冷场，损失 30 金押金。
+                    hud.ShowResult("The Incense Fades", "The ceremony fell flat. Lost your 30G stake.");
             }
             RefreshHud();
         }
@@ -598,7 +633,8 @@ namespace TempleCircuit
             player.fame++;
             player.rerolls++;
             RefreshHud();
-            hud.ShowResult("Leaving Nothing to Chance", "+1 Merit. +1 Re-roll Slip.");
+            // EN: 这次不把修行交给运气 / 功德 +1，改骰签 +1。
+            hud.ShowResult("Practice Without Relying on Luck", "Merit +1, Re-roll Slip +1.");
         }
 
         IEnumerator ResolveRandomChanceRoutine(TemplePlayerState player)
@@ -612,20 +648,24 @@ namespace TempleCircuit
                     var count = player.properties.Count(index => tiles[index].category == trend);
                     var gain = 20 + count * 20;
                     player.cash += gain;
-                    result = $"Pilgrims follow the incense trend. Gain {gain} Gold.";
+                    // EN: 香客循着本轮香火而来，获得 {gain} 金。
+                    result = $"Pilgrims follow the incense. Gained {gain}G.";
                     break;
                 case 1:
                     ChargeBank(player, 25);
-                    result = "A brief rain dampens the prayer flags. Lose 25 Gold.";
+                    // EN: 一场短雨打湿经幡，损失 25 金。
+                    result = "A brief rain wets the prayer flags. Lost 25G.";
                     break;
                 case 2:
                     player.fame++;
                     player.cash += 20;
-                    result = "Your name echoes down the mountain. Gain 20 Gold and +1 Merit.";
+                    // EN: 法号传到山下，获得 20 金与 1 功德。
+                    result = "Your dharma name spreads down the mountain. Gained 20G and 1 Merit.";
                     break;
                 case 3:
                     player.rerolls++;
-                    result = "You find an unused Re-roll Slip.";
+                    // EN: 拾到一张未曾启用的改骰签。
+                    result = "Found an unused Re-roll Slip.";
                     break;
                 case 4:
                     var total = 0;
@@ -637,23 +677,27 @@ namespace TempleCircuit
                         total += 10;
                     }
                     player.cash += total;
-                    result = $"Neighboring courtyards offer {total} Gold in incense tribute.";
+                    // EN: 邻院合掌送来 {total} 金香火。
+                    result = $"Neighboring halls send {total}G in offerings.";
                     break;
                 case 5:
                     var fee = player.properties.Count * 12;
                     ChargeBank(player, fee);
-                    result = fee > 0 ? $"The temple inspector collects {fee} Gold." : "No courtyards yet. You pass inspection without paying.";
+                    // EN: 寺院巡检收走 {fee} 金。/ 你还没有院落，顺利通过巡检。
+                    result = fee > 0 ? $"Temple inspectors collected {fee}G." : "No properties owned — inspection passed.";
                     break;
                 case 6:
                     if (UnityEngine.Random.value < 0.5f)
                     {
                         player.fame += 2;
-                        result = "Your impromptu teaching is a great success. +2 Merit.";
+                        // EN: 即兴说法大获成功，功德 +2。
+                        result = "Impromptu sermon was a hit. Merit +2.";
                     }
                     else
                     {
                         ChargeBank(player, 30);
-                        result = "Your impromptu teaching falls flat. The altar costs 30 Gold.";
+                        // EN: 即兴说法冷场，临时法坛花掉 30 金。
+                        result = "The sermon fell flat. Spent 30G on the impromptu altar.";
                     }
                     break;
                 default:
@@ -661,11 +705,13 @@ namespace TempleCircuit
                     yield return MovePawnOneStep(player, (player.position - 1 + pathTiles.Length) % pathTiles.Length);
                     yield return MovePawnOneStep(player, back);
                     player.position = back;
-                    result = "The Dedication Path sends you back two spaces. No event on landing.";
+                    // EN: 回向小径把你带回两格，落地不触发事件。
+                    result = "The winding path carries you back two spaces. No effect on landing.";
                     break;
             }
             RefreshHud();
-            hud.ShowResult("A Pilgrim Presents a Wish Lot", result);
+            // EN: 香客递来一张祈愿签
+            hud.ShowResult("A Prayer Slip is Drawn", result);
             if (!finished)
                 yield return FinishTurnRoutine();
         }
@@ -677,7 +723,8 @@ namespace TempleCircuit
             var fameWinner = players.FirstOrDefault(p => !p.bankrupt && p.fame >= fameToWin);
             if (fameWinner != null)
             {
-                EndGame(fameWinner, $"Merit reached {fameToWin}. An early completion!");
+                // EN: 功德达到 {fameToWin}，提前圆满。
+                EndGame(fameWinner, $"Reached {fameToWin} Merit. Victory!");
                 yield break;
             }
             yield return new WaitForSeconds(1.05f);
@@ -696,7 +743,8 @@ namespace TempleCircuit
                 if (round > maxRounds)
                 {
                     var winner = players.Where(p => !p.bankrupt).OrderByDescending(PlayerScore).First();
-                    EndGame(winner, $"{maxRounds} rounds complete. Scored by Gold, courtyard value, and Merit.");
+                    // EN: {maxRounds} 轮巡游结束，按现金、院落价值与功德结算。
+                    EndGame(winner, $"{maxRounds} rounds complete. Final score: cash, property value, and merit.");
                     return;
                 }
                 var choices = Enum.GetValues(typeof(TempleTileCategory)).Cast<TempleTileCategory>().Where(c => c != trend).ToArray();
@@ -757,7 +805,8 @@ namespace TempleCircuit
                 return;
             player.completedSets.Add(category);
             player.fame += 2;
-            hud.ShowResult($"Completed the {CategoryName(category)} Set!", "+2 Merit.");
+            // EN: 集齐「{CategoryName(category)}」/ 功德 +2。 → Set Complete: X / Merit +2.
+            hud.ShowResult($"Set Complete: {CategoryName(category)}", "Merit +2.");
         }
 
         void ChargeBank(TemplePlayerState player, int amount)
@@ -784,7 +833,8 @@ namespace TempleCircuit
             player.properties.Clear();
             var alive = players.Where(p => !p.bankrupt).ToArray();
             if (alive.Length == 1)
-                EndGame(alive[0], "All other pilgrims have left the temple. The last one standing wins.");
+                // EN: 其余行脚者都已离寺，最后守住香火的人获胜。
+                EndGame(alive[0], "All other pilgrims have left the temple. Last one standing wins.");
         }
 
         void UpdateOwnershipMarker(int tileIndex)
@@ -869,18 +919,28 @@ namespace TempleCircuit
         {
             switch (tile.type)
             {
-                case TileType.Property: return tile.owner < 0 ? $"A {CategoryName(tile.category)} courtyard available for {tile.price} Gold." : $"Currently owned by {players[tile.owner].name}. Level {tile.level}.";
-                case TileType.Chance: return "A Wish Lot awaits.";
-                case TileType.Festival: return "The Ceremony amplifies your choice between safety and risk.";
-                case TileType.Tax: return $"Pay {tile.amount} Gold to the temple fund.";
-                case TileType.Bonus: return $"Receive a Merit scroll worth {tile.amount} Gold.";
-                case TileType.Gate: return "Gain 35 Gold and one Re-roll Slip.";
-                default: return "Gain 60 Gold for each completed lap.";
+                // EN: 可用 {price} 金修下的{category}院落。→ A {category} property available for {price}G.
+                // EN: 当前归 {name} 所有，{level} 级。→ Currently owned by {name}. Level {level}.
+                case TileType.Property: return tile.owner < 0 ? $"A {CategoryName(tile.category)} property available for {tile.price}G." : $"Currently owned by {players[tile.owner].name}. Level {tile.level}.";
+                // EN: 一支祈愿签正在等待揭晓。
+                case TileType.Chance: return "A prayer slip awaits.";
+                // EN: 法会会在稳妥与冒险之间放大选择。
+                case TileType.Festival: return "The ceremony amplifies your choice: safe or bold.";
+                // EN: 需向寺院公账支付 {amount} 金。
+                case TileType.Tax: return $"Pay {tile.amount}G to the temple fund.";
+                // EN: 可获得 {amount} 金功德帖。
+                case TileType.Bonus: return $"Receive a merit offering of {tile.amount}G.";
+                // EN: 获得 35 金与一张改骰签。
+                case TileType.Gate: return "Gain 35G and one Re-roll Slip.";
+                // EN: 绕寺一周时会获得 60 金。
+                default: return "Pass this point to receive 60G.";
             }
         }
 
         /// <summary>
         /// Returns a compact, stable summary for the player-name hover card.
+        /// The UI can query this without reaching into the private tile state;
+        /// malformed or stale indices are ignored instead of throwing.
         /// </summary>
         public string GetOwnedPropertySummary(int playerId)
         {
@@ -902,6 +962,7 @@ namespace TempleCircuit
                 if (tile == null || tile.owner != playerId || string.IsNullOrEmpty(tile.name))
                     continue;
 
+                // EN: {tile.name} · {level + 1}级 → {tile.name} · Lv.{level + 1}
                 lines.Add($"{tile.name} · Lv.{tile.level + 1}");
             }
 
@@ -911,6 +972,7 @@ namespace TempleCircuit
         public TempleTileInfoContent GetTileInfo(int index)
         {
             if (index < 0 || index >= tiles.Count)
+                // EN: 未知格 → Unknown
                 return new TempleTileInfoContent("Unknown", "", new Color32(220, 181, 91, 255));
 
             var tile = tiles[index];
@@ -918,53 +980,62 @@ namespace TempleCircuit
             switch (tile.type)
             {
                 case TileType.Property:
+                    // EN: 可购修行院落\n{price}金 · 租{rent} → Available\n{price}G · Rent {rent}G
+                    // EN: {name}的院落\n{level+1}级 · 租{rent} → {name}'s Property\nLevel {level+1} · Rent {rent}G
                     var detail = tile.owner < 0
-                        ? $"Available Courtyard\n{tile.price}G · Rent {tile.rent}"
-                        : $"{players[tile.owner].name}'s Courtyard\nLv.{tile.level + 1} · Rent {CalculateRent(tile)}";
+                        ? $"Available\n{tile.price}G · Rent {tile.rent}G"
+                        : $"{players[tile.owner].name}'s Property\nLevel {tile.level + 1} · Rent {CalculateRent(tile)}G";
                     return new TempleTileInfoContent(CompactTileName(tile.name), detail, accent);
                 case TileType.Chance:
-                    return new TempleTileInfoContent("Lot", "Random Wish Lot\nBoon or Bane", accent);
+                    // EN: 祈签 → Slip; 抽取随机祈愿\n福祸皆可能 → Random prayer\nGood or ill fate
+                    return new TempleTileInfoContent("Slip", "Random prayer\nGood or ill fate", accent);
                 case TileType.Festival:
-                    return new TempleTileInfoContent(CompactTileName(tile.name), "Ceremony Choice\nSafe or Bold", accent);
+                    // EN: 法会收益抉择\n稳取或冒险 → Ceremony choice\nRisk or safety
+                    return new TempleTileInfoContent(CompactTileName(tile.name), "Ceremony choice\nRisk or safety", accent);
                 case TileType.Tax:
-                    return new TempleTileInfoContent(CompactTileName(tile.name), $"Temple Common Fund\nPay {tile.amount}G", accent);
+                    // EN: 寺院公共支出\n支付{amount}金 → Temple fund\nPay {amount}G
+                    return new TempleTileInfoContent(CompactTileName(tile.name), $"Temple fund\nPay {tile.amount}G", accent);
                 case TileType.Bonus:
-                    return new TempleTileInfoContent(CompactTileName(tile.name), $"Merit Reward\nGain {tile.amount}G", accent);
+                    // EN: 领取功德奖励\n获得{amount}金 → Merit reward\nGain {amount}G
+                    return new TempleTileInfoContent(CompactTileName(tile.name), $"Merit reward\nGain {tile.amount}G", accent);
                 case TileType.Gate:
-                    return new TempleTileInfoContent("Dedicate", "Dedication Reward\n35G · Re-roll Slip", accent);
+                    // EN: 回向 → Dedicate; 回向转运奖励\n35金 · 改骰签 → Luck reward\n35G · Re-roll Slip
+                    return new TempleTileInfoContent("Dedicate", "Luck reward\n35G · Re-roll Slip", accent);
                 default:
-                    return new TempleTileInfoContent("Start", "Circuit Start\nGain 60G per lap", accent);
+                    // EN: 起点 → Start; 巡游起始位置\n过圈获得60金 → Circuit start\nPass: 60G
+                    return new TempleTileInfoContent("Start", "Circuit start\nPass: 60G", accent);
             }
         }
 
         static string CompactTileName(string name)
         {
+            // EN compact names per coordinator table (长名 / 短名)
             switch (name)
             {
-                case "Zen Stone Path": return "Zen Path";
-                case "Pilgrim Arcade": return "Arcade";
-                case "Sacred Relics Hall": return "Relics";
-                case "Lotus Lamp Tower": return "Lotus";
-                case "Vegetarian Court": return "Veggie";
-                case "Merit Blessing": return "Merit";
-                case "Offering Lighthouse": return "Offering";
-                case "Scripture Gallery": return "Canon";
-                case "Incense Levy": return "Inc. Levy";
-                case "Relic Pavilion": return "Relic";
-                case "Morning Bell Ceremony": return "Bell";
-                case "Incense Altar": return "Altar";
-                case "Wooden Fish Cottage": return "WoodFish";
-                case "Meditation Hall": return "Retreat";
-                case "Canon Tower": return "Vault";
-                case "Merit Collection": return "Collect";
+                case "Zen Stone Path": return "Stone Path";
+                case "Pilgrims' Corridor": return "Corridor";
+                case "Ritual Vault": return "Ritual";
+                case "Lotus Lantern Pavilion": return "Lotus Lamps";
+                case "Vegetarian Refectory": return "Refectory";
+                case "Merit Red Envelope": return "Envelope";
+                case "Lamp Offering Tower": return "Lamp Tower";
+                case "Sutra Cloister": return "Cloister";
+                case "Incense Fund Fee": return "Incense Fee";
+                case "Relic Pavilion": return "Relics";
+                case "Morning Bell Ceremony": return "Morning Bell";
+                case "Prayer Incense Altar": return "Altar";
+                case "Wooden Fish Lodge": return "Wooden Fish";
+                case "Meditation Hall": return "Meditation";
+                case "Sutra Library": return "Library";
+                case "Collect Merit": return "Collect";
                 case "Grand Ceremony": return "Grand";
-                case "Lamp Oil Levy": return "Oil Levy";
-                case "Sympathetic Merit": return "Alms";
-                case "Lantern Ceremony": return "Lantern";
-                case "Repair Levy": return "Repair";
-                case "Alms Merit": return "Dana";
-                case "Water-Land Ceremony": return "Water";
-                default: return name.Length > 6 ? name.Substring(0, 6) : name;
+                case "Lamp Oil Fee": return "Oil Fee";
+                case "Rejoicing in Merit": return "Rejoice";
+                case "Lantern Ceremony": return "Lantern Rite";
+                case "Repair Fee": return "Repairs";
+                case "Merit of Giving": return "Giving";
+                case "Water and Land Ceremony": return "Water & Land";
+                default: return name.Length > 2 ? name : name;
             }
         }
 
@@ -988,16 +1059,15 @@ namespace TempleCircuit
             }
         }
 
-        // EN: category display names (translated from Chinese)
-        // 供灯阁 = Lamp Pavilion Wing, 禅修院 = Meditation Wing, 香火院 = Incense Wing, 法器阁 = Relic Wing
         static string CategoryName(TempleTileCategory category)
         {
+            // EN: 供灯阁→Lamp Pavilion, 禅修院→Meditation Court, 香火院→Incense Court, 法器阁→Ritual Pavilion
             switch (category)
             {
-                case TempleTileCategory.Offering: return "Lamp Wing";
-                case TempleTileCategory.Meditation: return "Zen Wing";
-                case TempleTileCategory.Incense: return "Incense Wing";
-                default: return "Relic Wing";
+                case TempleTileCategory.Offering: return "Lamp Pavilion";
+                case TempleTileCategory.Meditation: return "Meditation Court";
+                case TempleTileCategory.Incense: return "Incense Court";
+                default: return "Ritual Pavilion";
             }
         }
 
