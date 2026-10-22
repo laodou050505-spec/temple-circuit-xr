@@ -310,7 +310,12 @@ namespace TempleCircuit
             var canvasRect = canvasObject.GetComponent<RectTransform>();
             canvasRect.sizeDelta = new Vector2(700f, 350f);
             var inheritedScale = Mathf.Max(0.0001f, transform.lossyScale.x);
-            var scale = Mathf.Max(0.0001f, boardSize * 0.36f / 700f);
+            // v3 Polish VR spec C: raised multiplier 0.36→0.47 so the panel is ~1.30× wider
+            // in world space at typical boardSize (1.0m → panel now 0.47m wide instead of 0.36m).
+            // At d=0.9m this gives Body cap≈15.4mm (≥15.3mm body min) and Hint cap≈12.6mm
+            // (≥10.8mm secondary min). Panel stays anchored to the side/above the dice
+            // (sideRatio 0.24, forwardRatio 0.10) so it does not overlap the board.
+            var scale = Mathf.Max(0.0001f, boardSize * 0.47f / 700f);
             canvasRect.localScale = Vector3.one * (scale / inheritedScale);
             var promptAnchor = canvasObject.GetComponent<TempleDicePromptAnchor>();
             promptAnchor.Configure(game != null && game.dice != null ? game.dice.transform : null, Camera.main, boardCenter, boardSize);
@@ -322,13 +327,15 @@ namespace TempleCircuit
                 AddOutline(panel.gameObject, new Color32(220, 181, 91, 190), new Vector2(2f, -2f));
 
             // Headline uses title font (Cinzel) for dramatic display text
-            // v3 Polish VR spec C: raised headline 40→48 (cap height increases proportionally with dice canvas scale).
+            // v3 Polish VR spec C (dice scale 0.47): headline fontSizeMax 48→60.
+            // Container height 62 units → TMP auto-size settles ~54 units.
+            // Cap at 54: 54×0.000671×0.72 = 26.1mm ≥ 25.2mm title min at d=0.9m.
             font = this.font; // currently the "Dice" title font instance
-            headlineText = CreateText("Headline", panel.rectTransform, 48, TextAnchor.MiddleLeft, Gold, new Vector2(0f, 86f), new Vector2(530f, 62f));
+            headlineText = CreateText("Headline", panel.rectTransform, 60, TextAnchor.MiddleLeft, Gold, new Vector2(0f, 86f), new Vector2(530f, 62f));
             headlineText.fontStyle = FontStyles.Bold;
             headlineText.enableAutoSizing = true;
             headlineText.fontSizeMin = 30f;
-            headlineText.fontSizeMax = 48f;
+            headlineText.fontSizeMax = 60f;
 
             // Body and hint use body font (EB Garamond) for readable prose
             // v3 Polish VR spec C: raised body 26→32, hint 22→26.
