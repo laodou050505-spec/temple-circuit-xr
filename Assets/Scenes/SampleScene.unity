@@ -11473,11 +11473,13 @@ MonoBehaviour:
   pawnStep: {fileID: 8300000, guid: 48403a769f2284b3c9223e4f0fb3a6c6, type: 3}
   claimChime: {fileID: 8300000, guid: 490f1ce99f5a1411e9bdf82decf274ec, type: 3}
   uiClick: {fileID: 8300000, guid: 48403a769f2284b3c9223e4f0fb3a6c6, type: 3}
+  uiHover: {fileID: 8300000, guid: 323590dd2eb394f34ad8cb11005e2767, type: 3}
   diceRollVolume: 0.65
   diceLandVolume: 0.8
   pawnStepVolume: 0.2
   claimVolume: 0.7
   uiVolume: 0.32
+  uiHoverVolume: 0.18
 --- !u!114 &1380605270
 MonoBehaviour:
   m_ObjectHideFlags: 0
