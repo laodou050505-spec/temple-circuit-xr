@@ -1,0 +1,419 @@
+--- com.quantumecho.decrypt1 ---
+16-    appId=10099
+17-    pkg=Package{12de1f7 com.quantumecho.decrypt1}
+18:    codePath=/data/app/~~Z9tS0FzXWOH4nShtnJCjOQ==/com.quantumecho.decrypt1-Bv5G8mN4-xHqHHch474IYA==
+19:    resourcePath=/data/app/~~Z9tS0FzXWOH4nShtnJCjOQ==/com.quantumecho.decrypt1-Bv5G8mN4-xHqHHch474IYA==
+20-    legacyNativeLibraryDir=/data/app/~~Z9tS0FzXWOH4nShtnJCjOQ==/com.quantumecho.decrypt1-Bv5G8mN4-xHqHHch474IYA==/lib
+21-    extractNativeLibs=true
+--
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=2 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=0.1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{76ca864 version:2, signatures:[b50db031], past signatures:[]}
+--
+64-    isVrApp: true
+65-    isAllComponentVr: true
+66:  isMrSafeApplication: false
+67-  isSpatialApp: false
+68-  default density: 400
+package:/data/app/~~Z9tS0FzXWOH4nShtnJCjOQ==/com.quantumecho.decrypt1-Bv5G8mN4-xHqHHch474IYA==/base.apk
+--- com.codex.pico.xrvisuallab ---
+2-  Non-Data Actions:
+3-      android.intent.action.MAIN:
+4:        3d51cbd com.codex.pico.xrvisuallab/com.unity3d.player.UnityPlayerActivity filter 7ad02b2
+5-          Action: "android.intent.action.MAIN"
+6-          Category: "android.intent.category.LAUNCHER"
+--
+9-
+10-Key Set Manager:
+11:  [com.codex.pico.xrvisuallab]
+12-      Signing KeySets: 21
+13-
+14-Packages:
+15:  Package [com.codex.pico.xrvisuallab] (6cd3879):
+16-    appId=10090
+17:    pkg=Package{9f8e1ce com.codex.pico.xrvisuallab}
+18:    codePath=/data/app/~~SVRZXqsKIrWAkQezYUx0dg==/com.codex.pico.xrvisuallab-Kf4oeq6XLWTXV-xkaKaReA==
+19:    resourcePath=/data/app/~~SVRZXqsKIrWAkQezYUx0dg==/com.codex.pico.xrvisuallab-Kf4oeq6XLWTXV-xkaKaReA==
+20:    legacyNativeLibraryDir=/data/app/~~SVRZXqsKIrWAkQezYUx0dg==/com.codex.pico.xrvisuallab-Kf4oeq6XLWTXV-xkaKaReA==/lib
+21-    extractNativeLibs=true
+22-    primaryCpuAbi=arm64-v8a
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{71918ef version:2, signatures:[792f61b3], past signatures:[]}
+--
+57-    User 0: ceDataInode=565250 deDataInode=393939 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+58-      installReason=0
+59:      dataDir=/data/user/0/com.codex.pico.xrvisuallab
+60-      firstInstallTime=2026-08-03 12:46:05
+61-      uninstallReason=0
+--
+64-    isVrApp: true
+65-    isAllComponentVr: true
+66:  isMrSafeApplication: false
+67-  isSpatialApp: false
+68-  default density: 400
+--
+79-  queries via component:
+80-    com.android.settings.intelligence:
+81:      com.codex.pico.xrvisuallab
+82-  queryable via interaction:
+83-    User 0:
+--
+85-
+86-Dexopt state:
+87:  [com.codex.pico.xrvisuallab]
+88:    path: /data/app/~~SVRZXqsKIrWAkQezYUx0dg==/com.codex.pico.xrvisuallab-Kf4oeq6XLWTXV-xkaKaReA==/base.apk
+89-      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+90-        [location is error]
+91-
+92-Compiler stats:
+93:  [com.codex.pico.xrvisuallab]
+94-    (No recorded stats)
+package:/data/app/~~SVRZXqsKIrWAkQezYUx0dg==/com.codex.pico.xrvisuallab-Kf4oeq6XLWTXV-xkaKaReA==/base.apk
+--- com.anomalylab.cosmicslice ---
+16-    appId=10093
+17-    pkg=Package{f7bfe8 com.anomalylab.cosmicslice}
+18:    codePath=/data/app/~~tXP1qm3xTFbL3KYxH5C3hA==/com.anomalylab.cosmicslice-H0t524iiUzce0R36kBI2Vg==
+19:    resourcePath=/data/app/~~tXP1qm3xTFbL3KYxH5C3hA==/com.anomalylab.cosmicslice-H0t524iiUzce0R36kBI2Vg==
+20-    legacyNativeLibraryDir=/data/app/~~tXP1qm3xTFbL3KYxH5C3hA==/com.anomalylab.cosmicslice-H0t524iiUzce0R36kBI2Vg==/lib
+21-    extractNativeLibs=true
+--
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=0.1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{b659601 version:2, signatures:[b50db031], past signatures:[]}
+--
+65-    app config orientation: 1
+66-    app launch activity orientation: 0
+67:  isMrSafeApplication: false
+68-  isSpatialApp: false
+69-  default density: 400
+--
+81-  queryable via interaction:
+82-    User 0:
+83:      [com.android.sdksetup,com.android.location.fused,com.pico.developerhubservice,com.picoxr.systemui,com.pvr,com.pvr.seethrough.setting,com.pico.xr.runtime.ext,com.pico.spatial.resourceupdater,com.android.settings,com.picoxr.coreservice,com.pxr.scenarioprovider,com.pico.spatial.spatialavatarservice,com.android.providers.settings,com.pico.xr.openxr_runtime,com.android.keychain,com.android.inputdevices,os.teatracker,com.bytedance.pico.openmr.spatial,com.android.dynsystem,com.android.talkback,android,com.picovr.settings,com.android.localtransport,com.pico.mrservice,com.bytedance.pico.openmr,com.pico.spatial.runtime,com.picoxr.worldspace,com.picoxr.launcher,com.pico.performancetool,com.picoxr.browser,com.bytedance.os.slardar,com.pico.cloudservice]:
+84-        com.anomalylab.cosmicslice
+85-  queryable via uses-library:
+package:/data/app/~~tXP1qm3xTFbL3KYxH5C3hA==/com.anomalylab.cosmicslice-H0t524iiUzce0R36kBI2Vg==/base.apk
+--- com.codex.pico.smoketest ---
+2-  Non-Data Actions:
+3-      android.intent.action.MAIN:
+4:        35ec177 com.codex.pico.smoketest/com.unity3d.player.UnityPlayerActivity filter 754d1e4
+5-          Action: "android.intent.action.MAIN"
+6-          Category: "android.intent.category.LAUNCHER"
+--
+9-
+10-Key Set Manager:
+11:  [com.codex.pico.smoketest]
+12-      Signing KeySets: 21
+13-
+14-Packages:
+15:  Package [com.codex.pico.smoketest] (930a1f):
+16-    appId=10091
+17:    pkg=Package{8b09d32 com.codex.pico.smoketest}
+18:    codePath=/data/app/~~anvoiwYgBcZ5-hkVf1jDpg==/com.codex.pico.smoketest-wm6S3yztmwrGhPX0W7F9qQ==
+19:    resourcePath=/data/app/~~anvoiwYgBcZ5-hkVf1jDpg==/com.codex.pico.smoketest-wm6S3yztmwrGhPX0W7F9qQ==
+20:    legacyNativeLibraryDir=/data/app/~~anvoiwYgBcZ5-hkVf1jDpg==/com.codex.pico.smoketest-wm6S3yztmwrGhPX0W7F9qQ==/lib
+21-    extractNativeLibs=true
+22-    primaryCpuAbi=arm64-v8a
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{9c45a83 version:2, signatures:[792f61b3], past signatures:[]}
+--
+56-    User 0: ceDataInode=565497 deDataInode=393962 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+57-      installReason=0
+58:      dataDir=/data/user/0/com.codex.pico.smoketest
+59-      firstInstallTime=2026-08-03 13:32:30
+60-      uninstallReason=0
+--
+65-    app config orientation: 1
+66-    app launch activity orientation: 0
+67:  isMrSafeApplication: false
+68-  isSpatialApp: false
+69-  default density: 400
+--
+78-  queries via component:
+79-    com.android.settings.intelligence:
+80:      com.codex.pico.smoketest
+81-  queryable via interaction:
+82-    User 0:
+--
+84-
+85-Dexopt state:
+86:  [com.codex.pico.smoketest]
+87:    path: /data/app/~~anvoiwYgBcZ5-hkVf1jDpg==/com.codex.pico.smoketest-wm6S3yztmwrGhPX0W7F9qQ==/base.apk
+88-      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+89-        [location is error]
+90-
+91-Compiler stats:
+92:  [com.codex.pico.smoketest]
+93-    (No recorded stats)
+package:/data/app/~~anvoiwYgBcZ5-hkVf1jDpg==/com.codex.pico.smoketest-wm6S3yztmwrGhPX0W7F9qQ==/base.apk
+--- com.astralworkshop.alchemyxr ---
+16-    appId=10098
+17-    pkg=Package{84c002c com.astralworkshop.alchemyxr}
+18:    codePath=/data/app/~~xt1gNoExUlycfCZ2-R0K1A==/com.astralworkshop.alchemyxr-l3mFScnJUq0SOq4ziC2D1w==
+19:    resourcePath=/data/app/~~xt1gNoExUlycfCZ2-R0K1A==/com.astralworkshop.alchemyxr-l3mFScnJUq0SOq4ziC2D1w==
+20-    legacyNativeLibraryDir=/data/app/~~xt1gNoExUlycfCZ2-R0K1A==/com.astralworkshop.alchemyxr-l3mFScnJUq0SOq4ziC2D1w==/lib
+21-    extractNativeLibs=true
+--
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{e71aaf5 version:2, signatures:[b50db031], past signatures:[]}
+--
+64-    isVrApp: true
+65-    isAllComponentVr: true
+66:  isMrSafeApplication: false
+67-  isSpatialApp: false
+68-  default density: 400
+package:/data/app/~~xt1gNoExUlycfCZ2-R0K1A==/com.astralworkshop.alchemyxr-l3mFScnJUq0SOq4ziC2D1w==/base.apk
+--- com.structurebuild.pico ---
+2-  Non-Data Actions:
+3-      android.intent.action.MAIN:
+4:        bc1a8d6 com.structurebuild.pico/com.unity3d.player.UnityPlayerActivity filter e6a4757
+5-          Action: "android.intent.action.MAIN"
+6-          Category: "android.intent.category.LAUNCHER"
+--
+9-
+10-Key Set Manager:
+11:  [com.structurebuild.pico]
+12-      Signing KeySets: 22
+13-
+14-Packages:
+15:  Package [com.structurebuild.pico] (1ea3b56):
+16-    appId=10100
+17:    pkg=Package{953a7d7 com.structurebuild.pico}
+18:    codePath=/data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==
+19:    resourcePath=/data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==
+20:    legacyNativeLibraryDir=/data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==/lib
+21-    extractNativeLibs=true
+22-    primaryCpuAbi=arm64-v8a
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{d0c28c4 version:2, signatures:[b50db031], past signatures:[]}
+--
+58-    User 0: ceDataInode=549697 deDataInode=417798 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+59-      installReason=0
+60:      dataDir=/data/user/0/com.structurebuild.pico
+61-      firstInstallTime=2026-08-21 00:12:55
+62-      uninstallReason=0
+--
+65-    isVrApp: true
+66-    isAllComponentVr: true
+67:  isMrSafeApplication: false
+68-  isSpatialApp: false
+69-  default density: 400
+--
+80-  queries via component:
+81-    com.android.settings.intelligence:
+82:      com.structurebuild.pico
+83-  queryable via interaction:
+84-    User 0:
+--
+86-
+87-Dexopt state:
+88:  [com.structurebuild.pico]
+89:    path: /data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==/base.apk
+90-      arm64: [status=verify] [reason=install] [primary-abi]
+91:        [location is /data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==/oat/arm64/base.odex]
+92-
+93-Compiler stats:
+94:  [com.structurebuild.pico]
+95-     base.apk - 95
+package:/data/app/~~AZICCXJQCjSEO66xSc9Gew==/com.structurebuild.pico-x0u52mWfw7PpohrHB-cmNw==/base.apk
+--- com.gravitywarden.repulsion ---
+16-    appId=10094
+17-    pkg=Package{93d5f2e com.gravitywarden.repulsion}
+18:    codePath=/data/app/~~1ZfftDywwQiqATs_X2Kn4Q==/com.gravitywarden.repulsion-Sr5oxev_-g5xQ0-IDx6P1A==
+19:    resourcePath=/data/app/~~1ZfftDywwQiqATs_X2Kn4Q==/com.gravitywarden.repulsion-Sr5oxev_-g5xQ0-IDx6P1A==
+20-    legacyNativeLibraryDir=/data/app/~~1ZfftDywwQiqATs_X2Kn4Q==/com.gravitywarden.repulsion-Sr5oxev_-g5xQ0-IDx6P1A==/lib
+21-    extractNativeLibs=true
+--
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=0.1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{db5bacf version:2, signatures:[b50db031], past signatures:[]}
+--
+64-    isVrApp: true
+65-    isAllComponentVr: true
+66:  isMrSafeApplication: false
+67-  isSpatialApp: false
+68-  default density: 400
+package:/data/app/~~1ZfftDywwQiqATs_X2Kn4Q==/com.gravitywarden.repulsion-Sr5oxev_-g5xQ0-IDx6P1A==/base.apk
+--- com.codex.spatialtowerdefense.pico ---
+2-  Non-Data Actions:
+3-      android.intent.action.MAIN:
+4:        2984b5f com.codex.spatialtowerdefense.pico/com.unity3d.player.UnityPlayerActivity filter c4939ac
+5-          Action: "android.intent.action.MAIN"
+6-          Category: "android.intent.category.LAUNCHER"
+--
+9-
+10-Key Set Manager:
+11:  [com.codex.spatialtowerdefense.pico]
+12-      Signing KeySets: 22
+13-
+14-Packages:
+15:  Package [com.codex.spatialtowerdefense.pico] (76c57e6):
+16-    appId=10092
+17:    pkg=Package{ddeec2b com.codex.spatialtowerdefense.pico}
+18:    codePath=/data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==
+19:    resourcePath=/data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==
+20:    legacyNativeLibraryDir=/data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==/lib
+21-    extractNativeLibs=true
+22-    primaryCpuAbi=arm64-v8a
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=0.2.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{821d888 version:2, signatures:[b50db031], past signatures:[]}
+--
+52-    requested permissions:
+53-      android.permission.INTERNET
+54:      android.permission.CAMERA
+55-      android.permission.VIBRATE
+56-    install permissions:
+--
+59-    User 0: ceDataInode=565514 deDataInode=394049 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+60-      installReason=0
+61:      dataDir=/data/user/0/com.codex.spatialtowerdefense.pico
+62-      firstInstallTime=2026-08-04 11:45:03
+63-      uninstallReason=0
+64-      gids=[3003]
+65-      runtime permissions:
+66:        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+67-    isVrApp: true
+68-    isAllComponentVr: true
+69:  isMrSafeApplication: true
+70-  isSpatialApp: false
+71-  default density: 400
+--
+75-  com.unity3d.player.UnityPlayerActivity isVrActivity: true
+76-  android.app.AppDetailsActivity isVrActivity: false
+77:  com.unity3d.player.UnityPlayerActivity isMrSafeActivity: true
+78:  android.app.AppDetailsActivity isMrSafeActivity: false
+79-
+80-Queries:
+--
+84-  queries via component:
+85-    com.android.settings.intelligence:
+86:      com.codex.spatialtowerdefense.pico
+87-  queryable via interaction:
+88-    User 0:
+89:      [com.android.sdksetup,com.android.location.fused,com.pico.developerhubservice,com.picoxr.systemui,com.pvr,com.pvr.seethrough.setting,com.pico.xr.runtime.ext,com.pico.spatial.resourceupdater,com.android.settings,com.picoxr.coreservice,com.pxr.scenarioprovider,com.pico.spatial.spatialavatarservice,com.android.providers.settings,com.pico.xr.openxr_runtime,com.android.keychain,com.android.inputdevices,os.teatracker,com.bytedance.pico.openmr.spatial,com.android.dynsystem,com.android.talkback,android,com.picovr.settings,com.android.localtransport,com.pico.mrservice,com.bytedance.pico.openmr,com.pico.spatial.runtime,com.picoxr.worldspace,com.picoxr.launcher,com.pico.performancetool,com.picoxr.browser,com.bytedance.os.slardar,com.pico.cloudservice]:
+90:        com.codex.spatialtowerdefense.pico
+91-  queryable via uses-library:
+92-
+93-Dexopt state:
+94:  [com.codex.spatialtowerdefense.pico]
+95:    path: /data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==/base.apk
+96-      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+97-        [location is error]
+98-
+99-Compiler stats:
+100:  [com.codex.spatialtowerdefense.pico]
+101-    (No recorded stats)
+package:/data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==/base.apk
+--- com.guandan.tombxr ---
+16-    appId=10097
+17-    pkg=Package{1737d72 com.guandan.tombxr}
+18:    codePath=/data/app/~~wq-YiYiwdlML1hPsVdMw8A==/com.guandan.tombxr-WW7hhugT0WpblyTqIiGOzQ==
+19:    resourcePath=/data/app/~~wq-YiYiwdlML1hPsVdMw8A==/com.guandan.tombxr-WW7hhugT0WpblyTqIiGOzQ==
+20-    legacyNativeLibraryDir=/data/app/~~wq-YiYiwdlML1hPsVdMw8A==/com.guandan.tombxr-WW7hhugT0WpblyTqIiGOzQ==/lib
+21-    extractNativeLibs=true
+--
+23-    secondaryCpuAbi=null
+24-    cpuAbiOverride=null
+25:    versionCode=1 minSdk=29 targetSdk=36
+26-    minExtensionVersions=[]
+27:    versionName=1.0
+28-    hiddenApiEnforcementPolicy=2
+29-    usesNonSdkApi=false
+--
+43-    originatingPackageName=null
+44-    packageSource=1
+45:    appMetadataFilePath=null
+46-    appMetadataSource=0
+47-    signatures=PackageSignatures{1dde408 version:2, signatures:[b50db031], past signatures:[]}
+--
+64-    isVrApp: true
+65-    isAllComponentVr: true
+66:  isMrSafeApplication: false
+67-  isSpatialApp: false
+68-  default density: 400
+package:/data/app/~~wq-YiYiwdlML1hPsVdMw8A==/com.guandan.tombxr-WW7hhugT0WpblyTqIiGOzQ==/base.apk

@@ -1,0 +1,235 @@
+--- own package: fatal/crash match ---
+191:08-22 10:45:27.449 F/DEBUG   ( 5640): Abort message: 'terminating due to uncaught exception of type Il2CppExceptionWrapper'
+192:08-22 10:45:27.449 F/DEBUG   ( 5640):       #14 pc 00000000000d7434  /data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==/lib/arm64/libPxrPlatform.so (Java_com_psmart_aosoperation_SysActivity_NativeLogLevelChange+184) (BuildId: 5de8b4ec8494678e7ec66e11cf6c2998bc91137f)
+193:08-22 10:45:27.450 F/DEBUG   ( 5640):       #66 pc 0000000000147f90  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&, bool)+908) (BuildId: 652beb3945e816bee20becb469374f84)
+1291:08-22 12:16:04.813 I/[PxrUnityNative](17068): [logger.cpp] [setGlobalLevel:15]  NativeLogLevelChange LogLevel :4
+1975:08-22 12:21:07.579 I/AndroidRuntime(17824): Using default boot image
+1976:08-22 12:21:07.579 I/AndroidRuntime(17824): Leaving lock profiling enabled
+2003:08-22 12:21:07.677 I/AndroidRuntime(17824): VM exiting with result code 0.
+2117:08-22 12:21:10.884 I/[PxrUnityNative](17843): [logger.cpp] [setGlobalLevel:15]  NativeLogLevelChange LogLevel :4
+--- own package: title/start/pose match ---
+4756:08-22 12:21:15.474 I/Unity   (17843): Temple title stage: 217 renderers, 6 colliders, 94 gameplay behaviours and 0 audio sources disabled before the opaque title surface is shown.
+4761:08-22 12:21:15.476 I/Unity   (17843): Temple XR tracking origin confirmed: Floor.
+4806:08-22 12:21:15.569 I/Unity   (17843): Temple title design start applied (nominal eye): local eye (0.000, 1.620, 0.000), world eye (0.000, 1.620, -0.050), target eye (0.000, 1.620, -0.050), yaw 0.0, board (0.000, 0.840, 1.050).
+4819:08-22 12:21:15.718 I/Unity   (17843): Temple title design start applied (tracked eye): local eye (0.000, 1.650, 0.000), world eye (0.000, 1.620, -0.050), target eye (0.000, 1.620, -0.050), yaw 0.0, board (0.000, 0.840, 1.050).
+--- own pid logs final window ---
+08-22 12:23:51.481 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.481 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.487 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.498 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.498 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.503 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.514 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.514 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.520 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.531 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.531 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.536 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.548 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.548 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.555 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.565 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.565 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.568 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.579 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.579 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.581 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.596 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.596 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.599 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.613 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.613 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.614 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.629 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.629 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.631 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.647 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.647 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.649 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.664 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.664 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.666 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.681 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.681 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.682 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.699 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.699 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.701 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.716 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.716 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.720 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.732 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.732 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.737 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.750 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.750 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.754 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.766 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.766 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.770 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.782 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.782 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.787 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.799 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.799 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.804 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.815 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.815 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.820 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.833 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.833 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.838 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.848 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.848 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.850 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.865 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.865 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.867 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.882 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.882 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.884 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.898 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.899 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.902 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.916 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.916 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.921 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.932 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.932 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.936 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.949 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.949 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.955 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.966 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.966 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.968 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.984 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.984 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:51.989 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:51.998 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:51.998 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.001 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.014 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.014 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.020 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.030 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.030 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.033 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.046 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.046 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.051 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.064 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.064 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.069 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.082 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.082 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.086 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.097 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.097 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.102 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.114 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.114 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.118 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.132 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.132 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.136 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.148 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.148 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.153 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.165 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.165 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.170 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.181 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.181 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.186 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.198 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.198 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.203 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.215 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.215 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.220 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.221 I/PxrMetric(17843): FPS=60/60,MTP=30.11ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=5.14ms,FrmGpu=0.52ms,FrmTime=6.06ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=9617,Skip=0
+08-22 12:23:52.233 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.233 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.237 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.248 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.248 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.253 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.265 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.265 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.272 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.283 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.283 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.287 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.297 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.297 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.302 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.315 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.315 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.319 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.332 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.332 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.335 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.348 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.348 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.353 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.367 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.367 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.372 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.373 W/APxrRuntime(17843): PXRSDK_PM ENGINE FPS: 60, 6885937235949
+08-22 12:23:52.381 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.381 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.384 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.398 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.398 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.400 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.415 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.415 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.417 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.431 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.431 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.437 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.449 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.449 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.453 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.465 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.465 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.471 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.481 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.481 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.487 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.499 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.499 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.503 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.514 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.514 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.516 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.533 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.533 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.537 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.548 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.548 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.553 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.564 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.564 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.568 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.581 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.581 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.587 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.598 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.598 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.604 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.614 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.614 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.618 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:52.631 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:52.631 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:52.632 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:53.605 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:53.605 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:53.607 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!
+08-22 12:23:53.607 W/APxrRuntime(17843): PXRSDK_PM ENGINE FPS: 14, 6887171381450
+08-22 12:23:53.612 I/PxrMetric(17843): FPS=60/60,MTP=-926.81ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=4.69ms,FrmGpu=1.26ms,FrmTime=6.34ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=1,Pkg=com.templecircuit.monopoly,FrmId=9643,Skip=0
+08-22 12:23:53.614 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromHT is NULL!
+08-22 12:23:53.614 E/TrackingServiceApi(17843): TrackingService_getSpecificHandPoseFromCtrl is NULL!
+08-22 12:23:53.617 E/APxrRuntime(17843): PassthroughFB: Passthrough effect data is NULL!

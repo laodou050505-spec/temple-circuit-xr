@@ -1,0 +1,101 @@
+8bfc47ecb46bffdc36781be16e3919413af8409d489a920b8aea3dee223279e8  /data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==/base.apk
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        1195197 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity filter 6def84
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Key Set Manager:
+  [com.templecircuit.monopoly]
+      Signing KeySets: 22
+
+Packages:
+  Package [com.templecircuit.monopoly] (2ec5d08):
+    appId=10095
+    pkg=Package{698b291 com.templecircuit.monopoly}
+    codePath=/data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==
+    resourcePath=/data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==
+    legacyNativeLibraryDir=/data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1 minSdk=29 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-08 14:00:53
+    lastUpdateTime=2026-09-08 14:00:56
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{29265f6 version:2, signatures:[b50db031], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.WRITE_SETTINGS
+      android.permission.INTERNET
+      android.permission.CAMERA
+      com.picovr.permission.SPATIAL_DATA
+    install permissions:
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=549587 deDataInode=394052 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.templecircuit.monopoly
+      firstInstallTime=2026-08-19 20:31:49
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.CAMERA: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        com.picovr.permission.SPATIAL_DATA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    isVrApp: true
+    isAllComponentVr: true
+  isMrSafeApplication: true
+  isSpatialApp: false
+  default density: 400
+  default size: 1080x1920
+  process keep alive: false
+  app flags: 0
+  com.unity3d.player.UnityPlayerActivity isVrActivity: true
+  android.app.AppDetailsActivity isVrActivity: false
+  com.unity3d.player.UnityPlayerActivity isMrSafeActivity: true
+  android.app.AppDetailsActivity isMrSafeActivity: false
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.android.settings.intelligence:
+      com.templecircuit.monopoly
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.templecircuit.monopoly]
+    path: /data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==/base.apk
+      arm64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~lo6n9jjw9qbqXdW4MftpDw==/com.templecircuit.monopoly-RsOx-gh6n9KWwvwm0-u_Xw==/oat/arm64/base.odex]
+
+Compiler stats:
+  [com.templecircuit.monopoly]
+     base.apk - 267

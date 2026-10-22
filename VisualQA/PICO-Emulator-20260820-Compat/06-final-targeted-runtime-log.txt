@@ -1,0 +1,31 @@
+captured_at=2026-08-20 12:56:49 +0800
+
+== app process ==
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+14653
+
+== activity ==
+    * Task{bb3edbb #23 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=22 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      topResumedActivity=ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+      * Hist  #0: ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+        packageName=com.templecircuit.monopoly processName=com.templecircuit.monopoly
+        app=ProcessRecord{ae35a69 14653:com.templecircuit.monopoly/u0a95 PRSmt{64da9fa p:0 rp:14653 t:null sa:0 usps:2 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity }
+        rootOfTask=true task=Task{bb3edbb #23 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300}
+        taskAffinity=10095:com.templecircuit.monopoly
+
+== targeted runtime log ==
+08-20 12:56:48.486  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5430002, currentTime=5430057, checkCount=5405
+08-20 12:56:48.966 14653 14734 I PxrMetric: FPS=60/60,MTP=37.75ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=2.97ms,FrmGpu=9.80ms,FrmTime=13.09ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=9078,Skip=0
+08-20 12:56:49.487  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5430980, currentTime=5431058, checkCount=5406
+08-20 12:56:49.983 14653 14734 I PxrMetric: FPS=60/60,MTP=38.46ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=2.87ms,FrmGpu=11.05ms,FrmTime=14.24ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=9139,Skip=0
+08-20 12:56:50.489  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5431951, currentTime=5432060, checkCount=5407
+08-20 12:56:50.995 14653 14734 I PxrMetric: FPS=60/60,MTP=37.15ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=2.83ms,FrmGpu=8.93ms,FrmTime=12.10ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=9200,Skip=0
+08-20 12:56:51.489  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5433035, currentTime=5433060, checkCount=5408
+08-20 12:56:51.997 14653 14734 I PxrMetric: FPS=60/60,MTP=36.58ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=2.98ms,FrmGpu=9.05ms,FrmTime=12.38ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=9260,Skip=0
+08-20 12:56:52.490  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5434013, currentTime=5434062, checkCount=5409
+
+== host window processes ==
+35067 /bin/zsh /Applications/PICO XR 模拟器.app/Contents/MacOS/PICOXRLauncher
+35075 /Users/ld/Library/PICO/sdk/0.13/emulator/qemu/darwin-aarch64/qemu-system-aarch64 -avd Pico_XR_Visual_Lab -sysdir /Users/ld/Library/PICO/sdk/0.13/emulator/system-images/system-images -gpu angle_indirect

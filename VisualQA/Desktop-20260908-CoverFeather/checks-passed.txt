@@ -1,0 +1,1 @@
+8-merit win boundary, full property list, empty state, dual-hand hover, ray colliders, text fit and dice-panel separation passed.

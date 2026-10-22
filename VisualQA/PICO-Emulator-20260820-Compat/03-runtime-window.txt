@@ -1,0 +1,26 @@
+started_at=2026-08-20 12:54:12 +0800
+
+--- elapsed 5s ---
+14653
+    * Task{bb3edbb #23 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=22 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      topResumedActivity=ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+      * Hist  #0: ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+08-20 12:54:18.229  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5279746, currentTime=5279800, checkCount=5255
+08-20 12:54:18.461 14653 14734 I PxrMetric: FPS=57/60,MTP=30.40ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=3.64ms,FrmGpu=1.55ms,FrmTime=5.65ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=118,Skip=0
+
+--- elapsed 10s ---
+14653
+    * Task{bb3edbb #23 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=22 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      topResumedActivity=ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+      * Hist  #0: ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+08-20 12:54:23.234  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5284746, currentTime=5284805, checkCount=5260
+08-20 12:54:23.518 14653 14734 I PxrMetric: FPS=60/60,MTP=37.69ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=3.48ms,FrmGpu=10.04ms,FrmTime=13.91ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=404,Skip=0
+
+--- elapsed 15s ---
+14653
+    * Task{bb3edbb #23 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=22 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+      topResumedActivity=ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+      * Hist  #0: ActivityRecord{43222687 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t23}
+08-20 12:54:28.240  1250  1588 I SpatialRuntimeService: Watchdog: focus=12(com.templecircuit.monopoly) lastRenderTime=5289729, currentTime=5289811, checkCount=5265
+08-20 12:54:28.578 14653 14734 I PxrMetric: FPS=60/60,MTP=36.44ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=3.01ms,FrmGpu=8.72ms,FrmTime=12.01ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=708,Skip=0
+ended_at=2026-08-20 12:54:28 +0800

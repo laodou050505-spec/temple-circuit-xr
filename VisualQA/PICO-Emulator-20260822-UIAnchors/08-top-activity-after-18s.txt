@@ -1,0 +1,20 @@
+5:    * Task{616d635 #55 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=54 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+8:      topResumedActivity=ActivityRecord{57342841 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t55}
+10:      * Hist  #0: ActivityRecord{57342841 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t55}
+11:        packageName=com.templecircuit.monopoly processName=com.templecircuit.monopoly
+13:        app=ProcessRecord{4aab6a5 17843:com.templecircuit.monopoly/u0a95 PRSmt{c5de393 p:0 rp:17843 t:null sa:0 usps:2 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}}
+14:        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity }
+15:        rootOfTask=true task=Task{616d635 #55 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300}
+16:        taskAffinity=10095:com.templecircuit.monopoly
+17:        mActivityComponent=com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity
+18:        baseDir=/data/app/~~c-ZcuH9O01HAocZYCDSD0w==/com.templecircuit.monopoly-nW0XrGxEt6In3THgTKqh-g==/base.apk
+19:        dataDir=/data/user/0/com.templecircuit.monopoly
+33:        windows=[Window{f0d18d u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}]
+199:    Resumed: ActivityRecord{57342841 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t55}
+207:      topResumedActivity=ActivityRecord{201353109 u0 com.pxr.scenarioprovider/com.unity3d.player.UnityPlayerActivity t5}
+255:  ResumedActivity: ActivityRecord{57342841 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t55}
+263:  mCurrentFocus=Window{f0d18d u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+264:  mFocusedApp=ActivityRecord{57342841 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t55}
+329:    mFocusedWindow=Window{f0d18d u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+330:    mTopFullscreenOpaqueWindowState=Window{f0d18d u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+527:  VisibleActivityProcess:[ ProcessRecord{d851d7b 1752:com.pxr.scenarioprovider/1000 PRSmt{142b1b1 p:0 rp:1752 t:null sa:100 usps:0 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}} ProcessRecord{4aab6a5 17843:com.templecircuit.monopoly/u0a95 PRSmt{c5de393 p:0 rp:17843 t:null sa:0 usps:2 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}}]

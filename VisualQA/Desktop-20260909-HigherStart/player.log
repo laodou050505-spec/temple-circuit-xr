@@ -1,0 +1,598 @@
+Mono path[0] = '/Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Builds/TempleCircuit-macOS.app/Contents/Resources/Data/Managed'
+Mono config path = '/Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Builds/TempleCircuit-macOS.app/Contents/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 2 interfaces on host : 0) 198.18.0.1 1) 10.10.20.70
+Player connection [8552739072]  Target information:
+
+Player connection [8552739072]  * "[IP] 198.18.0.1 [Port] 55000 [Flags] 2 [Guid] 2515574820 [EditorId] 2270571525 [Version] 1048832 [Id] OSXPlayer(1,LDdeMacBook-Pro.lan) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香火争渡" 
+
+Player connection [8552739072]  * "[IP] 10.10.20.70 [Port] 55000 [Flags] 2 [Guid] 2515574820 [EditorId] 2270571525 [Version] 1048832 [Id] OSXPlayer(1,LDdeMacBook-Pro.lan) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香火争渡" 
+
+Player connection [8552739072] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+ preferred device: Apple M4 Pro (high power)
+Metal devices available: 1
+0: Apple M4 Pro (high power)
+Using device Apple M4 Pro (high power)
+Initialize engine version: 6000.5.5f1 (d16e074b49fd)
+[Subsystems] Discovering subsystems at path /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Builds/TempleCircuit-macOS.app/Contents/Resources/Data/UnitySubsystems
+[Subsystems] No descriptors matched for  examples in UnitySubsystems/PxrPlatform/UnitySubsystemsManifest.json.
+[Subsystems] 1 'inputs' descriptors matched in UnitySubsystems/PxrPlatform/UnitySubsystemsManifest.json
+[Subsystems] 1 'displays' descriptors matched in UnitySubsystems/PxrPlatform/UnitySubsystemsManifest.json
+[Subsystems] 1 'meshings' descriptors matched in UnitySubsystems/PxrPlatform/UnitySubsystemsManifest.json
+GfxDevice: creating device client; kGfxThreadingModeThreaded
+Initializing Metal device caps: Apple M4 Pro
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+Begin MonoManager ReloadAssembly
+- Finished resetting the current domain, in  0.025 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Metal RecreateSurface[0x1270e6d20]: surface size 1920x1080
+Shader 'SyntyStudios/TriplanarBasic': fallback shader 'wiiu' not found
+UnloadTime: 0.734625 ms
+Temple title stage: 217 renderers, 6 colliders, 94 gameplay behaviours and 0 audio sources disabled before the opaque title surface is shown.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:Log (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:128)
+TempleCircuit.TempleStartScreen:SetGameplayStageActive (bool) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:210)
+TempleCircuit.TempleStartScreen:Awake () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:68)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 128)
+
+Your project uses a scriptable render pipeline. You can use Camera.stereoTargetEye only with the built-in renderer.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogWarning (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:216)
+UnityEngine.Camera:set_stereoTargetEye (UnityEngine.StereoTargetEyeMask) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Camera/Camera.bindings.cs:292)
+TempleCircuit.TempleXRTabletopRig:ConfigureDesktopCamera () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:687)
+TempleCircuit.TempleXRTabletopRig:Start () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:160)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 216)
+
+TEMPLE_SMOKE_PASS: Cover begins fading before gameplay becomes visible
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:52)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+Temple gameplay stage: 217 renderers, 6 colliders, 94 gameplay behaviours and 0 audio sources restored after START.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:Log (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:128)
+TempleCircuit.TempleStartScreen:SetGameplayStageActive (bool) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:210)
+TempleCircuit.TempleStartScreen:ActivateGameplayStage () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:421)
+TempleCircuit.TempleStartScreen/<TransitionToGameplay>d__52:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:376)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 128)
+
+Your project uses a scriptable render pipeline. You can use Camera.stereoTargetEye only with the built-in renderer.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogWarning (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:216)
+UnityEngine.Camera:set_stereoTargetEye (UnityEngine.StereoTargetEyeMask) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Camera/Camera.bindings.cs:292)
+TempleCircuit.TempleXRTabletopRig:ConfigureDesktopCamera () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:687)
+TempleCircuit.TempleXRTabletopRig:SetTitleStage (bool) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:178)
+TempleCircuit.TempleStartScreen:ActivateGameplayStage () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:422)
+TempleCircuit.TempleStartScreen/<TransitionToGameplay>d__52:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:376)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 216)
+
+Your project uses a scriptable render pipeline. You can use Camera.stereoTargetEye only with the built-in renderer.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:LogWarning (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:216)
+UnityEngine.Camera:set_stereoTargetEye (UnityEngine.StereoTargetEyeMask) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Camera/Camera.bindings.cs:292)
+TempleCircuit.TempleXRTabletopRig:ConfigureDesktopCamera () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:687)
+TempleCircuit.TempleXRTabletopRig:EnterGame () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleXRTabletopRig.cs:855)
+TempleCircuit.TempleStartScreen:ActivateGameplayStage () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:423)
+TempleCircuit.TempleStartScreen/<TransitionToGameplay>d__52:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:376)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 216)
+
+Temple audio active: BGM 'Temple_BGM_Chinese_Quiet' is playing; dice, pawn, claim and UI clips are ready.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:Log (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:128)
+TempleCircuit.TempleAudioManager:Start () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleAudioManager.cs:53)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 128)
+
+Temple dice anchored on the central shrine at (-371.804, 64.180, -654.630); shrine top 59.450.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:Log (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:128)
+TempleCircuit.TempleDiceInteractor:SnapToSupportSurface () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDiceInteractor.cs:74)
+TempleCircuit.TempleCircuitGame:Start () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleCircuitGame.cs:165)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 128)
+
+TEMPLE_SMOKE_PASS: Development transition check remains active through scene reveal
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:56)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+Temple START transition complete: cover faded out and gameplay revealed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:Log (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:128)
+TempleCircuit.TempleStartScreen/<TransitionToGameplay>d__52:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleStartScreen.cs:389)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 128)
+
+TEMPLE_SMOKE_PASS: Cover is removed after the gameplay reveal completes
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:58)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Starting pawn is visible in default desktop view: 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:66)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Starting pawn is visible in default desktop view: 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:66)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Starting pawn is visible in default desktop view: 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:66)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Starting pawn is visible in default desktop view: 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:66)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Scene victory threshold is 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:75)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: HUD displays actual victory threshold
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:76)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: 7 merit does not win
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:81)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: 8 merit wins through real turn resolution
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:84)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Empty ownership state is visible
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:89)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Hover falls back to other controller
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:92)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Panel hides when both rays leave
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:94)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Every owned property is listed
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:107)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_03
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_02
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_19
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_16
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_08
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_06
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_01
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_09
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_17
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Flag has a clear wall-side position: OwnerMarker_04
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:109)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Player name card is reachable by physics ray: Player0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Player name card is reachable by physics ray: Player1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Player name card is reachable by physics ray: Player2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Player name card is reachable by physics ray: Player3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:116)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Full ownership list fits popup height
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:122)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+TEMPLE_SMOKE_PASS: Action panel is entirely to the right of dice centre
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+TempleCircuit.TempleDevelopmentSmokeCheck:Require (bool,string) (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:40)
+TempleCircuit.TempleDevelopmentSmokeCheck/<Start>d__6:MoveNext () (at /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+Thread 0x16f73f000 may have been prematurely finalized
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+Thread 0x16e2b7000 may have been prematurely finalized
+Thread 0x16e3cf000 may have been prematurely finalized
+Thread 0x16e45b000 may have been prematurely finalized
+Thread 0x16e343000 may have been prematurely finalized
+Thread 0x16e5ff000 may have been prematurely finalized
+Thread 0x16e717000 may have been prematurely finalized
+Thread 0x16e4e7000 may have been prematurely finalized
+Thread 0x16e68b000 may have been prematurely finalized
+Thread 0x16e573000 may have been prematurely finalized
+Thread 0x16e7a3000 may have been prematurely finalized
+Thread 0x16e82f000 may have been prematurely finalized
+CodeReloadManager destroyed
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1788925413191,"processId":80769,"allocatedMemory":4285230,"memoryLabels":[{"Default":69329},{"Permanent":1472},{"NewDelete":1383280},{"Thread":6584},{"Manager":539079},{"VertexData":8},{"Geometry":408},{"Texture":16},{"Shader":78414},{"Material":24},{"GfxDevice":38608},{"GfxThread":320},{"Animation":880},{"Audio":864},{"FreeType":8},{"FontEngine":736},{"Physics":2176},{"Physics2D":16},{"Serialization":824},{"Input":43216},{"JobScheduler":448},{"TextLib":280},{"Mono":56},{"ScriptingNativeRuntime":128},{"BaseObject":1611392},{"Resource":520},{"Renderer":3600},{"Transform":6485},{"File":873},{"WebCam":32},{"Culling":32},{"Terrain":11298},{"Wind":24},{"String":3246},{"Utility":314560},{"PoolAlloc":1584},{"AI":40},{"TypeTree":5512},{"CodeReload":440},{"RuntimeInitializeOnLoadManager":64},{"Sprites":78},{"SpriteAtlas":120},{"GI":7200},{"Director":8248},{"CloudService":144},{"WebRequest":520},{"VR":47010},{"SceneManager":408},{"Video":2080},{"LazyScriptCache":32},{"NativeArray":648},{"Camera":9},{"Secure":241},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":192},{"VirtualTexturing":57496},{"Baselib":16},{"Analytics":80},{"Hierarchy":1568},{"UIElements":72},{"CoreStats":13768},{"Identifiers":6768},{"Gui":40},{"CoreBusinessMetrics":128},{"AssetReference":32}]}

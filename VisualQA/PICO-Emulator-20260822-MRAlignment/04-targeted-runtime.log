@@ -1,0 +1,500 @@
+08-22 11:35:10.003   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.003   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.020 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.020   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.020   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.022  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:10.036 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.036   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.036   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.053   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.053   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.053 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.070   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.070   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.070 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.086 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.086   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.086   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.103 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.103   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.103   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.119 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.120   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.120   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.135 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.136   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.137   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.152 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.158   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.158   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.168 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.170   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.170   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.185 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.186   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.186   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.203 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.204   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.204   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.218 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.220   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.220   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.234 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.236   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.236   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.252 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.253   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.253   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.268 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.270   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.270   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.271  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:10.286   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.286   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.287 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.302 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.303   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.303   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.311  1242  1579 I SpatialRuntimeService: Watchdog: focus=18(com.templecircuit.monopoly) lastRenderTime=3963814, currentTime=3963875, checkCount=3943
+08-22 11:35:10.319 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.319 11708 11762 W APxrRuntime: PXRSDK_PM ENGINE FPS: 60, 3963883828639
+08-22 11:35:10.320   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.320   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.321 11708 11783 I PxrMetric: FPS=60/60,MTP=27.68ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=1.71ms,FrmGpu=1.71ms,FrmTime=3.64ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=714,Skip=0
+08-22 11:35:10.336   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.337   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.337 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.353 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.353   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.353   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.369 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.370   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.370   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.385 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.387   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.387   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.401 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.403   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.403   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.419 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.420   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.420   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.435 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.438   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.438   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.451 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.453   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.453   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.467 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.470   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.470   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.484 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.487   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.487   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.502 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.503   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.503   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.518 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.520   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.520   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.521  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:10.535 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.536   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.536   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.553   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.553   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.554 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.569 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.570   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.570   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.586 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.586   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.586   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.603   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.603   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.603 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.618 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.620   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.620   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.634 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.636   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.636   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.644 11811 11811 W freeze_kernel_h: type=1400 audit(0.0:11188): avc:  denied  { read } for  name="u:object_r:pxr_factory_prop:s0" dev="tmpfs" ino=301 scontext=u:r:freeze_kernel_helper:s0 tcontext=u:object_r:pxr_factory_prop:s0 tclass=file permissive=0
+08-22 11:35:10.644 11811 11811 W freeze_kernel_h: type=1400 audit(0.0:11189): avc:  denied  { read } for  name="u:object_r:pxr_factory_prop:s0" dev="tmpfs" ino=301 scontext=u:r:freeze_kernel_helper:s0 tcontext=u:object_r:pxr_factory_prop:s0 tclass=file permissive=0
+08-22 11:35:10.651 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.653   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.653   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.668 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.670   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.670   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.683  1242  1580 W SPR-HumanSeeThroughController: mHumanSeeThroughAPI is null, return at updateProviderSettings, line 156
+08-22 11:35:10.683  1242  1580 W SPR-HumanSeeThroughController: Skip updateRenderSettings because mIsHumanSeeThroughEnabled is false.
+08-22 11:35:10.683  1242  1580 W SPR-HumanSeeThroughController: snapshot, mEnable=false, mEffectState=0, mIsHumanSeeThroughEnabled=false, mHumanTrackingToken=false, mHumanDataProcessorHandle=0x0, isHumanTrackingEnabled=false, isRenderPipelineHumanSeeThroughEnabled=false, mHumanRenderCount=0.
+08-22 11:35:10.683  1242  1580 W SPR-ArmSeeThroughController: TrackingState:Lost, State:AUTOMATIC, RequestState:AUTOMATIC
+08-22 11:35:10.683  1242  1580 W SPR-ArmSeeThroughController: State: mIsInitialized:false, mIsVSTOpen:false, mIsAlgorithmOpen:false, mIsArmSeethroughOpen:false, mIsInDark:false, mIsFadeIn:false, mIsFadeOut:false
+08-22 11:35:10.684 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.687   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.687   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.701 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.703   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.703   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.719 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.720   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.720   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.735 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.736   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.736   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.751 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.753   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.754   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.767 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.770   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.770   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.771  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:10.785 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.787   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.787   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.801 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.803   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.803   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.819 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.820   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.820   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.836 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.837   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.837   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.853 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.853   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.853   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.869 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.870   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.870   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.886 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.886   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.886   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.902 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.903   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.903   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.919 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.920   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.920   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.935 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.937   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.937   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.944  1225  1510 W APxrRuntime: current client is skipping frame reason: last transferred 140500, slot_frame 0, last deprecated 0, last discard 140619 skip count 26550
+08-22 11:35:10.952 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.953   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.953   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.968 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.970   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.970   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:10.985 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:10.986   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:10.986   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.002 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.003   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.003   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.019 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.020   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.020   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.025  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:11.035 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.036   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.036   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.051 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.053   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.053   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.067 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.070   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.070   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.085 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.087   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.087   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.101 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.103   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.103   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.120 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.120   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.120   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.135 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.136   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.136   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.153 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.153   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.153   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.170 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.170   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.170   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.186 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.186   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.186   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.202 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.203   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.203   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.220   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.220   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.224 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.235 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.237   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.237   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.251 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.253   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.253   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.268 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.270   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.270   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.274  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:11.284 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.291   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.291   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.301 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.303   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.303   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.313  1242  1579 I SpatialRuntimeService: Watchdog: focus=18(com.templecircuit.monopoly) lastRenderTime=3964783, currentTime=3964877, checkCount=3944
+08-22 11:35:11.318 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.320   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.320   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.334 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.334 11708 11762 W APxrRuntime: PXRSDK_PM ENGINE FPS: 60, 3964898787264
+08-22 11:35:11.336   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.336   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.337 11708 11783 I PxrMetric: FPS=60/60,MTP=29.17ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=1.84ms,FrmGpu=2.58ms,FrmTime=4.65ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=775,Skip=0
+08-22 11:35:11.352 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.353   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.353   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.368 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.370   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.370   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.384 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.386   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.386   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.402 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.403   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.403   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.417 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.420   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.420   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.434 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.437   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.437   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.451 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.453   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.453   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.469 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.470   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.470   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.486 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.487   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.487   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.503 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.503   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.503   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.520 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.520   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.520   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.522  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:11.536   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.536   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.540 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.553 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.553   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.553   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.568 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.571   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.571   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.586 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.587   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.587   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.602 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.603   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.603   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.612 11812 11812 W virtual_input: type=1400 audit(0.0:11190): avc:  denied  { read } for  name="u:object_r:pxr_factory_prop:s0" dev="tmpfs" ino=301 scontext=u:r:virtual_input:s0 tcontext=u:object_r:pxr_factory_prop:s0 tclass=file permissive=0
+08-22 11:35:11.612 11812 11812 W virtual_input: type=1400 audit(0.0:11191): avc:  denied  { read } for  name="u:object_r:pxr_factory_prop:s0" dev="tmpfs" ino=301 scontext=u:r:virtual_input:s0 tcontext=u:object_r:pxr_factory_prop:s0 tclass=file permissive=0
+08-22 11:35:11.618 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.620   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.620   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.634 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.636   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.637   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.651 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.653   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.653   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.668 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.670   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.670   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.685 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.687   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.687   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.701 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.703   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.703   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.718 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.720   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.720   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.735 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.736   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.736   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.753 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.753   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.753   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.768 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.770   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.770   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.775  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:11.784 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.787   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.787   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.801 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.803   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.803   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.818 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.820   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.820   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.834 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.836   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.836   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.851 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.853   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.853   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.868 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.870   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.870   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.885 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.886   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.886   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.901 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.903   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.904   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.918 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.920   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.920   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.936 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.937   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.937   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.951 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.953   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.953   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.967 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.970   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.970   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:11.984 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:11.987   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:11.987   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.001 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.004   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.004   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.018 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.020   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.020   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.025  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:12.033 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.036   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.036   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.050 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.053   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.053   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.066 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.070   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.070   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.083 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.086  1225  1510 E PxrCompositor: ATW_CPU real right sleep longer than excepted, exceeding 0.703440ms, Affinity: 0
+08-22 11:35:12.087   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.087   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.100 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.102  1225  1510 E PxrCompositor: ATW_CPU real right sleep longer than excepted, exceeding 0.709858ms, Affinity: 0
+08-22 11:35:12.103   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.103   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.117 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.120   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.120   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.134 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.137   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.137   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.151 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.153   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.153   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.169 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.170   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.170   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.185 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.186   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.186   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.202 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.203   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.203   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.218 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.220   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.220   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.236 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.236   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.236   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.254 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.254   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.254   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.269 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.270   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.270   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.276  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:12.284 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.286   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.287   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.301 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.303   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.303   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.314  1242  1579 I SpatialRuntimeService: Watchdog: focus=18(com.templecircuit.monopoly) lastRenderTime=3965867, currentTime=3965878, checkCount=3945
+08-22 11:35:12.317 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.321   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.321   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.335 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.335 11708 11762 W APxrRuntime: PXRSDK_PM ENGINE FPS: 60, 3965899112057
+08-22 11:35:12.336   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.336   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.338 11708 11783 I PxrMetric: FPS=60/60,MTP=28.69ms,AppSW=off,FrmEarly=0,FrmLate=0,FrmCpu=1.60ms,FrmGpu=3.19ms,FrmTime=5.01ms,ATWGPU=0.00ms,VsyncDelay=1,GPU=0%/0Mhz,GPUTemp=0.0C,LayerCnt=2,Stuck=0,Pkg=com.templecircuit.monopoly,FrmId=835,Skip=0
+08-22 11:35:12.351 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.353   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.353   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.367 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.370   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.370   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.385 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.386   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.386   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.401 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.404   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.404   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.417 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.420   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.420   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.434 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.436   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.436   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.444  1225  1510 W APxrRuntime: current client is skipping frame reason: last transferred 140500, slot_frame 0, last deprecated 0, last discard 140633 skip count 26640
+08-22 11:35:12.451 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.453   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.453   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.468 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.470   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.470   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.484 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.486   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.487   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.501 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.503   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.507   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.518 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.520   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.520   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.524  1225  1510 E PxrCompositor: tear screen checkGPUError gpu_num = 0
+08-22 11:35:12.534 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.536   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.536   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.551 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.554   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.554   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.568 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.570   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.570   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!
+08-22 11:35:12.584 11708 11762 E APxrRuntime: PassthroughFB: Passthrough effect data is NULL!
+08-22 11:35:12.587   545   739 I PxrConfigurationService: [###][###:221]: get config property type 0, configName: emulator.sceneid
+08-22 11:35:12.587   545   739 I PxrConfigurationService: [###][###:133]: getConfigProperty configValue 0, ret 0!

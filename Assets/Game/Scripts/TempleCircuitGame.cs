@@ -279,6 +279,8 @@ namespace TempleCircuit
 
         void OnHumanDiceSettled(int value)
         {
+            // v2 Polish: strong impact haptic when the die lands for the human player
+            TempleXRTabletopRig.Active?.SendBothHandsHaptic(0.72f, 0.14f);
             pendingRoll = value;
             var player = players[activePlayer];
             if (!rerolling && player.rerolls > 0)
@@ -409,6 +411,9 @@ namespace TempleCircuit
         {
             var follower = pawnFollowers[player.id];
             audioManager?.PlayPawnStep();
+            // v2 Polish: light haptic tick on each pawn step (human player only)
+            if (player.human)
+                TempleXRTabletopRig.Active?.SendBothHandsHaptic(0.20f, 0.04f);
             follower.follow = false;
             var start = follower.transform.position;
             var duration = Mathf.Max(0.05f, moveStepSeconds);
@@ -589,6 +594,8 @@ namespace TempleCircuit
             tile.owner = player.id;
             player.properties.Add(tileIndex);
             audioManager?.PlayClaim();
+            // v2 Polish: double-tap confirmation haptic on property purchase
+            TempleXRTabletopRig.Active?.SendDoubleHaptic(0.55f);
             UpdateOwnershipMarker(tileIndex);
             CheckCompletedSet(player, tile.category);
             RefreshHud();
@@ -600,6 +607,8 @@ namespace TempleCircuit
             player.cash -= UpgradeCost(tile);
             tile.level++;
             audioManager?.PlayClaim();
+            // v2 Polish: lighter confirmation haptic on upgrade
+            TempleXRTabletopRig.Active?.SendDoubleHaptic(0.42f);
             UpdateOwnershipMarker(tileIndex);
             RefreshHud();
         }
@@ -635,6 +644,8 @@ namespace TempleCircuit
             player.fame++;
             player.rerolls++;
             RefreshHud();
+            // v2 Polish: gentle confirmation haptic for prayer slip purchase
+            TempleXRTabletopRig.Active?.SendBothHandsHaptic(0.32f, 0.09f);
             // EN: 这次不把修行交给运气 / 功德 +1，改骰签 +1。
             hud.ShowResult("Practice Without Relying on Luck", "Merit +1, Re-roll Slip +1.");
         }
@@ -712,6 +723,8 @@ namespace TempleCircuit
                     break;
             }
             RefreshHud();
+            // v2 Polish: ripple haptic when the random prayer slip outcome is revealed
+            TempleXRTabletopRig.Active?.SendBothHandsHaptic(0.28f, 0.10f);
             // EN: 香客递来一张祈愿签
             hud.ShowResult("A Prayer Slip is Drawn", result);
             if (!finished)
@@ -760,6 +773,8 @@ namespace TempleCircuit
             finished = true;
             phase = Phase.Finished;
             RefreshHud();
+            // v2 Polish: three-pulse victory haptic
+            TempleXRTabletopRig.Active?.SendVictoryHaptic();
             hud.ShowWinner(winner.name, reason + $"  Final score: {PlayerScore(winner)}.");
         }
 

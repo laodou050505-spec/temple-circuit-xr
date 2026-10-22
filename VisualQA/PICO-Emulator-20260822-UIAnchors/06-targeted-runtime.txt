@@ -1,0 +1,12 @@
+F/DEBUG   ( 5640): Abort message: 'terminating due to uncaught exception of type Il2CppExceptionWrapper'
+F/DEBUG   ( 5640):       #14 pc 00000000000d7434  /data/app/~~Y3WGlbYPyPDcK0PHpAhG1g==/com.codex.spatialtowerdefense.pico-bn617_DEq0RVc9yXldVs3Q==/lib/arm64/libPxrPlatform.so (Java_com_psmart_aosoperation_SysActivity_NativeLogLevelChange+184) (BuildId: 5de8b4ec8494678e7ec66e11cf6c2998bc91137f)
+F/DEBUG   ( 5640):       #66 pc 0000000000147f90  /system/lib64/libandroid_runtime.so (android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&, bool)+908) (BuildId: 652beb3945e816bee20becb469374f84)
+I/[PxrUnityNative](17068): [logger.cpp] [setGlobalLevel:15]  NativeLogLevelChange LogLevel :4
+I/AndroidRuntime(17824): Using default boot image
+I/AndroidRuntime(17824): Leaving lock profiling enabled
+I/AndroidRuntime(17824): VM exiting with result code 0.
+I/[PxrUnityNative](17843): [logger.cpp] [setGlobalLevel:15]  NativeLogLevelChange LogLevel :4
+I/Unity   (17843): Temple title stage: 217 renderers, 6 colliders, 94 gameplay behaviours and 0 audio sources disabled before the opaque title surface is shown.
+I/Unity   (17843): Temple XR tracking origin confirmed: Floor.
+I/Unity   (17843): Temple title design start applied (nominal eye): local eye (0.000, 1.620, 0.000), world eye (0.000, 1.620, -0.050), target eye (0.000, 1.620, -0.050), yaw 0.0, board (0.000, 0.840, 1.050).
+I/Unity   (17843): Temple title design start applied (tracked eye): local eye (0.000, 1.650, 0.000), world eye (0.000, 1.620, -0.050), target eye (0.000, 1.620, -0.050), yaw 0.0, board (0.000, 0.840, 1.050).

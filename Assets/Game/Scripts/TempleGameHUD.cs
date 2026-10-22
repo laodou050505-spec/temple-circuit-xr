@@ -437,11 +437,19 @@ namespace TempleCircuit
             // EN: 香火正在汇聚 → Gathering Incense
             headlineText.text = "Gathering Incense";
             // EN: 蓄力 {n}% → Charging {n}%
-            bodyText.text = $"Charging {Mathf.RoundToInt(strength * 100f)}%";
-            hintText.text = "Release to roll";
+            // v2 Polish: show charge percentage, change hint at high power
+            var pct = Mathf.RoundToInt(strength * 100f);
+            bodyText.text = $"Charging {pct}%";
+            hintText.text = strength >= 0.85f ? "<b>Release now for full power!</b>" : "Release to roll";
             SetChargeVisible(true);
             if (chargeFill != null)
+            {
                 chargeFill.sizeDelta = new Vector2(458f * Mathf.Clamp01(strength), 10f);
+                // v2 Polish: charge bar color transitions gold → crimson as power builds
+                var fillImage = chargeFill.GetComponent<UnityEngine.UI.Image>();
+                if (fillImage != null)
+                    fillImage.color = Color.Lerp(Gold, Cinnabar, Mathf.Clamp01(strength * 1.2f));
+            }
         }
 
         public void ShowRolling()
@@ -499,7 +507,9 @@ namespace TempleCircuit
         {
             // EN: 圆满 · {winner}获胜 → Merit Fulfilled · {winner} Wins
             // EN: 再开一局 → Play Again; 留在棋盘 → View Board
-            ShowChoices($"Merit Fulfilled · {winner} Wins", detail, "Play Again", "restart", "View Board", "dismiss-win");
+            // v2 Polish: winner's name rendered in gold to distinguish the victory headline
+            var winnerTag = winner == "You" ? "<color=#DCB55B>You</color>" : $"<color=#DCB55B>{winner}</color>";
+            ShowChoices($"Merit Fulfilled · {winnerTag} Wins", detail, "Play Again", "restart", "View Board", "dismiss-win");
         }
 
         void SetChargeVisible(bool visible)

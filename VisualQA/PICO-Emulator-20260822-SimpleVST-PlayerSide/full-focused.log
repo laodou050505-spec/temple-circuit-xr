@@ -1,0 +1,500 @@
+08-22 18:01:45.303  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 35 (>=30ms)
+08-22 18:01:45.327   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 55 (>=30ms)
+08-22 18:01:45.361   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 34 (>=30ms)
+08-22 18:01:45.387  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:45.395  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 67 (>=30ms)
+08-22 18:01:45.448   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 63 (>=30ms)
+08-22 18:01:45.497   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 47 (>=30ms)
+08-22 18:01:45.554  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:45.557   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 59 (>=30ms)
+08-22 18:01:45.560  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 153 (>=30ms)
+08-22 18:01:45.601   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 43 (>=30ms)
+08-22 18:01:45.632   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 31 (>=30ms)
+08-22 18:01:45.690   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 30 (>=30ms)
+08-22 18:01:45.703  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 133 (>=30ms)
+08-22 18:01:45.703  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:45.802   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 64 (>=30ms)
+08-22 18:01:45.836  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:45.844  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 126 (>=30ms)
+08-22 18:01:45.864   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 61 (>=30ms)
+08-22 18:01:45.915   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 51 (>=30ms)
+08-22 18:01:45.968   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 52 (>=30ms)
+08-22 18:01:45.991  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:45.993  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 135 (>=30ms)
+08-22 18:01:46.008   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 40 (>=30ms)
+08-22 18:01:46.048  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.049  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:46.071  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.071  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.147  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.147  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.153  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 31 (>=30ms)
+08-22 18:01:46.163   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 34 (>=30ms)
+08-22 18:01:46.226  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 64 (>=30ms)
+08-22 18:01:46.256   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 39 (>=30ms)
+08-22 18:01:46.299  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.305  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 63 (>=30ms)
+08-22 18:01:46.324   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 31 (>=30ms)
+08-22 18:01:46.370  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 56 (>=30ms)
+08-22 18:01:46.370  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.370  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.479   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 55 (>=30ms)
+08-22 18:01:46.487  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.490  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 72 (>=30ms)
+08-22 18:01:46.588  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.588  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 80 (>=30ms)
+08-22 18:01:46.593   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 69 (>=30ms)
+08-22 18:01:46.631   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 37 (>=30ms)
+08-22 18:01:46.677   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:46.711  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.711  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 121 (>=30ms)
+08-22 18:01:46.713   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 36 (>=30ms)
+08-22 18:01:46.782  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.783  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 65 (>=30ms)
+08-22 18:01:46.832  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:46.833  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.848  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.848  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.879  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.949   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 61 (>=30ms)
+08-22 18:01:46.979  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 49 (>=30ms)
+08-22 18:01:46.979  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.979  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:46.986   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 37 (>=30ms)
+08-22 18:01:47.046  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 61 (>=30ms)
+08-22 18:01:47.070   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 30 (>=30ms)
+08-22 18:01:47.136  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.137  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 81 (>=30ms)
+08-22 18:01:47.176   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 39 (>=30ms)
+08-22 18:01:47.253   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 51 (>=30ms)
+08-22 18:01:47.293  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.295  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 146 (>=30ms)
+08-22 18:01:47.310   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 57 (>=30ms)
+08-22 18:01:47.384   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 73 (>=30ms)
+08-22 18:01:47.423  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 65 (>=30ms)
+08-22 18:01:47.429  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.429  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.432 15288 15288 I flags_health_check: ServerConfigurableFlagsReset updatable crashing detected, resetting flags.
+08-22 18:01:47.476   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 41 (>=30ms)
+08-22 18:01:47.499  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 65 (>=30ms)
+08-22 18:01:47.499  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.543   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 37 (>=30ms)
+08-22 18:01:47.562  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:47.562  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.621  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 53 (>=30ms)
+08-22 18:01:47.622   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 38 (>=30ms)
+08-22 18:01:47.668  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 31 (>=30ms)
+08-22 18:01:47.670  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.678   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:47.789  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.790  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 119 (>=30ms)
+08-22 18:01:47.800   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 121 (>=30ms)
+08-22 18:01:47.836  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.837  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 37 (>=30ms)
+08-22 18:01:47.858  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.858  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:47.896   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:47.972   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 51 (>=30ms)
+08-22 18:01:47.975  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 104 (>=30ms)
+08-22 18:01:48.046   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 73 (>=30ms)
+08-22 18:01:48.102   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 35 (>=30ms)
+08-22 18:01:48.136   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 34 (>=30ms)
+08-22 18:01:48.159  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 64 (>=30ms)
+08-22 18:01:48.170  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.170  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.170  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.175   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 38 (>=30ms)
+08-22 18:01:48.224   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 48 (>=30ms)
+08-22 18:01:48.288  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 87 (>=30ms)
+08-22 18:01:48.322  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.322  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.386  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 53 (>=30ms)
+08-22 18:01:48.387  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.433   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:48.493  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.496  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 92 (>=30ms)
+08-22 18:01:48.556   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 123 (>=30ms)
+08-22 18:01:48.613   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 56 (>=30ms)
+08-22 18:01:48.663   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 49 (>=30ms)
+08-22 18:01:48.668  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.670  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 114 (>=30ms)
+08-22 18:01:48.715  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 31 (>=30ms)
+08-22 18:01:48.752   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 32 (>=30ms)
+08-22 18:01:48.835  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 101 (>=30ms)
+08-22 18:01:48.836  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:48.842   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 60 (>=30ms)
+08-22 18:01:49.004   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 162 (>=30ms)
+08-22 18:01:49.061  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.061  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.061  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 190 (>=30ms)
+08-22 18:01:49.092  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.135   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 30 (>=30ms)
+08-22 18:01:49.180   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 44 (>=30ms)
+08-22 18:01:49.197  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.206  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 87 (>=30ms)
+08-22 18:01:49.213   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 32 (>=30ms)
+08-22 18:01:49.237  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.298  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.298  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 59 (>=30ms)
+08-22 18:01:49.390   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 83 (>=30ms)
+08-22 18:01:49.419  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 18:01:49.420  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.431   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 36 (>=30ms)
+08-22 18:01:49.484  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.484  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.485  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 61 (>=30ms)
+08-22 18:01:49.547   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 40 (>=30ms)
+08-22 18:01:49.549  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 46 (>=30ms)
+08-22 18:01:49.592   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:49.628   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 35 (>=30ms)
+08-22 18:01:49.688   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 59 (>=30ms)
+08-22 18:01:49.691  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 111 (>=30ms)
+08-22 18:01:49.691  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.691  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.800   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 84 (>=30ms)
+08-22 18:01:49.804  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 112 (>=30ms)
+08-22 18:01:49.924   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 54 (>=30ms)
+08-22 18:01:49.952  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:49.955  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 138 (>=30ms)
+08-22 18:01:49.963   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 38 (>=30ms)
+08-22 18:01:50.054  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.054  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.055  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 93 (>=30ms)
+08-22 18:01:50.093  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.129   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 41 (>=30ms)
+08-22 18:01:50.197   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 68 (>=30ms)
+08-22 18:01:50.204  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 81 (>=30ms)
+08-22 18:01:50.239   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 41 (>=30ms)
+08-22 18:01:50.240  8982  9052 E APxrRuntime: [OnInfoChanged][84] provider  info callback event type: 2
+08-22 18:01:50.240  8982  9052 E APxrRuntime: on_sense_client_data_provider_data_update_result notify pico 12970367412862023472 == dataProviderHandle 12970367408287075312
+08-22 18:01:50.248  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, Update, frameCount = 78000
+08-22 18:01:50.248  1763  2509 I Unity   : SendTexture:Update()
+08-22 18:01:50.248  1763  2509 I Unity   : 
+08-22 18:01:50.274   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 34 (>=30ms)
+08-22 18:01:50.279  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, CallPluginAtEndOfFrames, frameCount = 78000
+08-22 18:01:50.279  1763  2509 I Unity   : <CallPluginAtEndOfFrames>d__57:MoveNext()
+08-22 18:01:50.279  1763  2509 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+08-22 18:01:50.279  1763  2509 I Unity   : 
+08-22 18:01:50.284  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 60 (>=30ms)
+08-22 18:01:50.284  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.284  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.284  8982  9025 E APxrRuntime: [QuerySenseDataAsync][1501] get data provider queried request, queryInfo->filter is nullptr,  futureId 291 
+08-22 18:01:50.289  8982  9025 E APxrRuntime: [operator()][1482] get data provider queried result  code 0 size 39  0xb400006f496ef010
+08-22 18:01:50.289  8982  9025 E APxrRuntime: [operator()][1487] callback get data provider queried result  code 0  futureId 291
+08-22 18:01:50.363  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 64 (>=30ms)
+08-22 18:01:50.363  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.363  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.363  8982  9017 E APxrRuntime: [GetSenseDataHandle][1604] get handle 12970367407482457336 retCode 0 
+08-22 18:01:50.363  8982  9017 E APxrRuntime:  oxr_xrQuerySenseDataCompletePICO tmp: 0
+08-22 18:01:50.379  8982  9026 E APxrRuntime:  oxr_xrGetQueriedSenseDataPICO senseDataHandle 12970367407482457336, spatialEntityCountOutput 39
+08-22 18:01:50.379  8982  9026 E APxrRuntime:  oxr_xrGetQueriedSenseDataPICO senseDataHandle 12970367407482457336, spatialEntityCountOutput 39
+08-22 18:01:50.423  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 18:01:50.453   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 76 (>=30ms)
+08-22 18:01:50.504   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 18:01:50.537   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 18:01:50.641  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 199 (>=30ms)
+08-22 18:01:50.641  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.641  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.699  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:50.702  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 18:01:50.730   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 74 (>=30ms)
+08-22 18:01:50.786   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 55 (>=30ms)
+08-22 18:01:50.845   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 18:01:50.850  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 133 (>=30ms)
+08-22 18:01:50.931  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 77 (>=30ms)
+08-22 18:01:50.932  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.015  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 65 (>=30ms)
+08-22 18:01:51.017  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.060   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 18:01:51.087  8982  9052 E APxrRuntime: [OnInfoChanged][84] provider  info callback event type: 2
+08-22 18:01:51.087  8982  9052 E APxrRuntime: on_sense_client_data_provider_data_update_result notify pico 12970367412861728560 == dataProviderHandle 12970367405065878400
+08-22 18:01:51.107   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 46 (>=30ms)
+08-22 18:01:51.161   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 53 (>=30ms)
+08-22 18:01:51.167  8982  9052 E APxrRuntime: [OnInfoChanged][84] provider  info callback event type: 2
+08-22 18:01:51.167  8982  9052 E APxrRuntime: on_sense_client_data_provider_data_update_result notify pico 12970367412861638448 == dataProviderHandle 12970367406139797096
+08-22 18:01:51.221  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 193 (>=30ms)
+08-22 18:01:51.221  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.221  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.232  8982  9027 E APxrRuntime: [QuerySenseDataAsync][1501] get data provider queried request, queryInfo->filter is nullptr,  futureId 292 
+08-22 18:01:51.236  8982  9027 E APxrRuntime: [QuerySenseDataAsync][1501] get data provider queried request, queryInfo->filter is nullptr,  futureId 293 
+08-22 18:01:51.237  8982  8995 E APxrRuntime: [operator()][1482] get data provider queried result  code 0 size 42  0xb400006f496d9010
+08-22 18:01:51.237  8982  8995 E APxrRuntime: [operator()][1487] callback get data provider queried result  code 0  futureId 292
+08-22 18:01:51.240  8982 15297 E APxrRuntime: [operator()][1482] get data provider queried result  code 0 size 1  0xb400006f496e6dd0
+08-22 18:01:51.240  8982 15297 E APxrRuntime: [operator()][1487] callback get data provider queried result  code 0  futureId 293
+08-22 18:01:51.243   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 37 (>=30ms)
+08-22 18:01:51.301   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 57 (>=30ms)
+08-22 18:01:51.362   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 61 (>=30ms)
+08-22 18:01:51.386  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.386  8982  9017 E APxrRuntime: [GetSenseDataHandle][1604] get handle 12970367407482456216 retCode 0 
+08-22 18:01:51.386  8982  9017 E APxrRuntime:  oxr_xrQuerySenseDataCompletePICO tmp: 0
+08-22 18:01:51.387  8982  9017 E APxrRuntime: [GetSenseDataHandle][1604] get handle 12970367407482460472 retCode 0 
+08-22 18:01:51.387  8982  9017 E APxrRuntime:  oxr_xrQuerySenseDataCompletePICO tmp: 0
+08-22 18:01:51.393  8982  9026 E APxrRuntime:  oxr_xrGetQueriedSenseDataPICO senseDataHandle 12970367407482456216, spatialEntityCountOutput 42
+08-22 18:01:51.393  8982  9026 E APxrRuntime:  oxr_xrGetQueriedSenseDataPICO senseDataHandle 12970367407482456216, spatialEntityCountOutput 42
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 3.507, 0.115
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (3.506600,0.000000,-0.114750) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  1
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.150, 0.237
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-1.149750,0.000000,0.236600) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  1
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.262, 0.237
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.261700,0.000000,-0.237100) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 0, get value from anchor: 0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.102, 0.517
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-1.102350,-0.517100) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 4, get value from anchor: 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.397, 1.328
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-1.397150,0.000000,1.328050) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 15, get value from anchor: 15
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.459, 0.265
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.459250,0.265150,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.441, 0.431
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.440700,0.000000,-0.431300) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 7, get value from anchor: 7
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.755, 0.213
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.754800,0.000000,-0.212550) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.115, 2.404
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.114700,0.000000,-2.404100) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  1
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.950, 1.192
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (0.949550,-1.191750,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 13, get value from anchor: 13
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.507, 0.267
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.507000,0.000000,-0.266800) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.219, 0.187
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.219075,0.000000,-0.187400) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 0, get value from anchor: 0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.687, 0.847
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-1.686700,-0.846750) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.434, 0.431
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.434200,0.000000,-0.431300) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 0, get value from anchor: 0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.678, 0.660
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.678150,0.000000,-0.073650) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 9, get value from anchor: 9
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.248, 2.064
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,0.248400,-2.064100) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.573, 1.655
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.572850,-1.655100,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.393, 0.246
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.392900,0.246200,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.687, 1.910
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-1.686700,-1.910400) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.499, 0.143
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.499350,0.000000,-0.143450) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  1
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 2.134, 1.687
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (2.133650,-1.686700,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.017, 0.780
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-1.016550,0.000000,-0.779650) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 15, get value from anchor: 15
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.755, 0.172
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.754800,0.000000,-0.172500) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.454, 1.451
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.453800,-1.450800,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.216, 0.384
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (0.215700,0.000000,-0.383700) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 4.802, 2.906
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-4.802100,0.000000,-2.906350) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  1
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.658, 1.034
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-1.657900,-1.034100,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.265, 0.274
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,0.265150,-0.274350) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.170, 0.171
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.170400,0.000000,-0.170900) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 7, get value from anchor: 7
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.266, 0.267
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.266450,0.000000,-0.266850) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 7, get value from anchor: 7
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.150, 0.237
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-1.149750,-0.236600) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 3.232, 0.115
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (3.231700,-0.114700,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.197, 2.338
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-1.196800,-2.337550) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 13, get value from anchor: 13
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.552, 1.279
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.552450,0.000000,-1.279500) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.755, 0.213
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.754800,0.000000,-0.212800) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 14, get value from anchor: 14
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.825, 0.214
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-0.824650,0.214500) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 1.398, 1.687
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-1.398000,-1.686700,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.117, 1.984
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.000000,-0.117100,-1.984300) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,6978436905700049613855718320587654527774779586502980666554600762246986185843971628193486251288866709147884105586974316263343739834416480562791489311398913323793137149893940157312415746911271427728327080139906998292856747839994486198971729765141858746368.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 2, get value from anchor: 2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.533, 1.655
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.532650,-1.655100,0.000000) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 3, get value from anchor: 3
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  2
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataBoundingBox2D][2096] boundingBox2D extents: 0.554, 1.197
+08-22 18:01:51.393  8982  9026 E APxrRuntime: ipc_sense_client_data_provider_get_spatial_entity_triangle_mesh_info vertexCountOutput: 4 indexCountOutput 6
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] vertices[0] (-0.554400,0.000000,-1.197300) vCount 4
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] indices 0 1 2 (0.000000,0.000000,0.000000)
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [planeAnchor] [getSpatialEntityComponentDataSemantic][2472] output scene labels is 9, get value from anchor: 9
+08-22 18:01:51.393  8982  9026 E APxrRuntime: [getSpatialEntityComponentDataSpatialPlaneOrientation][2733] get planeAnchor orientation  0
+08-22 18:01:51.399  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 164 (>=30ms)
+08-22 18:01:51.404   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 41 (>=30ms)
+08-22 18:01:51.442   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 38 (>=30ms)
+08-22 18:01:51.491   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 47 (>=30ms)
+08-22 18:01:51.573   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 64 (>=30ms)
+08-22 18:01:51.656   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 69 (>=30ms)
+08-22 18:01:51.702   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:51.708  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 305 (>=30ms)
+08-22 18:01:51.741   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 38 (>=30ms)
+08-22 18:01:51.786   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 45 (>=30ms)
+08-22 18:01:51.844   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:51.861  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.863  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 142 (>=30ms)
+08-22 18:01:51.878   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 18:01:51.921   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:51.958  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.958  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:51.965  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 78 (>=30ms)
+08-22 18:01:51.974   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 52 (>=30ms)
+08-22 18:01:52.041   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 67 (>=30ms)
+08-22 18:01:52.084   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 42 (>=30ms)
+08-22 18:01:52.113  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:52.115  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 148 (>=30ms)
+08-22 18:01:52.182   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 34 (>=30ms)
+08-22 18:01:52.239   529   529 W SPC-/sys26-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 57 (>=30ms)
+08-22 18:01:52.252  8982  9017 E APxrRuntime: [hands_holding][review] push openxr event begin session=0xb400007132f082c0 algorithm=0 left=0 right=0
+08-22 18:01:52.256  9580  9580 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 128 (>=30ms)

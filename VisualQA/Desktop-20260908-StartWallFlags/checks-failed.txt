@@ -1,0 +1,3 @@
+System.Exception: Flag has a clear wall-side position: OwnerMarker_11
+  at TempleCircuit.TempleDevelopmentSmokeCheck.Require (System.Boolean condition, System.String message) [0x0001a] in /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:38 
+  at TempleCircuit.TempleDevelopmentSmokeCheck+<Start>d__6.MoveNext () [0x00537] in /Users/ld/Documents/Codex/2026-08-10/TempleMonopolyBuild/Assets/Game/Scripts/TempleDevelopmentSmokeCheck.cs:97 

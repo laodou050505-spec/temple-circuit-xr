@@ -1,0 +1,57 @@
+3-  * Task{7069fc6 #32 type=standard U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+4-    mBounds=Rect(0, 0 - 1080, 1920)
+5:    * Task{9bcf252 #33 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300 U=0 rootTaskId=32 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+6-      mLastNonFullscreenBounds=Rect(668, 347 - 1492, 1811)
+7-      isSleeping=false
+8:      topResumedActivity=ActivityRecord{190137864 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t33}
+9-      mMinWidth=400 mMinHeight=300
+10:      * Hist  #0: ActivityRecord{190137864 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t33}
+11:        packageName=com.templecircuit.monopoly processName=com.templecircuit.monopoly
+12-        launchedFromUid=1000 launchedFromPackage=com.picoxr.systemui launchedFromFeature=null userId=0
+13:        app=ProcessRecord{45879aa 16707:com.templecircuit.monopoly/u0a95 PRSmt{aed0511 p:0 rp:16707 t:null sa:0 usps:2 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}}
+14:        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity (has extras) }
+15:        rootOfTask=true task=Task{9bcf252 #33 type=standard A=10095:com.templecircuit.monopoly minWidth=400 minHeight=300}
+16:        taskAffinity=10095:com.templecircuit.monopoly
+17:        mActivityComponent=com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity
+18:        baseDir=/data/app/~~bPajC6beAUj6GHVqVpcUUA==/com.templecircuit.monopoly-lXFjmCGxUiPLwPfK5Ka0Pw==/base.apk
+19:        dataDir=/data/user/0/com.templecircuit.monopoly
+20-        stateNotNeeded=false componentSpecified=true mActivityType=standard
+21-        compat={320dpi always-compat} theme=0x7f050001
+--
+31-        occludesParent=true mNoDisplay=false immersive=false launchMode=2
+32-        mActivityType=standard
+33:        windows=[Window{9e4317b u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}]
+34-        windowType=2
+35-        mOccludesParent=true
+--
+199-
+200-  Resumed activities in task display areas (from top to bottom):
+201:    Resumed: ActivityRecord{190137864 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t33}
+202-
+203-Display #3 (activities from top to bottom):
+--
+255-    Resumed: ActivityRecord{130550969 u0 com.pxr.scenarioprovider/com.unity3d.player.UnityPlayerActivity t29}
+256-
+257:  ResumedActivity: ActivityRecord{190137864 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t33}
+258-
+259-ActivityTaskSupervisor state:
+--
+263-  ignoreOrientationRequest=true
+264-  mLayoutSeq=219
+265:  mCurrentFocus=Window{9e4317b u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+266:  mFocusedApp=ActivityRecord{190137864 u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity t33}
+267-
+268-  mHoldScreenWindow=null
+--
+329-    mShowingDream=false mDreamingLockscreen=false
+330-    isKeyguardShowing=false
+331:    mFocusedWindow=Window{9e4317b u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+332:    mTopFullscreenOpaqueWindowState=Window{9e4317b u0 com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity}
+333-    mLastStatusBarAppearanceRegions=
+334-    mLastLetterboxDetails=
+--
+523-  TaskOrganizerController:
+524-
+525:  VisibleActivityProcess:[ ProcessRecord{a4ea04a 12574:com.pxr.scenarioprovider/1000 PRSmt{d1d038f p:0 rp:12574 t:null sa:100 usps:0 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}} ProcessRecord{45879aa 16707:com.templecircuit.monopoly/u0a95 PRSmt{aed0511 p:0 rp:16707 t:null sa:0 usps:2 sps:2 kt:0 fs:0 inSfile:false freezeBlockFlags:0 pendingInstallProviderCount:0 fm:INVALID}}]
+526-  NumNonAppVisibleWindowUidMap:[ 1000:4]
+527-  SleepTokens={}

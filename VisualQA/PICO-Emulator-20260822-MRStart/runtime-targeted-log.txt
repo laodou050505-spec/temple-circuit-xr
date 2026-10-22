@@ -1,0 +1,500 @@
+08-22 17:13:16.720  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.720  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.721  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.721  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.722  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.722  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.723  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.723  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.723  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.724  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.724  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.724  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.725  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.725  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.726  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.726  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.727  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.727  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.727  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.727  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.728  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.728  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.729  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.729  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.729  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.729  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.730  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.730  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.731  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.731  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.732  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.732  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.733  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.733  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.734  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.734  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.735  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.735  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.736  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.736  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.737  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.737  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.738  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.738  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.738  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.738  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.739  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.739  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.740  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.740  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.741  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.741  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.741  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.741  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.742  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.742  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.743  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.743  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.744  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.744  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.744  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.744  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.745  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.745  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.752  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.752  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.753  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.753  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.754  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.754  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.754  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.755  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.755  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.755  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.756  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.756  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.757  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.757  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.758  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.758  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.759  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.759  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.759  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.759  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.760  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.760  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.761  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.761  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.762  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.762  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.763  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.763  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.764  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.764  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.768  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.768  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.769  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.769  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.770  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.770  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.771  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.771  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.771  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.772  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.772  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.772  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.773  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.773  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.774  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.774  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.774  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.775  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.775  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.775  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.776  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.776  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.777  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.777  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.777  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.777  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.778  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.778  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.779  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.779  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.779  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.780  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.780  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.780  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.781  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.781  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.782  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.782  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.783  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.783  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:428] session is not Ready.
+08-22 17:13:16.784  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.784  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [HandleSessionStateChangedEvent:539] session_manage_state XR_SESSION_STATE_READY received
+08-22 17:13:16.784  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:13:16.784  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.784  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.784  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.784  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=2
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=3
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=4
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [HandleSessionStateChangedEvent:581] session_manage_state XR_SESSION_STATE_FOCUSED received
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=5
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_SEETHROUGH_STATE_CHANGED
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : PXR_Loader FrameID >>>>>>SeethroughStateChanged status =0
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:i(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_SEETHROUGH_STATE_CHANGED
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4412 I Unity   : PXR_Loader FrameID >>>>>>SeethroughStateChanged status =3
+08-22 17:13:16.785  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:i(String, String, Boolean)
+08-22 17:13:16.785  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.785  4392  4412 I Unity   : 
+08-22 17:13:16.785  4392  4465 I [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:397] session_manage_state PollEvent PXR_TYPE_EVENT_DATA_SESSION_STATE_READY received .
+08-22 17:13:16.785  4392  4465 I [PxrUnityNative]: [OpenXrProgram.cpp] [BeginXr:908] BeginXr start
+08-22 17:13:16.786  4392  4465 I [PxrUnityNative]: [EXThandtracking.cpp] [PostBeginSession:45]  PostBeginSession skipped: hand tracking disabled.
+08-22 17:13:16.786  4392  4465 I [PxrUnityNative]: [FBPassthrough.cpp] [PostBeginSession:49]  CurrentDeviceSupportPassthrough: 1
+08-22 17:13:16.786  4392  4465 I [PxrUnityNative]: [FBPassthrough.cpp] [PostBeginSession:50]  PassthroughSystemProperties2FB 3 
+08-22 17:13:16.786  4392  4465 I [PxrUnityNative]: [FBPassthrough.cpp] [PostBeginSession:59]  PassthroughSystemProperties2FB SupportColor= 1 SupportDepth= 0
+08-22 17:13:16.786  4392  4465 I [PxrUnityNative]: [OpenXrProgram.cpp] [BeginXr:922] session_manage_ BeginXr end ,ret =0
+08-22 17:13:16.786  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_PopulateNextFrameDesc:440] No frames have been queue'd for rendering.
+08-22 17:13:16.787  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_USER_PRESENCE_CHANGED_EXT
+08-22 17:13:16.787  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.787  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.787  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.787  4392  4412 I Unity   : 
+08-22 17:13:16.787  4392  4465 E [PxrUnityNative]: [Display.cpp] [GfxThread_SubmitCurrentFrame:558] No frames have been queue'd for submission.
+08-22 17:13:16.794  4392  4465 E [PxrUnityNative]: [OpenXrProgram.cpp] [GetLayerNextImageIndex:984] layerId=0:0:try recover ret =0.
+08-22 17:13:16.811  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_ENVIRONMENT_BLEND_MODE_CHANGED_EXT
+08-22 17:13:16.811  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:16.811  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:16.811  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:16.811  4392  4412 I Unity   : 
+08-22 17:13:21.655   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:494] handtrackinghandtracking type: 1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Display.cpp] [onEvent:1601] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:948] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:952] IProgramEvent eventDataPerfSettingsEXT.eventtype=0
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:956]  Update controller connect = 0,1
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:494] handtrackinghandtracking type: 1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:497] handtrackinghandtracking event: 1
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Display.cpp] [onEvent:1601] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:948] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:952] IProgramEvent eventDataPerfSettingsEXT.eventtype=21
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:960] PXR_DEVICE_INPUTDEVICE_CHANGED ：1
+08-22 17:13:23.750  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_CONTROLLER_STATE_CHANGED_PICO
+08-22 17:13:23.750  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.750  4392  4412 I Unity   : 
+08-22 17:13:23.750  4392  4412 I Unity   : PXR_Loader FrameID >>>>>>Controller eventType=XR_DEVICE_INPUTDEVICE_CHANGED, status=1, action=0
+08-22 17:13:23.750  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:i(String, String, Boolean)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.750  4392  4412 I Unity   : 
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:494] handtrackinghandtracking type: 1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Display.cpp] [onEvent:1601] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:948] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:952] IProgramEvent eventDataPerfSettingsEXT.eventtype=0
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:956]  Update controller connect = 1,0
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:494] handtrackinghandtracking type: 1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:497] handtrackinghandtracking event: 2
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Display.cpp] [onEvent:1601] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:948] IProgramEvent type=1200006064
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:952] IProgramEvent eventDataPerfSettingsEXT.eventtype=21
+08-22 17:13:23.750  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:960] PXR_DEVICE_INPUTDEVICE_CHANGED ：2
+08-22 17:13:23.750  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_CONTROLLER_STATE_CHANGED_PICO
+08-22 17:13:23.750  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.750  4392  4412 I Unity   : 
+08-22 17:13:23.750  4392  4412 I Unity   : PXR_Loader FrameID >>>>>>Controller eventType=XR_DEVICE_INPUTDEVICE_CHANGED, status=2, action=0
+08-22 17:13:23.750  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:i(String, String, Boolean)
+08-22 17:13:23.750  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.750  4392  4412 I Unity   : 
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:494] handtrackinghandtracking type: 1200006064
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [PollEvent:497] handtrackinghandtracking event: 1
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [Display.cpp] [onEvent:1601] IProgramEvent type=1200006064
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:948] IProgramEvent type=1200006064
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:952] IProgramEvent eventDataPerfSettingsEXT.eventtype=21
+08-22 17:13:23.846  4392  4412 I [PxrUnityNative]: [Input.cpp] [onEvent:960] PXR_DEVICE_INPUTDEVICE_CHANGED ：1
+08-22 17:13:23.846  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_CONTROLLER_STATE_CHANGED_PICO
+08-22 17:13:23.846  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.846  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:13:23.846  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.846  4392  4412 I Unity   : 
+08-22 17:13:23.846  4392  4412 I Unity   : PXR_Loader FrameID >>>>>>Controller eventType=XR_DEVICE_INPUTDEVICE_CHANGED, status=1, action=0
+08-22 17:13:23.846  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:13:23.846  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:i(String, String, Boolean)
+08-22 17:13:23.846  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:13:23.846  4392  4412 I Unity   : 
+08-22 17:13:23.862  4392  4412 I [PxrUnityNative]: [Input.cpp] [PFillDeviceDefinition:254] PFillDeviceDefinition Started. deviceId : 1 
+08-22 17:13:24.944  1256  1609 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:9 perf_level:0
+08-22 17:13:24.944  1256  1607 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:7 perf_level:1
+08-22 17:13:25.049  1256  1610 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:4 perf_level:2
+08-22 17:13:25.432  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, Update, frameCount = 42000
+08-22 17:13:25.432  1763  2509 I Unity   : SendTexture:Update()
+08-22 17:13:25.432  1763  2509 I Unity   : 
+08-22 17:13:25.433  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, CallPluginAtEndOfFrames, frameCount = 42000
+08-22 17:13:25.433  1763  2509 I Unity   : <CallPluginAtEndOfFrames>d__57:MoveNext()
+08-22 17:13:25.433  1763  2509 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+08-22 17:13:25.433  1763  2509 I Unity   : 
+08-22 17:13:26.794   829   916 E SysMonitorDump: Notify surfaceflinger dump info error.java.lang.SecurityException
+08-22 17:13:27.656   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:33.656   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:39.657   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:42.099  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, Update, frameCount = 43000
+08-22 17:13:42.099  1763  2509 I Unity   : SendTexture:Update()
+08-22 17:13:42.099  1763  2509 I Unity   : 
+08-22 17:13:42.099  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, CallPluginAtEndOfFrames, frameCount = 43000
+08-22 17:13:42.099  1763  2509 I Unity   : <CallPluginAtEndOfFrames>d__57:MoveNext()
+08-22 17:13:42.099  1763  2509 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+08-22 17:13:42.099  1763  2509 I Unity   : 
+08-22 17:13:45.657   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:51.657   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:57.657   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:13:58.766  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, Update, frameCount = 44000
+08-22 17:13:58.766  1763  2509 I Unity   : SendTexture:Update()
+08-22 17:13:58.766  1763  2509 I Unity   : 
+08-22 17:13:58.766  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, CallPluginAtEndOfFrames, frameCount = 44000
+08-22 17:13:58.766  1763  2509 I Unity   : <CallPluginAtEndOfFrames>d__57:MoveNext()
+08-22 17:13:58.766  1763  2509 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+08-22 17:13:58.766  1763  2509 I Unity   : 
+08-22 17:14:03.658   546  2500 E EMUMRSER:meshMng: [OnlienMesh][auto] Skip auto callback, mEnableOnlineMesh: 0, mUnityMeshs: 0
+08-22 17:14:03.674  1300  1300 I SpatialSystemUI: FullSpaceManager, show fullSpace app dialog, container: Info{id=5, pkg=com.anomalylab.cosmicslice, visible=true, focus=true, type=xr, cat=mr_safe, life=foreground, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1050447, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}
+08-22 17:14:03.766  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 17:14:03.800  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 17:14:03.832  1268  1268 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 50 (>=30ms)
+08-22 17:14:03.833  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 32 (>=30ms)
+08-22 17:14:03.867  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 17:14:03.901  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 17:14:03.935  1300  2711 W SPC-syui-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 33 (>=30ms)
+08-22 17:14:03.944  1268  1268 W SPC-wspc-IFrameController: send ClientPerfExceptionEvent cause of FRAME_TOO_SLOW, current frame cost 95 (>=30ms)
+08-22 17:14:03.965  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:14:03.965  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:14:03.965  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:14:03.965  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:14:03.965  4392  4412 I Unity   : 
+08-22 17:14:03.965  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=4
+08-22 17:14:03.965  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:14:03.965  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:14:03.965  4392  4412 I Unity   : 
+08-22 17:14:04.956  1300  5712 I SpatialSystemUI: FullSpaceManager, confirm, close fullspace container: Info{id=5, pkg=com.anomalylab.cosmicslice, visible=true, focus=true, type=xr, cat=mr_safe, life=foreground, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1050447, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() : Exception_1 = java.lang.ClassNotFoundException: com.qualcomm.qti.Performance
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() Ux Perf: Exception = java.lang.ClassNotFoundException: com.qualcomm.qti.UxPerformance
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() : Exception_1 = java.lang.ClassNotFoundException: com.qualcomm.qti.Performance
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() Ux Perf: Exception = java.lang.ClassNotFoundException: com.qualcomm.qti.UxPerformance
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() : Exception_1 = java.lang.ClassNotFoundException: com.qualcomm.qti.Performance
+08-22 17:14:04.959   829  1127 E BoostFramework: BoostFramework() Ux Perf: Exception = java.lang.ClassNotFoundException: com.qualcomm.qti.UxPerformance
+08-22 17:14:04.960   829  1127 I ActivityTaskManager: [TXN_DEBUG] scheduleTopResumedActivityStateLossIfNeeded: lastReportedTopResumed=ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, state=RESUMED, finishing=false, waitingForPrev=false, callers=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2715 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:426 com.android.server.wm.TaskDisplayArea.positionChildAt:369 com.android.server.wm.WindowContainer.positionChildAt:1034 com.android.server.wm.Task.positionChildAt:2810 com.android.server.wm.Task.moveToFront:5042 
+08-22 17:14:04.960   829  1127 I ActivityTaskManager: [TXN_DEBUG] scheduleTopResumedActivityChanged: activity=ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, onTop=false, state=RESUMED, finishing=false, token=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}}, callers=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateLossIfNeeded:2807 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2715 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:426 com.android.server.wm.TaskDisplayArea.positionChildAt:369 com.android.server.wm.WindowContainer.positionChildAt:1034 com.android.server.wm.Task.positionChildAt:2810 
+08-22 17:14:04.960   829  1127 I ClientTransaction: [TXN_DEBUG] addTransactionItem: name=fd1ab9_1099528, identity=16587449, hash=-1321071371, item=TopResumedActivityChangeItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},onTop=false,itemHash=0x556ed03}, size=1, callers=com.android.server.wm.ClientLifecycleManager.scheduleTransactionItem:118 com.android.server.wm.ActivityRecord.scheduleTopResumedActivityChanged:1549 com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateLossIfNeeded:2807 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2715 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:426 com.android.server.wm.TaskDisplayArea.positionChildAt:369 com.android.server.wm.WindowContainer.positionChildAt:1034 com.android.server.wm.Task.positionChildAt:2810 com.android.server.wm.Task.moveToFront:5042 com.android.server.wm.ActivityRecord.moveFocusableActivityToTop:3652 com.android.server.wm.Task.moveTaskToFront:5937 com.android.server.wm.ActivityStarter.setTargetRootTaskIfNeeded:3395 
+08-22 17:14:04.960   829  1127 W ContainerManager: onTopFullscreenTaskChanged, new top [ComponentInfo{com.picoxr.launcher/com.picoxr.launcher.MainActivity}], Task{5ae5927 #12 type=home}, old is ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity}
+08-22 17:14:04.960   829  1127 I ContainerManager_STATE: container state changed, from foreground to background, id=5, pkg=com.anomalylab.cosmicslice, v=true, f=true, t=xr, c=mr_safe, life=foreground, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:04.963   829  1127 I ClientTransaction: [TXN_DEBUG] addTransactionItem: name=fd1ab9_1099528, identity=16587449, hash=-1887789401, item=PauseActivityItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},finished=false,userLeaving=true,dontReport=false,autoEnteringPip=false}, size=2, callers=com.android.server.wm.ClientLifecycleManager.scheduleTransactionItem:118 com.android.server.wm.TaskFragment.schedulePauseActivity:2193 com.android.server.wm.TaskFragment.startPausing:2125 com.android.server.wm.TaskFragment.startPausing:1981 com.android.server.wm.Task.lambda$pauseActivityIfNeeded$0:1345 com.android.server.wm.Task.$r8$lambda$bnf7J1CAePU4DA3lrZHJ-mxpAws:0 com.android.server.wm.Task$$ExternalSyntheticLambda15.accept:0 com.android.server.wm.TaskFragment.forAllLeafTaskFragments:2369 com.android.server.wm.Task.pauseActivityIfNeeded:1339 com.android.server.wm.TaskDisplayArea.lambda$pauseBackTasks$6:1296 com.android.server.wm.TaskDisplayArea.$r8$lambda$9T11aR3wjd7tX7gC_s6Y_EGgask:0 com.android.server.wm.TaskDisplayArea$$ExternalSyntheticLambda9.accept:0 
+08-22 17:14:04.963   829  1127 I ClientTransaction:     TopResumedActivityChangeItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},onTop=false,itemHash=0x556ed03}
+08-22 17:14:04.963   829  1127 I ClientTransaction:     PauseActivityItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},finished=false,userLeaving=true,dontReport=false,autoEnteringPip=false}
+08-22 17:14:04.963   829  1127 W ClientLifecycleManager:     TopResumedActivityChangeItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},onTop=false,itemHash=0x556ed03}
+08-22 17:14:04.963   829  1127 W ClientLifecycleManager:     PauseActivityItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}},finished=false,userLeaving=true,dontReport=false,autoEnteringPip=false}
+08-22 17:14:04.964   829   855 W SurfaceControl: setInputWindowInfo: sc: Surface(name=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity)/@0x662fc07, inputWindowHandle: 7b717b6 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity, frame=[Rect(0, 0 - 0, 0)], touchableRegion=SkRegion((0,0,1080,1920)), scaleFactor=1.0, transform=null, windowToken=android.os.BinderProxy@fe1351, displayId=0, isClone=false, contentSize=0x0, alpha=0.0, canOccludePresentation=false, caller: com.android.server.wm.InputWindowHandleWrapper.applyChangesToSurface:66 com.android.server.wm.InputMonitor.setInputWindowInfoIfNeeded:710 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:697 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:588 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2826 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2816 com.android.server.wm.WindowState.applyInOrderWithImeWindows:4677 com.android.server.wm.WindowState.forAllWindows:4478 com.android.server.wm.WindowContainer.forAllWindows:1785 com.android.server.wm.WindowContainer.forAllWindows:1785 
+08-22 17:14:04.964  4392  4392 W PauseActivityItem: skipExecutePause is true, ActivityInfo{ff0ef3a com.unity3d.player.UnityPlayerActivity}
+08-22 17:14:04.965   829  1127 W ContainerManager: updateFocusedWindow, oldFocus: Window{7b717b6 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity}, newFocus: null
+08-22 17:14:04.969   829   855 W SurfaceControl: setInputWindowInfo: sc: Surface(name=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity)/@0x662fc07, inputWindowHandle: 7b717b6 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity, frame=[Rect(0, 0 - 0, 0)], touchableRegion=SkRegion(), scaleFactor=1.0, transform=null, windowToken=android.os.BinderProxy@fe1351, displayId=0, isClone=false, contentSize=0x0, alpha=0.0, canOccludePresentation=false, caller: com.android.server.wm.InputWindowHandleWrapper.applyChangesToSurface:66 com.android.server.wm.InputMonitor.setInputWindowInfoIfNeeded:710 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:651 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:588 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2826 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2816 com.android.server.wm.WindowState.applyInOrderWithImeWindows:4677 com.android.server.wm.WindowState.forAllWindows:4478 com.android.server.wm.WindowContainer.forAllWindows:1785 com.android.server.wm.WindowContainer.forAllWindows:1785 
+08-22 17:14:04.984  1268  1268 I WorldSpace: FWKWrapper, onContainerFocusChanged, info=SpatialContainerInfo{id=5, taskId=9, pkg=com.anomalylab.cosmicslice, name=AndroidApp, visible=true, focus=false, type=xr, cat=15, life=background, size(1080, 1920, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, isSystem=false, isSecure=false, isLunchNoLimited=false, flags=0, callerContainerId=17, callerPkg=com.picoxr.systemui, launchedFromUid=2000, launchedFromPid=4235, lastActionPid=1300, imeTargetEntityId=0, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }}, focus=false
+08-22 17:14:04.984  1268  1268 I WorldSpace: ContainerLifecycleController, onContainerTransition: transition=ContainerLifecycleTransition(containerId=5, from=ContainerLifecycleState(primary=FOCUSED, secondary=FOCUSED_STABLE), to=ContainerLifecycleState(primary=VISIBLE, secondary=VISIBLE_STABLE), cause=BizLifecycleEvent(eventType=UNFOCUSE, currentContainerInfo=Info{id=5, pkg=com.anomalylab.cosmicslice, visible=true, focus=false, type=xr, cat=mr_safe, life=background, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1099530, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}, extraInfos=[FocusChanged(hasFocus=false)]), timestamp=1787390044984)
+08-22 17:14:04.985  4392  4392 I ViewRootImpl: windowFocusChanged, skip lost focus: com.android.internal.policy.DecorView{499f22d V.E...... R.....I. 0,0-1080,1920}[UnityPlayerActivity]
+08-22 17:14:04.987   829   855 I ContainerManager: startAnimation, anim: Animation{animationType=2, isFinished=false}, state: 1, isIgnore: false, timeout: 420, pending: 0, container: id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:04.987   829   829 I SpatialTransitionPlayer:    ChangeInfo{69d376b container=ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9} flags=0x0}
+08-22 17:14:04.987   829   855 I WindowManager: Deferred update visibility[true], reason: CLOSE_FULL_CONTAINER_ANIMATION, id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:04.988   829   855 I WindowManager: Deferred update visibility[true], reason: CLOSE_FULL_CONTAINER_ANIMATION, id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:04.988  1268  1268 I WorldSpace: ContainerLifecycleController, onContainerTransition: transition=ContainerLifecycleTransition(containerId=5, from=ContainerLifecycleState(primary=VISIBLE, secondary=VISIBLE_STABLE), to=ContainerLifecycleState(primary=HIDDEN, secondary=HIDDEN_ANIMATING), cause=BizLifecycleEvent(eventType=HIDE_ANIMATION, currentContainerInfo=Info{id=5, pkg=com.anomalylab.cosmicslice, visible=true, focus=false, type=xr, cat=mr_safe, life=background, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1099530, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}, extraInfos=[AnimationStart(animation=RemoteContainerAnimation{animationType=close, needDiscard=false, isImmersiveContainerSwitch=true, openingImmersiveContainer=id=8, pkg=com.picoxr.launcher, name=Launcher, v=false, f=true, t=stage, c=home, life=foreground, size(2560, 1440, 1280), entityId=2329113519980655, contentId=2329113519980654, useSystemEnvironment=false, useSystemEnvironmentMode=0, caller (-1, pkg=null), closingImmersiveContainer=id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui)})]), timestamp=1787390044988)
+08-22 17:14:04.999   829   855 W SurfaceControl: setInputWindowInfo: sc: Surface(name=15c703a ActivityRecordInputSink com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity)/@0x279902a, inputWindowHandle: 15c703a ActivityRecordInputSink com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity, frame=[Rect(0, 0 - 0, 0)], touchableRegion=SkRegion(), scaleFactor=0.0, transform=null, windowToken=null, displayId=0, isClone=false, contentSize=0x0, alpha=0.0, canOccludePresentation=false, caller: com.android.server.wm.InputWindowHandleWrapper.applyChangesToSurface:66 com.android.server.wm.ActivityRecordInputSink.applyChangesToSurfaceIfChanged:92 com.android.server.wm.ActivityRecord.prepareSurfaces:7855 com.android.server.wm.WindowContainer.prepareSurfaces:2866 com.android.server.wm.TaskFragment.prepareSurfaces:3511 com.android.server.wm.Task.prepareSurfaces:3392 com.android.server.wm.WindowContainer.prepareSurfaces:2866 com.android.server.wm.TaskFragment.prepareSurfaces:3511 com.android.server.wm.Task.prepareSurfaces:3392 com.android.server.wm.WindowContainer.prepareSurfaces:2866 
+08-22 17:14:05.030  4392  4412 I [PxrUnityNative]: [OpenXrProgram.cpp] [HandleSessionStateChangedEvent:581] session_manage_state XR_SESSION_STATE_FOCUSED received
+08-22 17:14:05.031  4392  4412 I Unity   : XrEventFunction FrameID >>>>>>XrEventDataBufferFunction eventType=XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+08-22 17:14:05.031  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:14:05.031  4392  4412 I Unity   : ByteDance.PICO.XR.PLog:d(String, String, Boolean)
+08-22 17:14:05.031  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:14:05.031  4392  4412 I Unity   : 
+08-22 17:14:05.031  4392  4412 I Unity   : XrEventDataBufferFunction sessionstate=5
+08-22 17:14:05.031  4392  4412 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+08-22 17:14:05.031  4392  4412 I Unity   : ByteDance.PICO.XR.PXR_Loader:XrEventDataBufferFunction(XrEventDataBuffer&)
+08-22 17:14:05.031  4392  4412 I Unity   : 
+08-22 17:14:05.194   829  1127 E NetworkWatchlistService: onDnsEvent error: java.lang.SecurityException: Only the system server should try to bind to the network stack.
+08-22 17:14:05.408   829   854 I ContainerManager: Animation timeout, container: id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:05.408   829   854 I ContainerManager: cancelAnimation, curAnim: Animation{animationType=2, isFinished=false}, state: 1, pending: 0, container: id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:05.408   829   854 I ContainerManager: finish_animation: 2, container: id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:05.408   829   854 I ContainerManager: onAnimationFinished, anim: Animation{animationType=2, isFinished=true}, state: 1, pending: 0, container: id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1
+08-22 17:14:05.408   829   854 I ContainerManager: updateVisible forceUpdate true, 5, visible true, isVisible true, reason: changeTaskVisibility, id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1, com.android.server.wm.TaskSpatialContainer.updateTaskVisible:337 com.android.server.wm.SpaceTaskImpl.checkVisibilityChanged:222 com.android.server.wm.SpaceTaskImpl.continueUpdateContainerVisible:237 com.android.server.wm.SpaceTransitionControllerImpl.lambda$startFullSwitchAnimation$0:128 com.android.server.wm.SpaceTransitionControllerImpl.$r8$lambda$-72TcXCvAol72LI64YGgk5_Wq74:0 com.android.server.wm.SpaceTransitionControllerImpl$$ExternalSyntheticLambda0.run:0 com.android.server.wm.SpaceTransitionControllerImpl.lambda$startFullSwitchAnimation$3:153 com.android.server.wm.SpaceTransitionControllerImpl$$ExternalSyntheticLambda2.run:0 com.android.server.wm.SpatialContainer$ContainerAnimation.finish:1371 com.android.server.wm.SpatialContainer.cancelAnimation:1287 com.android.server.wm.SpatialContainer.lambda$startAnimation$1:1241 com.android.server.wm.SpatialContainer.$r8$lambda$EH85Y42-dRXqsKvaAjYgmlbm50E:0 
+08-22 17:14:05.408  1268  1268 I WorldSpace: ContainerLifecycleController, onContainerTransition: transition=ContainerLifecycleTransition(containerId=5, from=ContainerLifecycleState(primary=HIDDEN, secondary=HIDDEN_ANIMATING), to=ContainerLifecycleState(primary=HIDDEN, secondary=HIDDEN_ANIMATING), cause=BizLifecycleEvent(eventType=ANIMATION_CANCEL, currentContainerInfo=Info{id=5, pkg=com.anomalylab.cosmicslice, visible=true, focus=false, type=xr, cat=mr_safe, life=background, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1099530, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}, extraInfos=[]), timestamp=1787390045408)
+08-22 17:14:05.408   829   854 I ContainerManager: updateVisible: true, reason: changeTaskVisibility, id=5, pkg=com.anomalylab.cosmicslice, v=true, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1, com.android.server.wm.TaskSpatialContainer.updateTaskVisible:337 com.android.server.wm.SpaceTaskImpl.checkVisibilityChanged:222 com.android.server.wm.SpaceTaskImpl.continueUpdateContainerVisible:237 com.android.server.wm.SpaceTransitionControllerImpl.lambda$startFullSwitchAnimation$0:128 com.android.server.wm.SpaceTransitionControllerImpl.$r8$lambda$-72TcXCvAol72LI64YGgk5_Wq74:0 com.android.server.wm.SpaceTransitionControllerImpl$$ExternalSyntheticLambda0.run:0 com.android.server.wm.SpaceTransitionControllerImpl.lambda$startFullSwitchAnimation$3:153 com.android.server.wm.SpaceTransitionControllerImpl$$ExternalSyntheticLambda2.run:0 com.android.server.wm.SpatialContainer$ContainerAnimation.finish:1371 com.android.server.wm.SpatialContainer.cancelAnimation:1287 com.android.server.wm.SpatialContainer.lambda$startAnimation$1:1241 com.android.server.wm.SpatialContainer.$r8$lambda$EH85Y42-dRXqsKvaAjYgmlbm50E:0 
+08-22 17:14:05.408  1268  1268 I WorldSpace: FWKWrapper, onContainerVisibilityChanged, info=SpatialContainerInfo{id=5, taskId=9, pkg=com.anomalylab.cosmicslice, name=AndroidApp, visible=true, focus=false, type=xr, cat=15, life=background, size(1080, 1920, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, isSystem=false, isSecure=false, isLunchNoLimited=false, flags=0, callerContainerId=17, callerPkg=com.picoxr.systemui, launchedFromUid=2000, launchedFromPid=4235, lastActionPid=1300, imeTargetEntityId=0, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }}, visible=true, bWaitAnim=true
+08-22 17:14:05.410   829   854 W WindowManager: resetDrawState Window{7b717b6 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity}, to DRAW_PENDING com.android.server.wm.WindowState.sendAppVisibilityToClients:3240 com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1317 com.android.server.wm.WindowToken.setClientVisible:395 com.android.server.wm.ActivityRecord.setClientVisible:7228 com.android.server.wm.ActivityRecord.commitVisibility:5883 com.android.server.wm.Transition.finishTransition:1417 
+08-22 17:14:05.410   829   854 I WindowManager: Reporting gone in Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}}
+08-22 17:14:05.410   829   855 W SurfaceControl: setInputWindowInfo: sc: Surface(name=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity)/@0x662fc07, inputWindowHandle: 7b717b6 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity, frame=[Rect(0, 0 - 0, 0)], touchableRegion=SkRegion(), scaleFactor=1.0, transform=null, windowToken=android.os.BinderProxy@fe1351, displayId=0, isClone=false, contentSize=0x0, alpha=0.0, canOccludePresentation=false, caller: com.android.server.wm.InputWindowHandleWrapper.applyChangesToSurface:66 com.android.server.wm.InputMonitor.setInputWindowInfoIfNeeded:710 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:651 com.android.server.wm.InputMonitor$UpdateInputForAllWindowsConsumer.accept:588 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2826 com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply:2816 com.android.server.wm.WindowState.applyInOrderWithImeWindows:4677 com.android.server.wm.WindowState.forAllWindows:4478 com.android.server.wm.WindowContainer.forAllWindows:1785 com.android.server.wm.WindowContainer.forAllWindows:1785 
+08-22 17:14:05.411   829   854 I ClientTransaction: [TXN_DEBUG] addTransactionItem: name=a79703f_1099979, identity=175730751, hash=1138951160, item=StopActivityItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}}}, size=1, callers=com.android.server.wm.ClientLifecycleManager.scheduleTransactionItem:118 com.android.server.wm.ActivityRecord.stopIfPossible:6811 com.android.server.wm.ActivityTaskSupervisor.processStoppingAndFinishingActivities:2561 com.android.server.wm.ActivityTaskSupervisor.activityIdleInternal:1698 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.activityIdleFromMessage:3123 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessageInner:3156 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessage:3098 android.os.Handler.dispatchMessage:110 android.os.Looper.loopOnce:284 android.os.Looper.loop:384 android.os.HandlerThread.run:85 com.android.server.ServiceThread.run:49 
+08-22 17:14:05.411   829   854 I ClientTransaction:     StopActivityItem{mActivityToken=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}}}
+08-22 17:14:05.411  1268  1429 I WorldSpace: WorldSpaceDB, syncSpaceDetailToClient: {"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}, spaceId: 1
+08-22 17:14:05.411  1268  1429 I WorldSpace: WorldSpaceBinder, sendToClient, clientName=com.picoxr.systemui, code=103, bundle=Bundle[space_detail={"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}]
+08-22 17:14:05.411  1268  1429 I WorldSpace: WorldSpaceBinder, sendToClient, clientName=quickSettingAnimation, code=103, bundle=Bundle[space_detail={"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}]
+08-22 17:14:05.411  1268  1429 I WorldSpace: WorldSpaceBinder, sendToClient, clientName=com.picoxr.systemui:decor, code=103, bundle=Bundle[space_detail={"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}]
+08-22 17:14:05.411  1300  4531 I SpatialSystemUI: WSIpc, receiverWSData, code=103, bundle=Bundle[space_detail={"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}]
+08-22 17:14:05.412  1300  4675 I SpatialSystemUI: RunningRepository, onSpaceDetailChange: currSpaceID=1, spaceDetailInfo=(spaceId=1, containers=[(id=5, intent=ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity}), (id=14, intent=ComponentInfo{com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity})], groups={})
+08-22 17:14:05.415  1300  5723 I SpatialSystemUI: RunningRepository, handleRunning: runningList={1_com.anomalylab.cosmicslice=[(gid=-1,cId=5,tid=9,visible=true,type=xr,cate=mr_safe,intent=ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity},lat=1099530)], 1_com.templecircuit.monopoly=[(gid=-1,cId=14,tid=19,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity},lat=1041565)]}
+08-22 17:14:05.431   829  1127 I ContainerManager: updateVisible: false, reason: changeTaskVisibility, id=5, pkg=com.anomalylab.cosmicslice, v=false, f=false, t=xr, c=mr_safe, life=background, size(1080, 1920, 1280), entityId=2329113519980636, contentId=2329113519980635, caller (17, pkg=com.picoxr.systemui), taskId: 8, topActivity: ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}, cornerRadius: -1, com.android.server.wm.TaskSpatialContainer.updateTaskVisible:337 com.android.server.wm.SpaceTaskImpl.checkVisibilityChanged:222 com.android.server.wm.SpaceRootWindowContainerImpl.lambda$performSurfacePlacementNoTrace$0:28 com.android.server.wm.SpaceRootWindowContainerImpl$$ExternalSyntheticLambda1.accept:0 com.android.server.wm.Task.forAllRootTasks:3270 com.android.server.wm.WindowContainer.forAllRootTasks:2229 com.android.server.wm.SpaceRootWindowContainerImpl.performSurfacePlacementNoTrace:27 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:938 com.android.server.wm.RootWindowContainer.performSurfacePlacement:793 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:173 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:123 com.android.server.wm.WindowManagerService.relayoutWindow:2838 
+08-22 17:14:05.431  1268  1268 I WorldSpace: FWKWrapper, onContainerVisibilityChanged, info=SpatialContainerInfo{id=5, taskId=9, pkg=com.anomalylab.cosmicslice, name=AndroidApp, visible=false, focus=false, type=xr, cat=15, life=background, size(1080, 1920, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, isSystem=false, isSecure=false, isLunchNoLimited=false, flags=0, callerContainerId=17, callerPkg=com.picoxr.systemui, launchedFromUid=2000, launchedFromPid=4235, lastActionPid=1300, imeTargetEntityId=0, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }}, visible=false, bWaitAnim=false
+08-22 17:14:05.431  4392  4392 W Activity: onPause com.unity3d.player.UnityPlayerActivity@b871db
+08-22 17:14:05.431  4392  4392 I pico-ipc-client: onActivityPaused activity:com.unity3d.player.UnityPlayerActivity@b871db
+08-22 17:14:05.431  1268  1268 I WorldSpace: ContainerLifecycleController, onContainerTransition: transition=ContainerLifecycleTransition(containerId=5, from=ContainerLifecycleState(primary=HIDDEN, secondary=HIDDEN_ANIMATING), to=ContainerLifecycleState(primary=HIDDEN, secondary=HIDDEN_STABLE), cause=BizLifecycleEvent(eventType=HIDE, currentContainerInfo=Info{id=5, pkg=com.anomalylab.cosmicslice, visible=false, focus=false, type=xr, cat=mr_safe, life=background, size(1080, 1920, 1280), min size(360, 640, 1280), max size(3600, 5400, 1280), density=400, entityId=2329113519980636, contentId=2329113519980635, callerContainerId=17, callerPkg=com.picoxr.systemui, createTime=492860, lastActiveTime=1099530, baseIntent=Intent { cmp=com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity }, launchedFromPid=4235, launchedFromUid=2000, lastActionPid=1300}, extraInfos=[VisibilityChanged(visible=false, bWaitAnim=false)]), timestamp=1787390045431)
+08-22 17:14:05.432   529   529 I SfSpatialScene: setEntityVisibility: layer: Background for 6e27ed8 SurfaceView[com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity]#180, isVisible: 0
+08-22 17:14:05.432  1268  1429 I WorldSpace: WorldSpaceDB, syncSpaceDetailToClient: {"space_id":1,"containers":[{"container_id":5,"task_id":9,"intent":"intent:#Intent;component=com.anomalylab.cosmicslice\/com.unity3d.player.UnityPlayerActivity;end"},{"container_id":14,"task_id":19,"intent":"intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.templecircuit.monopoly\/com.unity3d.player.UnityPlayerActivity;end"}],"groups":{}}, spaceId: 1
+08-22 17:14:05.433  4392  4412 I [PxrUnityNative]: [Input.cpp] [Stop:238] Started.
+08-22 17:14:05.433  4392  4412 I [PxrUnityNative]: [Input.cpp] [DisconnectAllDevices:933] deviceId : 2, connected : false 
+08-22 17:14:05.433  4392  4412 I [PxrUnityNative]: [Input.cpp] [DisconnectAllDevices:933] deviceId : 1, connected : false 
+08-22 17:14:05.433  4392  4412 I [PxrUnityNative]: [Input.cpp] [DisconnectAllDevices:933] deviceId : 0, connected : false 
+08-22 17:14:05.433  4392  4412 I [PxrUnityNative]: [Input.cpp] [Stop:244] Ended.
+08-22 17:14:05.434  4392  4465 I [PxrUnityNative]: [Display.cpp] [GfxThread_Stop:586]  Started. m_IsRuning:true
+08-22 17:14:05.434  4392  4465 I [PxrUnityNative]: [Display.cpp] [DestroyEyeTextures:1158] Started.
+08-22 17:14:05.434  4392  4465 I [PxrUnityNative]: [Display.cpp] [DestroyEyeTextures:1175] DestroyEyeTextures Ended.
+08-22 17:14:05.434  4392  4465 I [PxrUnityNative]: [OpenXrProgram.cpp] [DestroyLayer:863] DestroyLayer layerId=0
+08-22 17:14:05.434  4392  4465 I [PxrUnityNative]: [Display.cpp] [GfxThread_Stop:612] GfxThread_Stop Ended.
+08-22 17:14:05.434  4392  4412 I [PxrUnityNative]: [Display.cpp] [Stop:912] Stop Started.
+08-22 17:14:05.435  4392  4412 I [PxrUnityNative]: [Display.cpp] [Stop:916] Stop Ended.
+08-22 17:14:05.436  4392  4392 W Activity: onStop com.unity3d.player.UnityPlayerActivity@b871db
+08-22 17:14:05.436  4392  4392 I pico-ipc-client: onActivityStopped activity:com.unity3d.player.UnityPlayerActivity@b871db
+08-22 17:14:05.437   547   683 W PxrNotificationService: [###][###:115]: send, pid: 1329, action: teatracker_event_action, id: 0, value1: provider_lifecycle_start, value2: 0, value3: {"client_app_id":"","client_name":"星际切割","client_pkg_name":"com.anomalylab.cosmicslice","client_version":"0.1.0","key_app_id":"611354","provider_type":"scene_capture","pxr_sdk_version":"Unity_XR_6.0.0","from_state":1,"to_state":2}
+08-22 17:14:05.437  4392  4392 I pico-ipc-client: onActivitySaveInstanceState activity:com.unity3d.player.UnityPlayerActivity@b871db
+08-22 17:14:05.437   547   681 W PxrNotificationService: [###][###:115]: send, pid: 1329, action: teatracker_event_action, id: 0, value1: provider_lifecycle_result, value2: 0, value3: {"client_app_id":"","client_name":"星际切割","client_pkg_name":"com.anomalylab.cosmicslice","client_version":"0.1.0","key_app_id":"611354","provider_type":"scene_capture","pxr_sdk_version":"Unity_XR_6.0.0","error_code":0,"from_state":1,"to_state":2,"duration":0.5018329999875277}
+08-22 17:14:05.437   547   682 W PxrNotificationService: [###][###:115]: send, pid: 1329, action: teatracker_event_action, id: 0, value1: sense_session_lifecycle_result, value2: 0, value3: {"client_app_id":"","client_name":"星际切割","client_pkg_name":"com.anomalylab.cosmicslice","client_version":"0.1.0","key_app_id":"611354","providers":"scene_capture|","pxr_sdk_version":"Unity_XR_6.0.0","error_code":0,"provider_count":0,"session_life_cycle_type":2,"duration":0.6828340000938624,"provider_done_duration":0.6000000000931323,"server_done_duration":0.6698340000584722}
+08-22 17:14:05.449   829  1486 I ActivityTaskManager: Activity stopped: token=Token{e2fe4ca ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}}
+08-22 17:14:05.449   829  1486 I WindowManager: Saving icicle of ActivityRecord{115288933 u0 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity t9}: Bundle[mParcelledData.dataSize=432]
+08-22 17:14:05.449   829  1486 W WindowManager: destroySurface WindowStateAnimator{c76dfb3 com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity}, to NO_SURFACE com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:420 com.android.server.wm.WindowState.destroySurfaceUnchecked:3288 com.android.server.wm.WindowState.destroySurface:3267 com.android.server.wm.ActivityRecord.destroySurfaces:6227 com.android.server.wm.ActivityRecord.destroySurfaces:6208 com.android.server.wm.ActivityRecord.activityStopped:6904 
+08-22 17:14:05.451  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: Light estimation provider [12970367412861638448] state changed from [2] to [1]
+08-22 17:14:05.451  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: Spatial mesh provider [12970367412862023472] state changed from [2] to [1]
+08-22 17:14:05.451  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: Spatial plane provider [12970367412861728560] state changed from [2] to [1]
+08-22 17:14:05.463   829   853 W UsageStatsService: Failed to update counter set: java.io.FileNotFoundException: /proc/kda_procstat/set: open failed: ENOENT (No such file or directory)
+08-22 17:14:05.716  1300  5718 I SpatialSystemUI: DockManager, handleRunningList, RunningSize=2,list={1_com.anomalylab.cosmicslice=[(gid=-1,cId=5,tid=9,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity},lat=1099530)], 1_com.templecircuit.monopoly=[(gid=-1,cId=14,tid=19,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity},lat=1041565)]}
+08-22 17:14:05.716  1300  5718 I SpatialSystemUI: DockManager, update, showInfo=@21972948(星际切割,1787389438644_1_com.anomalylab.cosmicslice,com.unity3d.player.UnityPlayerActivity,runInfo=(true,containers=[(gid=-1,cId=5,tid=9,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity},lat=1099530)]))
+08-22 17:14:05.716  1300  5718 I SpatialSystemUI: DockManager, update, showInfo=@174106759(香火争渡,1787389966826_1_com.templecircuit.monopoly,com.unity3d.player.UnityPlayerActivity,runInfo=(true,containers=[(gid=-1,cId=14,tid=19,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity},lat=1041565)]))
+08-22 17:14:05.716  1300  5718 I SpatialSystemUI: DockManager, showRunning, runningSize=2,list=[@174106759(香火争渡,1787389966826_1_com.templecircuit.monopoly,com.unity3d.player.UnityPlayerActivity,runInfo=(true,containers=[(gid=-1,cId=14,tid=19,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.templecircuit.monopoly/com.unity3d.player.UnityPlayerActivity},lat=1041565)])), @21972948(星际切割,1787389438644_1_com.anomalylab.cosmicslice,com.unity3d.player.UnityPlayerActivity,runInfo=(true,containers=[(gid=-1,cId=5,tid=9,visible=false,type=xr,cate=mr_safe,intent=ComponentInfo{com.anomalylab.cosmicslice/com.unity3d.player.UnityPlayerActivity},lat=1099530)]))]
+08-22 17:14:05.716  1300  5718 I SpatialSystemUI: DockManager, showPersist, size=4,list=[@94690496(资源库,1787388959201_1_com.picoxr.systemui_launchpad,.platform.MainActivity,unPin=false,runInfo=(false,containers=[])), @250916345(浏览器,1787388959284_1_com.picoxr.browser,.platform.BrowserActivity,runInfo=(false,containers=[])), @46539070(文件管理,1787388959352_1_com.picoxr.files,.platform.MainActivity,runInfo=(false,containers=[])), @7420831(设置,1787388959433_1_com.picovr.settings,com.picovr.vrsettingslib.UnityActivity,runInfo=(false,containers=[]))]
+08-22 17:14:05.921  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:09.671  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:11.421  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:11.421  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:12.805  1256  1610 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:7 perf_level:1
+08-22 17:14:12.805  1256  1606 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:9 perf_level:0
+08-22 17:14:12.822  1256  1608 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:4 perf_level:2
+08-22 17:14:15.462   829   916 E SysMonitorDump: Notify surfaceflinger dump info error.java.lang.SecurityException
+08-22 17:14:15.789  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:17.421  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:17.422  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:19.334  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, Update, frameCount = 45000
+08-22 17:14:19.334  1763  2509 I Unity   : SendTexture:Update()
+08-22 17:14:19.334  1763  2509 I Unity   : 
+08-22 17:14:19.335  1763  2509 I Unity   : [ScenarioProvider] Info: AVATAR_SERVICE_NATIVE:Unity SendTexture, CallPluginAtEndOfFrames, frameCount = 45000
+08-22 17:14:19.335  1763  2509 I Unity   : <CallPluginAtEndOfFrames>d__57:MoveNext()
+08-22 17:14:19.335  1763  2509 I Unity   : UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+08-22 17:14:19.335  1763  2509 I Unity   : 
+08-22 17:14:22.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:24.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:24.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:28.361  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:30.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:30.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:33.672  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:36.350  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:36.350  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:40.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:42.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:42.350  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:46.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:48.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:48.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:52.356  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:14:54.361  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:14:54.361  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:14:58.366  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:00.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:00.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:00.635   829  4820 E NetworkWatchlistService: onDnsEvent error: java.lang.SecurityException: Only the system server should try to bind to the network stack.
+08-22 17:15:04.361  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:06.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:06.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:10.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:12.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:12.355  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:16.361  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:18.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:18.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:22.350  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:24.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:24.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:28.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:30.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:30.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:34.366  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:36.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:36.349  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:40.350  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:42.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:42.344  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:46.360  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:48.356  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:48.356  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:52.345  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:53.605  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:53.605  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448
+08-22 17:15:53.871   829  3282 E EventsTrainService: java.lang.NullPointerException: Null reference used for synchronization (monitor-enter)
+08-22 17:15:55.119   829  1143 E NetworkWatchlistService: onDnsEvent error: java.lang.SecurityException: Only the system server should try to bind to the network stack.
+08-22 17:15:56.855  1256  1606 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:9 perf_level:0
+08-22 17:15:56.855  1256  1611 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:7 perf_level:1
+08-22 17:15:56.872  1256  1609 E SPR-PerformancePolicySystem: PerfL::Advertise RenderPerfExceptionEvent exceptionType:4 perf_level:2
+08-22 17:15:57.673   829  1145 E BoostFramework: BoostFramework() : Exception_1 = java.lang.ClassNotFoundException: com.qualcomm.qti.Performance
+08-22 17:15:57.673   829  1145 E BoostFramework: BoostFramework() Ux Perf: Exception = java.lang.ClassNotFoundException: com.qualcomm.qti.UxPerformance
+08-22 17:15:57.674   829  1145 E BoostFramework: BoostFramework() : Exception_1 = java.lang.ClassNotFoundException: com.qualcomm.qti.Performance
+08-22 17:15:57.674   829  1145 E BoostFramework: BoostFramework() Ux Perf: Exception = java.lang.ClassNotFoundException: com.qualcomm.qti.UxPerformance
+08-22 17:15:57.699  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412862023472
+08-22 17:15:59.421  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861728560
+08-22 17:15:59.438  1256  1592 E SPR-OpenXRPicoSpatialSensingExtension: onSenseDataUpdatedPICO------------12970367412861638448

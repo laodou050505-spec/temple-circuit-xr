@@ -1,0 +1,1 @@
+767f223810b889f7f2b29324d33b8a5ddb78214e2f1f6f11abafa29f43beda54  Builds/TempleCircuit-PICO-release.apk

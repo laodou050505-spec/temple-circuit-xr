@@ -17,6 +17,9 @@ namespace TempleCircuit
     {
         static TempleXRTabletopRig activeRig;
 
+        /// <summary>The currently active tabletop rig, or null when not in-scene.</summary>
+        public static TempleXRTabletopRig Active => activeRig;
+
         public TempleCircuitGame game;
         public TempleDiceInteractor dice;
         public TempleStartScreen startScreen;
@@ -866,6 +869,57 @@ namespace TempleCircuit
             // user's physical surroundings behind them.
             headCamera.clearFlags = CameraClearFlags.SolidColor;
             headCamera.backgroundColor = Color.clear;
+        }
+
+        // ── v2 Polish: Game-event haptic helpers ───────────────────────────────
+
+        /// <summary>
+        /// Fires a haptic impulse on both controllers simultaneously.
+        /// Safe to call from non-XR contexts (no-op if devices are not valid).
+        /// Amplitude 0–1, duration in seconds.
+        /// </summary>
+        public void SendBothHandsHaptic(float amplitude, float duration)
+        {
+            amplitude = Mathf.Clamp01(amplitude);
+            duration = Mathf.Max(0f, duration);
+            if (leftDevice.isValid)
+                leftDevice.SendHapticImpulse(0u, amplitude, duration);
+            if (rightDevice.isValid)
+                rightDevice.SendHapticImpulse(0u, amplitude, duration);
+        }
+
+        /// <summary>
+        /// Two-pulse haptic on both controllers ("confirm" feel).
+        /// Use for property purchase, upgrade complete.
+        /// </summary>
+        public void SendDoubleHaptic(float amplitude)
+        {
+            StartCoroutine(DoubleHapticRoutine(amplitude));
+        }
+
+        System.Collections.IEnumerator DoubleHapticRoutine(float amplitude)
+        {
+            SendBothHandsHaptic(amplitude, 0.08f);
+            yield return new WaitForSecondsRealtime(0.15f);
+            SendBothHandsHaptic(amplitude * 0.65f, 0.06f);
+        }
+
+        /// <summary>
+        /// Three ascending pulses on both controllers ("celebration" feel).
+        /// Use for victory and major milestones.
+        /// </summary>
+        public void SendVictoryHaptic()
+        {
+            StartCoroutine(VictoryHapticRoutine());
+        }
+
+        System.Collections.IEnumerator VictoryHapticRoutine()
+        {
+            SendBothHandsHaptic(0.40f, 0.09f);
+            yield return new WaitForSecondsRealtime(0.18f);
+            SendBothHandsHaptic(0.62f, 0.11f);
+            yield return new WaitForSecondsRealtime(0.22f);
+            SendBothHandsHaptic(0.85f, 0.22f);
         }
     }
 }

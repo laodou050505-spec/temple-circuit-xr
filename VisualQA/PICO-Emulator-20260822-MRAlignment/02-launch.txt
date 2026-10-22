@@ -1,0 +1,10 @@
+  bash arg: -p
+  bash arg: com.templecircuit.monopoly
+  bash arg: 1
+args: [-p, com.templecircuit.monopoly, 1]
+ arg: "-p"
+ arg: "com.templecircuit.monopoly"
+ arg: "1"
+data="com.templecircuit.monopoly"
+Events injected: 1
+## Network stats: elapsed time=22ms (0ms mobile, 0ms wifi, 22ms not connected)
