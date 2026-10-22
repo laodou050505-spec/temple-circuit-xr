@@ -179,8 +179,9 @@ namespace TempleCircuit
                 Debug.LogWarning("Temple start cover feather shader is missing; using the unfeathered cover.", this);
             }
 
-            startButtonFeedback = CreateButtonArea("StartButton", coverRect, StartMin, StartMax, TempleStartButtonShape.Start, BeginGameFromButton, new Color32(226, 183, 69, 255));
-            exitButtonFeedback = CreateButtonArea("ExitButton", coverRect, ExitMin, ExitMax, TempleStartButtonShape.Exit, QuitGameFromButton, new Color32(72, 162, 132, 255));
+            // v3 Polish: pass game reference so feedback can play hover audio and fire haptics.
+            startButtonFeedback = CreateButtonArea("StartButton", coverRect, StartMin, StartMax, TempleStartButtonShape.Start, BeginGameFromButton, new Color32(226, 183, 69, 255), game);
+            exitButtonFeedback = CreateButtonArea("ExitButton", coverRect, ExitMin, ExitMax, TempleStartButtonShape.Exit, QuitGameFromButton, new Color32(72, 162, 132, 255), game);
 
             if (rig != null)
             {
@@ -434,7 +435,8 @@ namespace TempleCircuit
 #endif
         }
 
-        static TempleStartButtonFeedback CreateButtonArea(string name, RectTransform parent, Vector2 anchorMin, Vector2 anchorMax, TempleStartButtonShape shape, UnityEngine.Events.UnityAction action, Color accent)
+        // v3 Polish: gameRef added so feedback can play hover audio and fire haptics.
+        static TempleStartButtonFeedback CreateButtonArea(string name, RectTransform parent, Vector2 anchorMin, Vector2 anchorMax, TempleStartButtonShape shape, UnityEngine.Events.UnityAction action, Color accent, TempleCircuitGame gameRef = null)
         {
             var image = CreateImage(name, parent, Color.clear);
             var rect = image.rectTransform;
@@ -444,7 +446,7 @@ namespace TempleCircuit
             rect.offsetMax = Vector2.zero;
 
             var feedback = image.gameObject.AddComponent<TempleStartButtonFeedback>();
-            feedback.Configure(image, accent, shape, action);
+            feedback.Configure(image, accent, shape, action, gameRef);
             return feedback;
         }
 
@@ -575,14 +577,22 @@ namespace TempleCircuit
         bool pressed;
         float forcedPressedUntil;
         Vector3 initialScale;
+        // v3 Polish: smooth scale for hover (+5%) and press (–3%) states.
+        // The authored button silhouette stays fully visible at all times; only the
+        // colour-overlay and scale change, never the hit-polygon or reference artwork.
+        float currentScaleMultiplier = 1f;
+        bool wasAnyHover;
+        TempleCircuitGame game;
 
-        public void Configure(Image target, Color color, TempleStartButtonShape buttonShape, UnityEngine.Events.UnityAction action)
+        // v3 Polish: gameRef supplies audio manager and haptic target (may be null in desktop mode).
+        public void Configure(Image target, Color color, TempleStartButtonShape buttonShape, UnityEngine.Events.UnityAction action, TempleCircuitGame gameRef = null)
         {
             overlay = target;
             rect = target.rectTransform;
             accent = color;
             shape = buttonShape;
             clickAction = action;
+            game = gameRef;
             initialScale = rect.localScale;
             overlay.sprite = GetShapeSprite(shape);
             overlay.type = Image.Type.Simple;
@@ -594,7 +604,11 @@ namespace TempleCircuit
 
         public void SetWorldHover(bool value)
         {
+            var wasWorld = worldHover;
             worldHover = value;
+            // v3 Polish: trigger hover entrance effects for controller ray hover too.
+            if (worldHover && !wasWorld && !(pointerHover))
+                OnHoverEntered();
             ApplyVisual(false);
         }
 
@@ -606,13 +620,19 @@ namespace TempleCircuit
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            var wasInside = pointerHover;
             pointerHover = IsPointerInsideShape(eventData);
+            if (pointerHover && !wasInside && !worldHover)
+                OnHoverEntered();
             ApplyVisual(false);
         }
 
         public void OnPointerMove(PointerEventData eventData)
         {
+            var wasInside = pointerHover;
             pointerHover = IsPointerInsideShape(eventData);
+            if (pointerHover && !wasInside && !worldHover)
+                OnHoverEntered();
             if (!pointerHover)
                 pressed = false;
             ApplyVisual(false);
@@ -644,6 +664,16 @@ namespace TempleCircuit
                 clickAction?.Invoke();
         }
 
+        // v3 Polish: play hover audio and light haptic on first enter.
+        void OnHoverEntered()
+        {
+            game?.audioManager?.PlayUiHover();
+#if UNITY_ANDROID && !UNITY_EDITOR
+            // Light haptic on hover: spec requires ~0.15 amplitude, ~20ms.
+            TempleXRTabletopRig.Active?.SendBothHandsHaptic(0.15f, 0.02f);
+#endif
+        }
+
         void ApplyVisual(bool immediate)
         {
             if (overlay == null || rect == null)
@@ -651,17 +681,44 @@ namespace TempleCircuit
 
             var hovering = pointerHover || worldHover;
             var visuallyPressed = pressed || Time.unscaledTime < forcedPressedUntil;
-            var targetAlpha = visuallyPressed ? 0.55f : hovering ? 0.30f : 0f;
+            // v3 Polish: normal state shows a faint warm glow so the button reads as
+            // interactive even before the user aims at it.  Hover and press brighten further.
+            var targetAlpha = visuallyPressed ? 0.65f : hovering ? 0.42f : 0.14f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
-            // The authored button is an irregular painted surface. Feedback is
-            // colour-only and never grows beyond or shrinks inside that exact
-            // surface, so the source artwork remains perfectly registered.
-            rect.localScale = initialScale;
+
+            // v3 Polish: smooth scale easing.  Time constant 0.09 s gives ≈0.09 s rise
+            // (spec: 0.08–0.12 s).  When immediate == true (Configure), snap instantly.
+            var targetScale = visuallyPressed ? 0.97f : hovering ? 1.05f : 1.0f;
+            if (immediate)
+                currentScaleMultiplier = targetScale;
         }
 
         void LateUpdate()
         {
-            ApplyVisual(false);
+            if (overlay == null || rect == null)
+                return;
+
+            // Re-read hover state every frame to catch worldHover changes from the rig.
+            var hovering = pointerHover || worldHover;
+            var visuallyPressed = pressed || Time.unscaledTime < forcedPressedUntil;
+
+            // Detect hover entrance from world hover arriving in LateUpdate order.
+            var anyHover = hovering;
+            if (anyHover && !wasAnyHover)
+            {
+                // Edge already handled in SetWorldHover / OnPointerEnter for same-frame
+                // transitions; this path covers cases where the flag arrives late.
+            }
+            wasAnyHover = anyHover;
+
+            var targetAlpha = visuallyPressed ? 0.65f : hovering ? 0.42f : 0.14f;
+            overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
+
+            var targetScale = visuallyPressed ? 0.97f : hovering ? 1.05f : 1.0f;
+            // Exponential smoothing: 1 − e^(−dt / τ) where τ = 0.09 s.
+            currentScaleMultiplier = Mathf.Lerp(currentScaleMultiplier, targetScale,
+                1f - Mathf.Exp(-Time.unscaledDeltaTime / 0.09f));
+            rect.localScale = initialScale * currentScaleMultiplier;
         }
 
         bool IsPointerInsideShape(PointerEventData eventData)

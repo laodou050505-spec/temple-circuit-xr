@@ -15,11 +15,17 @@ namespace TempleCircuit
         public AudioClip pawnStep;
         public AudioClip claimChime;
         public AudioClip uiClick;
+        // v3 Polish: soft hover sound for title-screen START/EXIT buttons.
+        // Source: ange-embed ui_audio, generic_pos_soft_01.mp3 (short glass ping chord).
+        // If not assigned in Inspector, auto-loaded from Resources/UIAudio/TempleButtonHover.
+        public AudioClip uiHover;
         [Range(0f, 1f)] public float diceRollVolume = 0.65f;
         [Range(0f, 1f)] public float diceLandVolume = 0.8f;
         [Range(0f, 1f)] public float pawnStepVolume = 0.23f;
         [Range(0f, 1f)] public float claimVolume = 0.7f;
         [Range(0f, 1f)] public float uiVolume = 0.35f;
+        // v3 Polish: hover audio is quieter than the confirm click.
+        [Range(0f, 1f)] public float uiHoverVolume = 0.18f;
 
         AudioSource musicSource;
         AudioSource sfxSource;
@@ -45,12 +51,19 @@ namespace TempleCircuit
 
         void Start()
         {
+            // v3 Polish: auto-load UI clips from Resources if Inspector slots left empty.
+            // File source: ange-embed ui_audio (OFL-compatible; see POLISH_REPORT.md).
+            if (uiClick == null)
+                uiClick = Resources.Load<AudioClip>("UIAudio/TempleButtonClick");
+            if (uiHover == null)
+                uiHover = Resources.Load<AudioClip>("UIAudio/TempleButtonHover");
+
             if (backgroundMusic == null || musicSource == null)
                 return;
             musicSource.clip = backgroundMusic;
             musicSource.volume = musicVolume;
             musicSource.Play();
-            Debug.Log($"Temple audio active: BGM '{backgroundMusic.name}' is playing; dice, pawn, claim and UI clips are ready.", this);
+            Debug.Log($"Temple audio active: BGM '{backgroundMusic.name}' is playing; dice, pawn, claim, UI click and UI hover clips are ready.", this);
         }
 
         public void PlayDiceRoll()
@@ -76,6 +89,12 @@ namespace TempleCircuit
         public void PlayUiClick()
         {
             PlayOneShot(uiClick, uiVolume, 0.98f, 1.02f);
+        }
+
+        // v3 Polish: soft hover entrance chime for title-screen buttons.
+        public void PlayUiHover()
+        {
+            PlayOneShot(uiHover, uiHoverVolume, 0.97f, 1.03f);
         }
 
         void PlayOneShot(AudioClip clip, float volume, float minPitch, float maxPitch)

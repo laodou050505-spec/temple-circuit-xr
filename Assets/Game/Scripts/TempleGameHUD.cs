@@ -135,7 +135,11 @@ namespace TempleCircuit
                 // "Random prayer\nGood or ill fate") fit without shrinking below the original
                 // Chinese visual size. OverflowModes.Overflow lets extra lines show beyond the
                 // box edge rather than being truncated silently.
-                var content = CreateText("Content", panel.rectTransform, 20, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(258f, 110f));
+                // v3 Polish VR spec C: raised fontSize 20→26 per user complaint ("small text on tiles").
+                // At typical tile spacing (0.10–0.15m board), scale≈0.0004–0.0006 m/unit.
+                // Cap height = 26×0.0005×0.72 = 9.36mm → readable at d ≤ 0.55m; 6DoF allows approach.
+                // Auto-sizing (fontSizeMin 16) preserves layout if a longer property name forces wrapping.
+                var content = CreateText("Content", panel.rectTransform, 26, TextAnchor.MiddleCenter, new Color32(255, 250, 232, 255), new Vector2(0f, 1f), new Vector2(258f, 110f));
                 content.fontStyle = FontStyles.Bold;
                 content.fontWeight = FontWeight.Bold;
                 content.outlineColor = new Color32(24, 34, 29, 235);
@@ -143,6 +147,9 @@ namespace TempleCircuit
                 content.textWrappingMode = TextWrappingModes.Normal;
                 content.overflowMode = TextOverflowModes.Overflow;
                 content.lineSpacing = -3f;
+                content.enableAutoSizing = true;
+                content.fontSizeMin = 16f;
+                content.fontSizeMax = 26f;
 
                 var billboard = canvasObject.GetComponent<TempleTileInfoBillboard>();
                 billboard.Configure(tile, Camera.main, boardCenter, spacing, content, null, tileColor);
@@ -194,30 +201,36 @@ namespace TempleCircuit
             // EN: 香火争渡 · 云上寺院 → Incense Crossing · Cloud Temple
             // Use titleFont (Cinzel) for the location label — same as headlineText.
             font = titleFont;
-            // Width 460: fits "Incense Crossing · Cloud Temple" at auto-shrink range 20–26px.
-            // overflow=Overflow prevents the text being cut mid-word if the box is still tight.
-            var location = CreateText("Location", background.rectTransform, 26, TextAnchor.MiddleLeft, Gold, new Vector2(-415f, 53f), new Vector2(460f, 64f));
+            // v3 Polish: widened to 510px and shifted right 30px so the leading 'I' in
+            // "Incense Crossing" is no longer clipped at the background's left edge.
+            // Previous left margin was only 5 canvas units; new left margin is 35 units.
+            // overflow=Overflow is kept so text can extend right if auto-size selects a
+            // large size, but auto-shrink ensures it fits for all known strings.
+            // v3 Polish VR spec C: raised fontSizeMax 26→34 (cap height 31.1mm at d=1.45m ≥ 24.65mm body min).
+            var location = CreateText("Location", background.rectTransform, 34, TextAnchor.MiddleLeft, Gold, new Vector2(-385f, 53f), new Vector2(510f, 64f));
             location.text = "Incense Crossing · Cloud Temple";
             location.fontStyle = FontStyles.Bold;
             location.overflowMode = TextOverflowModes.Overflow;
             location.enableAutoSizing = true;
-            location.fontSizeMin = 18f;
-            location.fontSizeMax = 26f;
+            location.fontSizeMin = 22f;
+            location.fontSizeMax = 34f;
 
             // Use body font for status text (readable mixed-case)
             font = bodyFont ?? titleFont;
             // roundText: "Round 16 / 16  ·  8 Merit To Win" — allow auto-shrink, overflow visible
-            roundText = CreateText("Round", background.rectTransform, 24, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(380f, 64f));
+            // v3 Polish VR spec C: raised fontSizeMax 24→30 (cap height 27.5mm at d=1.45m ≥ 24.65mm body min).
+            roundText = CreateText("Round", background.rectTransform, 30, TextAnchor.MiddleCenter, Paper, new Vector2(0f, 53f), new Vector2(380f, 64f));
             roundText.overflowMode = TextOverflowModes.Overflow;
             roundText.enableAutoSizing = true;
-            roundText.fontSizeMin = 18f;
-            roundText.fontSizeMax = 24f;
-            // trendText: "Incense Flow · Incense Court" — longest category name; width 420 fits at 24px
-            trendText = CreateText("Trend", background.rectTransform, 24, TextAnchor.MiddleRight, Paper, new Vector2(430f, 53f), new Vector2(420f, 64f));
+            roundText.fontSizeMin = 20f;
+            roundText.fontSizeMax = 30f;
+            // trendText: "Incense Flow · Incense Court" — longest category name; width 420 fits at 30px
+            // v3 Polish VR spec C: raised fontSizeMax 24→30.
+            trendText = CreateText("Trend", background.rectTransform, 30, TextAnchor.MiddleRight, Paper, new Vector2(430f, 53f), new Vector2(420f, 64f));
             trendText.overflowMode = TextOverflowModes.Overflow;
             trendText.enableAutoSizing = true;
-            trendText.fontSizeMin = 18f;
-            trendText.fontSizeMax = 24f;
+            trendText.fontSizeMin = 20f;
+            trendText.fontSizeMax = 30f;
 
             var colors = new[]
             {
@@ -239,8 +252,9 @@ namespace TempleCircuit
                 var accent = CreateImage("Accent", card.rectTransform, colors[i], new Vector2(-131f, 0f), new Vector2(7f, 68f));
                 accent.raycastTarget = false;
                 // body font for player status text
+                // v3 Polish VR spec C: raised fontSize 25→30 (cap height 27.5mm ≥ 24.65mm body min at d=1.45m).
                 font = bodyFont ?? titleFont;
-                var text = CreateText("PlayerText", card.rectTransform, 25, TextAnchor.MiddleLeft, Paper, new Vector2(12f, 0f), new Vector2(232f, 80f));
+                var text = CreateText("PlayerText", card.rectTransform, 30, TextAnchor.MiddleLeft, Paper, new Vector2(12f, 0f), new Vector2(232f, 80f));
                 playerTexts.Add(text);
             }
             BuildPlayerPropertyHover(background.rectTransform);
@@ -308,18 +322,29 @@ namespace TempleCircuit
                 AddOutline(panel.gameObject, new Color32(220, 181, 91, 190), new Vector2(2f, -2f));
 
             // Headline uses title font (Cinzel) for dramatic display text
+            // v3 Polish VR spec C: raised headline 40→48 (cap height increases proportionally with dice canvas scale).
             font = this.font; // currently the "Dice" title font instance
-            headlineText = CreateText("Headline", panel.rectTransform, 40, TextAnchor.MiddleLeft, Gold, new Vector2(0f, 86f), new Vector2(530f, 62f));
+            headlineText = CreateText("Headline", panel.rectTransform, 48, TextAnchor.MiddleLeft, Gold, new Vector2(0f, 86f), new Vector2(530f, 62f));
             headlineText.fontStyle = FontStyles.Bold;
+            headlineText.enableAutoSizing = true;
+            headlineText.fontSizeMin = 30f;
+            headlineText.fontSizeMax = 48f;
 
             // Body and hint use body font (EB Garamond) for readable prose
+            // v3 Polish VR spec C: raised body 26→32, hint 22→26.
             var diceBodyFont = bodyFont != null ? CreateFontInstance(sourceBodyFont, "DiceBody") : this.font;
             font = diceBodyFont;
-            bodyText = CreateText("Body", panel.rectTransform, 26, TextAnchor.UpperLeft, Paper, new Vector2(0f, 24f), new Vector2(530f, 82f));
+            bodyText = CreateText("Body", panel.rectTransform, 32, TextAnchor.UpperLeft, Paper, new Vector2(0f, 24f), new Vector2(530f, 82f));
             bodyText.textWrappingMode = TextWrappingModes.Normal;
             bodyText.overflowMode = TextOverflowModes.Truncate;
             bodyText.lineSpacing = 3f;
-            hintText = CreateText("Hint", panel.rectTransform, 22, TextAnchor.MiddleLeft, Paper, new Vector2(0f, -42f), new Vector2(530f, 42f));
+            bodyText.enableAutoSizing = true;
+            bodyText.fontSizeMin = 20f;
+            bodyText.fontSizeMax = 32f;
+            hintText = CreateText("Hint", panel.rectTransform, 26, TextAnchor.MiddleLeft, Paper, new Vector2(0f, -42f), new Vector2(530f, 42f));
+            hintText.enableAutoSizing = true;
+            hintText.fontSizeMin = 18f;
+            hintText.fontSizeMax = 26f;
 
             chargeGroup = new GameObject("DiceCharge", typeof(RectTransform));
             var chargeRect = chargeGroup.GetComponent<RectTransform>();
