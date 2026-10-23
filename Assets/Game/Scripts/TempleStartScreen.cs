@@ -754,6 +754,19 @@ namespace TempleCircuit
             return inside;
         }
 
+        static bool InsideFeedbackRoundedRect(Vector2 point, TempleStartButtonShape shape)
+        {
+            // 反馈区域在参考分辨率下的像素尺寸（与 StartMin/Max、ExitMin/Max 一致），圆角 12px
+            var size = shape == TempleStartButtonShape.Start
+                ? new Vector2((StartMax.x - StartMin.x) * ReferenceWidth, (StartMax.y - StartMin.y) * ReferenceHeight)
+                : new Vector2((ExitMax.x - ExitMin.x) * ReferenceWidth, (ExitMax.y - ExitMin.y) * ReferenceHeight);
+            const float radius = 12f;
+            var p = new Vector2(point.x * size.x, point.y * size.y);
+            var cx = Mathf.Clamp(p.x, radius, size.x - radius);
+            var cy = Mathf.Clamp(p.y, radius, size.y - radius);
+            return (p - new Vector2(cx, cy)).sqrMagnitude <= radius * radius;
+        }
+
         static Sprite GetShapeSprite(TempleStartButtonShape shape)
         {
             var cached = shape == TempleStartButtonShape.Start ? startShapeSprite : exitShapeSprite;
@@ -781,7 +794,8 @@ namespace TempleCircuit
                             var point = new Vector2(
                                 (x + (sx + 0.5f) / ShapeSupersampling) / ShapeTextureWidth,
                                 (y + (sy + 0.5f) / ShapeSupersampling) / ShapeTextureHeight);
-                            if (ContainsShape(point, shape))
+                            // v4：封面按钮改为简约圆角矩形，反馈叠色跟随新按钮外形（命中判定仍用原轮廓多边形）
+                            if (InsideFeedbackRoundedRect(point, shape))
                                 coverage++;
                         }
                     }
