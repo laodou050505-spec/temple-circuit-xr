@@ -681,9 +681,9 @@ namespace TempleCircuit
 
             var hovering = pointerHover || worldHover;
             var visuallyPressed = pressed || Time.unscaledTime < forcedPressedUntil;
-            // v3 Polish: normal state shows a faint warm glow so the button reads as
-            // interactive even before the user aims at it.  Hover and press brighten further.
-            var targetAlpha = visuallyPressed ? 0.65f : hovering ? 0.42f : 0.14f;
+            // v4 Simplify: 按钮本身已绘入封面图，正常态几乎无叠色；
+            // 悬停：明显亮金叠层；按下：较强的暗闪。三态有清晰区别。
+            var targetAlpha = visuallyPressed ? 0.60f : hovering ? 0.38f : 0.04f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             // v3 Polish: smooth scale easing.  Time constant 0.09 s gives ≈0.09 s rise
@@ -711,7 +711,7 @@ namespace TempleCircuit
             }
             wasAnyHover = anyHover;
 
-            var targetAlpha = visuallyPressed ? 0.65f : hovering ? 0.42f : 0.14f;
+            var targetAlpha = visuallyPressed ? 0.60f : hovering ? 0.38f : 0.04f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             var targetScale = visuallyPressed ? 0.97f : hovering ? 1.05f : 1.0f;
