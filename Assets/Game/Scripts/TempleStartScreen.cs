@@ -681,9 +681,9 @@ namespace TempleCircuit
 
             var hovering = pointerHover || worldHover;
             var visuallyPressed = pressed || Time.unscaledTime < forcedPressedUntil;
-            // v4 Simplify: 按钮本身已绘入封面图，正常态几乎无叠色；
-            // 悬停：明显亮金叠层；按下：较强的暗闪。三态有清晰区别。
-            var targetAlpha = visuallyPressed ? 0.32f : hovering ? 0.22f : 0.0f;
+            // v3 Polish: normal state shows a faint warm glow so the button reads as
+            // interactive even before the user aims at it.  Hover and press brighten further.
+            var targetAlpha = visuallyPressed ? 0.40f : hovering ? 0.25f : 0f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             // v3 Polish: smooth scale easing.  Time constant 0.09 s gives ≈0.09 s rise
@@ -711,7 +711,7 @@ namespace TempleCircuit
             }
             wasAnyHover = anyHover;
 
-            var targetAlpha = visuallyPressed ? 0.32f : hovering ? 0.22f : 0.0f;
+            var targetAlpha = visuallyPressed ? 0.40f : hovering ? 0.25f : 0f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             var targetScale = visuallyPressed ? 0.97f : hovering ? 1.05f : 1.0f;
@@ -754,19 +754,6 @@ namespace TempleCircuit
             return inside;
         }
 
-        static bool InsideFeedbackRoundedRect(Vector2 point, TempleStartButtonShape shape)
-        {
-            // 反馈区域在 1920×1080 参考分辨率下的像素尺寸（与 TempleStartScreen 的 StartMin/Max、ExitMin/Max 一致），圆角 12px
-            var size = shape == TempleStartButtonShape.Start
-                ? new Vector2(760f - 249f, 504f - 374f)
-                : new Vector2(696f - 313f, 338f - 227f);
-            const float radius = 12f;
-            var p = new Vector2(point.x * size.x, point.y * size.y);
-            var cx = Mathf.Clamp(p.x, radius, size.x - radius);
-            var cy = Mathf.Clamp(p.y, radius, size.y - radius);
-            return (p - new Vector2(cx, cy)).sqrMagnitude <= radius * radius;
-        }
-
         static Sprite GetShapeSprite(TempleStartButtonShape shape)
         {
             var cached = shape == TempleStartButtonShape.Start ? startShapeSprite : exitShapeSprite;
@@ -794,8 +781,7 @@ namespace TempleCircuit
                             var point = new Vector2(
                                 (x + (sx + 0.5f) / ShapeSupersampling) / ShapeTextureWidth,
                                 (y + (sy + 0.5f) / ShapeSupersampling) / ShapeTextureHeight);
-                            // v4：封面按钮改为简约圆角矩形，反馈叠色跟随新按钮外形（命中判定仍用原轮廓多边形）
-                            if (InsideFeedbackRoundedRect(point, shape))
+                            if (ContainsShape(point, shape))
                                 coverage++;
                         }
                     }
