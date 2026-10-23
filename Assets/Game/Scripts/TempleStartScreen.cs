@@ -683,7 +683,7 @@ namespace TempleCircuit
             var visuallyPressed = pressed || Time.unscaledTime < forcedPressedUntil;
             // v4 Simplify: 按钮本身已绘入封面图，正常态几乎无叠色；
             // 悬停：明显亮金叠层；按下：较强的暗闪。三态有清晰区别。
-            var targetAlpha = visuallyPressed ? 0.60f : hovering ? 0.38f : 0.04f;
+            var targetAlpha = visuallyPressed ? 0.32f : hovering ? 0.22f : 0.0f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             // v3 Polish: smooth scale easing.  Time constant 0.09 s gives ≈0.09 s rise
@@ -711,7 +711,7 @@ namespace TempleCircuit
             }
             wasAnyHover = anyHover;
 
-            var targetAlpha = visuallyPressed ? 0.60f : hovering ? 0.38f : 0.04f;
+            var targetAlpha = visuallyPressed ? 0.32f : hovering ? 0.22f : 0.0f;
             overlay.color = new Color(accent.r, accent.g, accent.b, targetAlpha);
 
             var targetScale = visuallyPressed ? 0.97f : hovering ? 1.05f : 1.0f;
@@ -756,10 +756,10 @@ namespace TempleCircuit
 
         static bool InsideFeedbackRoundedRect(Vector2 point, TempleStartButtonShape shape)
         {
-            // 反馈区域在参考分辨率下的像素尺寸（与 StartMin/Max、ExitMin/Max 一致），圆角 12px
+            // 反馈区域在 1920×1080 参考分辨率下的像素尺寸（与 TempleStartScreen 的 StartMin/Max、ExitMin/Max 一致），圆角 12px
             var size = shape == TempleStartButtonShape.Start
-                ? new Vector2((StartMax.x - StartMin.x) * ReferenceWidth, (StartMax.y - StartMin.y) * ReferenceHeight)
-                : new Vector2((ExitMax.x - ExitMin.x) * ReferenceWidth, (ExitMax.y - ExitMin.y) * ReferenceHeight);
+                ? new Vector2(760f - 249f, 504f - 374f)
+                : new Vector2(696f - 313f, 338f - 227f);
             const float radius = 12f;
             var p = new Vector2(point.x * size.x, point.y * size.y);
             var cx = Mathf.Clamp(p.x, radius, size.x - radius);
